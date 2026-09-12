@@ -1,2 +1,0 @@
-Temporary test file to initialize the student examples repository.
-This file can be deleted later.
