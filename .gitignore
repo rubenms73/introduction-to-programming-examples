@@ -1,0 +1,13 @@
+# Generated programs and object files
+*.class
+*.o
+*.obj
+*.exe
+*.dSYM/
+**/prime_c
+**/prime_arm64
+**/prime_x64
+__pycache__/
+**/hello_c
+**/hello_arm64
+**/hello_x64
