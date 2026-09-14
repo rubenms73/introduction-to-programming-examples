@@ -1,4 +1,4 @@
-# Introduction to Programming — 2026–2027
+# Introduction to Programming
 
 Classroom code examples for Introduction to Programming at the University of Oviedo.
 
