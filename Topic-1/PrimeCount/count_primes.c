@@ -26,6 +26,6 @@ int main(int argc, char *argv[]) {
     double elapsed = now_seconds() - start;
 
     printf("Primes up to %d: %d\n", limit, count);
-    printf("Elapsed time: %.6f s\n", elapsed);
+    printf("Calculation time: %.6f s\n", elapsed);
     return 0;
 }

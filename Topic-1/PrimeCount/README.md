@@ -1,7 +1,7 @@
 # Counting primes: one algorithm, different languages
 
 Count the prime numbers between 2 and an upper limit `N`, inclusive. Each version
-prints the count and the elapsed calculation time. All messages and code are in
+prints the count and the calculation time. All messages and code are in
 English.
 
 Start with `N = 100000` to check that everything works. Try `1000000` for the live
@@ -79,6 +79,35 @@ clang -O2 -arch arm64 assembly/main.c assembly/count_primes_arm64.S -o prime_arm
 `clang` assembles the `.S` file, compiles the C launcher and links them into one
 executable. No separate assembler installation is needed.
 
+## Suggested classroom comparison on macOS
+
+After compiling the programs, use `/usr/bin/time` to measure each **complete
+process**, not only the calculation performed inside it:
+
+```sh
+/usr/bin/time -p ./prime_c 1000000
+/usr/bin/time -p java CountPrimes 1000000
+/usr/bin/time -p python3 count_primes.py 1000000
+/usr/bin/time -p ./prime_arm64 1000000
+```
+
+Each program reports `Calculation time`, while `/usr/bin/time` reports `real`,
+`user` and `sys`. For this activity, compare `real`: it includes process startup,
+and therefore includes starting the Java Virtual Machine and the Python
+interpreter. It still excludes source compilation because compilation was run as
+a separate command.
+
+For example, Java may report a calculation time shorter than C but a longer
+`real` time. This is not a contradiction. The Java Virtual Machine has a startup
+cost, but its just-in-time compiler (JIT) can translate frequently executed
+bytecode into highly optimised native machine code. As the workload becomes
+longer, the startup cost matters less and Java may match or even outperform C for
+this particular calculation.
+
+The useful lesson is not a fixed ranking that applies to every program. It is
+that performance depends on the execution model, startup costs, compiler and JIT
+optimisations, workload, machine, and exactly what is being measured.
+
 ## C, Java, Python and x64 assembly on Windows
 
 Use a **64-bit GCC/MinGW-w64** toolchain, a JDK and Python 3 (CPython). One option
@@ -136,8 +165,11 @@ The program prompts for the upper limit. The timer starts **after** reading it.
 
 ## What the times mean
 
-- The printed time covers one call to the counting function. It excludes console
-  input/output, source compilation and process/JVM startup.
+- `Calculation time`, printed by the program, covers one call to the counting
+  function. It excludes console input/output, source compilation and
+  process/JVM/interpreter startup.
+- `real`, printed by `/usr/bin/time -p`, covers the complete process. Use this
+  value for the suggested classroom comparison.
 - Java runs normally. JIT compilation that occurs during the calculation is part
   of its measured time. There is no special warm-up or benchmark framework.
 - Python runs normally with CPython. It also compiles source to bytecode; calling
@@ -185,13 +217,10 @@ extra machine-level detail matters more than memorising every instruction.
 
 ## Verification
 
-C, Java, Python and the Linux x64 executable were compiled/run and checked against
-known prime counts, including 78498 for one million. Small and boundary cases
-were checked against an independent sieve. The ARM64 calculation was assembled
-and checked in an instruction emulator. The Windows x64 calling-convention branch
-was executed through a compatible adapter on Linux.
+C, Java, Python, macOS ARM64 assembly and Linux x64 assembly were compiled and
+run against known prime counts, including 78498 for one million. Small and
+boundary cases were checked against an independent sieve. The Windows x64
+calling-convention branch was executed through a compatible adapter on Linux.
 
-Native execution on macOS and Windows remains to be checked on those systems.
-
-The assembly sources also cross-assemble successfully into macOS ARM64 and
-Windows x64 object files. Native execution on those systems is still pending.
+Both assembly sources also cross-assemble successfully into their native object
+formats. Native execution of the Windows x64 version remains to be checked.

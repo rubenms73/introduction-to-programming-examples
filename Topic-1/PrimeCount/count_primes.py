@@ -40,7 +40,7 @@ def main():
     elapsed = time.perf_counter() - start
 
     print(f"Primes up to {limit}: {count}")
-    print(f"Elapsed time: {elapsed:.6f} s")
+    print(f"Calculation time: {elapsed:.6f} s")
     return 0
 
 

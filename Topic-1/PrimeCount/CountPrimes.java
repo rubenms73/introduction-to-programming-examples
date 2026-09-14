@@ -51,6 +51,6 @@ public class CountPrimes {
         double elapsed = (System.nanoTime() - start) / 1_000_000_000.0;
 
         System.out.printf("Primes up to %d: %d%n", limit, count);
-        System.out.printf(Locale.ROOT, "Elapsed time: %.6f s%n", elapsed);
+        System.out.printf(Locale.ROOT, "Calculation time: %.6f s%n", elapsed);
     }
 }
