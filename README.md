@@ -18,3 +18,10 @@ PrimeCount to compare calculation times.
 Each exercise is self-contained, uses the default package and includes its own
 compile and run instructions. Class-design exercises also include a `main`
 demonstration.
+
+Solutions are grouped by topic, following the classroom exercise handout:
+
+- [Topic 2: Expressions, Types and Simple Programs](Topic-2/Classroom-exercises/README.md)
+- [Topic 3: Conditional and Iterative Statements](Topic-3/Classroom-exercises/README.md)
+- [Topic 4: Arrays, Strings and Matrices](Topic-4/Classroom-exercises/README.md)
+- [Topic 5: Classes and Objects](Topic-5/Classroom-exercises/README.md)
