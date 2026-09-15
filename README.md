@@ -11,3 +11,10 @@ Classroom code examples for Introduction to Programming at the University of Ovi
 
 Each directory includes build and run commands. Start with Hello World, then use
 PrimeCount to compare calculation times.
+
+## Classroom exercises
+
+[Java solutions to the 37 classroom exercises](Classroom-exercises/README.md).
+Each exercise is self-contained, uses the default package and includes its own
+compile and run instructions. Class-design exercises also include a `main`
+demonstration.
