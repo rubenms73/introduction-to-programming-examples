@@ -11,3 +11,11 @@ java RotateArray
 ```
 
 The main method is in `RotateArray.java`. Run it and follow any input prompts.
+
+## Prerequisites
+
+Use indexed arrays, loops and the text operations taught in Topic 4: length(), charAt(), equals(), concatenation, next() and nextLine(). Implement traversals explicitly.
+
+## Input and behaviour
+
+Print the resulting array with an indexed loop, one value per line.

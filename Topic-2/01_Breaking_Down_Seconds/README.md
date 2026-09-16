@@ -11,3 +11,11 @@ java BreakingDownSeconds
 ```
 
 The main method is in `BreakingDownSeconds.java`. Run it and follow any input prompts.
+
+## Prerequisites
+
+Use the main/Scanner templates, primitive variables, arithmetic, assignment and console output. No conditionals, loops, arrays or helper methods.
+
+## Input and behaviour
+
+Input is a non-negative integer number of seconds that fits in int.

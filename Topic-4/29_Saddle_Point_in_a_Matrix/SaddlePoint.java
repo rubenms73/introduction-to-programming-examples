@@ -1,10 +1,18 @@
+import java.util.Scanner;
+
 public class SaddlePoint {
     public static void main(String[] args) {
-        int[][] matrix = {
-                {7, 5, 9},
-                {8, 6, 10},
-                {9, 7, 11}
-        };
+        Scanner in = new Scanner(System.in);
+        System.out.print("Rows and columns: ");
+        int rows = in.nextInt();
+        int columns = in.nextInt();
+        int[][] matrix = new int[rows][columns];
+        System.out.println("Matrix values, row by row:");
+        for (int row = 0; row < rows; row++) {
+            for (int col = 0; col < columns; col++) {
+                matrix[row][col] = in.nextInt();
+            }
+        }
 
         printSaddlePoints(matrix);
     }

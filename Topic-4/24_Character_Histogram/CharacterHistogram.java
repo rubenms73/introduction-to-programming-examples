@@ -15,7 +15,10 @@ public class CharacterHistogram {
         int[] counts = new int[26];
 
         for (int i = 0; i < text.length(); i++) {
-            char c = Character.toLowerCase(text.charAt(i));
+            char c = text.charAt(i);
+            if (c >= 'A' && c <= 'Z') {
+                c = (char) (c + ('a' - 'A'));
+            }
             if (c >= 'a' && c <= 'z') {
                 counts[c - 'a']++;
             }

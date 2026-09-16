@@ -44,3 +44,11 @@ Exercises 31–37 include `Main.java` demonstrations. Other examples either prom
 for input or use sample values in their main method. Exercise numbers follow
 the classroom exercise handout. Introductory solutions assume inputs within the
 exercise's intended domain and numeric range.
+
+## Topic 1 demonstration
+
+The prime-counting programs are supplied for an instructor-led comparison of
+compilation and execution times. In Topic 1, run them and observe the results;
+you are not expected to understand or write their algorithms yet. Study loops
+and helper methods after Topic 3. The Hello World Java program is the coding
+example for Topic 1.

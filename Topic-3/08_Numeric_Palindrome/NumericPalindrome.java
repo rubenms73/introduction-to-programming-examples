@@ -18,7 +18,7 @@ public class NumericPalindrome {
 
     public static boolean isPalindrome(int number) {
         int original = number;
-        int reversed = 0;
+        long reversed = 0;
 
         while (number > 0) {
             int digit = number % 10;

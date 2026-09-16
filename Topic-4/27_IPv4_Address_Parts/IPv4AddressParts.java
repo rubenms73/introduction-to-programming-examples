@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class IPv4AddressParts {
@@ -12,7 +11,9 @@ public class IPv4AddressParts {
         if (parts == null) {
             System.out.println("Invalid IPv4 address");
         } else {
-            System.out.println(Arrays.toString(parts));
+            for (int i = 0; i < parts.length; i++) {
+                System.out.println(parts[i]);
+            }
         }
     }
 
@@ -46,7 +47,7 @@ public class IPv4AddressParts {
     }
 
     public static int parsePart(String text, int start, int end) {
-        if (start == end) {
+        if (start == end || end - start > 3) {
             return -1;
         }
 

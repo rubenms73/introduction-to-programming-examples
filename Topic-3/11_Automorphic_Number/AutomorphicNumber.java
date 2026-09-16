@@ -18,7 +18,7 @@ public class AutomorphicNumber {
 
     public static boolean isAutomorphic(int number) {
         long square = (long) number * number;
-        int modulus = 1;
+        long modulus = 1;
         int copy = number;
 
         while (copy > 0) {

@@ -224,3 +224,11 @@ calling-convention branch was executed through a compatible adapter on Linux.
 
 Both assembly sources also cross-assemble successfully into their native object
 formats. Native execution of the Windows x64 version remains to be checked.
+
+## Topic 1 demonstration
+
+The prime-counting programs are supplied for an instructor-led comparison of
+compilation and execution times. In Topic 1, run them and observe the results;
+you are not expected to understand or write their algorithms yet. Study loops
+and helper methods after Topic 3. The Hello World Java program is the coding
+example for Topic 1.

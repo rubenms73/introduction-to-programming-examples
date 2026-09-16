@@ -9,7 +9,7 @@ public class SquareRootByBisection {
         System.out.print("Tolerance: ");
         double tolerance = in.nextDouble();
 
-        if (number < 0 || tolerance <= 0) {
+        if (number < 0 || number > 1000000 || tolerance < 0.000000001 || tolerance > 1) {
             System.out.println("Invalid input");
         } else {
             double result = squareRoot(number, tolerance);
@@ -19,7 +19,10 @@ public class SquareRootByBisection {
 
     public static double squareRoot(double number, double tolerance) {
         double low = 0.0;
-        double high = Math.max(1.0, number);
+        double high = 1.0;
+        if (number > 1.0) {
+            high = number;
+        }
 
         while (high - low > tolerance) {
             double middle = (low + high) / 2.0;

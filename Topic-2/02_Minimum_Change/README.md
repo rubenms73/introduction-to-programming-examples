@@ -11,3 +11,11 @@ java MinimumChange
 ```
 
 The main method is in `MinimumChange.java`. Run it and follow any input prompts.
+
+## Prerequisites
+
+Use the main/Scanner templates, primitive variables, arithmetic, assignment and console output. No conditionals, loops, arrays or helper methods.
+
+## Input and behaviour
+
+Input is a non-negative amount in cents that fits in int. Use only sequential statements and individual variables; print every denomination count.

@@ -11,3 +11,11 @@ java Main
 ```
 
 `Main.java` demonstrates the classes with sample data.
+
+## Prerequisites
+
+Use classes, constructors, encapsulation, this, composition, toString() and the explicitly explained equality operations. Do not use exceptions or additional utility libraries.
+
+## Input and behaviour
+
+Construct with finite non-negative values. If distance is zero, the consumption and cost per kilometre methods return zero.

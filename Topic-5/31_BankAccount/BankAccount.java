@@ -1,3 +1,5 @@
+/** Constructor arguments must satisfy the exercise preconditions.
+ * Invalid setter values leave the previous valid state unchanged. */
 public class BankAccount {
     private String holder;
     private double balance;
@@ -12,7 +14,7 @@ public class BankAccount {
     }
 
     public void setHolder(String holder) {
-        if (holder != null && !holder.isBlank()) {
+        if (holder != null && holder.length() > 0) {
             this.holder = holder;
         }
     }
@@ -53,6 +55,6 @@ public class BankAccount {
 
     @Override
     public String toString() {
-        return String.format("%s: %.2f euro", holder, balance);
+        return holder + ": " + balance + " euro";
     }
 }

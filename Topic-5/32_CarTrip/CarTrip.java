@@ -1,3 +1,5 @@
+/** Constructor arguments must satisfy the exercise preconditions.
+ * Invalid setter values leave the previous valid state unchanged. */
 public class CarTrip {
     private double kilometres;
     private double litres;
@@ -59,7 +61,7 @@ public class CarTrip {
 
     @Override
     public String toString() {
-        return String.format("%.1f km, %.2f litres, %.2f euro/litre",
-                kilometres, litres, fuelCostPerLitre);
+        return kilometres + " km, " + litres + " litres, "
+                + fuelCostPerLitre + " euro/litre";
     }
 }

@@ -1,4 +1,3 @@
-import java.util.Arrays;
 
 public class MergeSortedArrays {
     public static void main(String[] args) {
@@ -6,7 +5,9 @@ public class MergeSortedArrays {
         int[] b = {2, 3, 9};
 
         int[] merged = merge(a, b);
-        System.out.println(Arrays.toString(merged));
+        for (int i = 0; i < merged.length; i++) {
+            System.out.println(merged[i]);
+        }
     }
 
     public static int[] merge(int[] a, int[] b) {

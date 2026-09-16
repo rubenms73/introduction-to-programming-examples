@@ -39,7 +39,11 @@ public class ReverseWords {
                 while (i < text.length() && text.charAt(i) != ' ') {
                     i++;
                 }
-                words[position] = text.substring(start, i);
+                String word = "";
+                for (int j = start; j < i; j++) {
+                    word = word + text.charAt(j);
+                }
+                words[position] = word;
                 position++;
             }
         }

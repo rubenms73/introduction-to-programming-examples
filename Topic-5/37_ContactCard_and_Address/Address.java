@@ -1,3 +1,5 @@
+/** Constructor arguments must satisfy the exercise preconditions.
+ * Invalid setter values leave the previous valid state unchanged. */
 public class Address {
     private String street;
     private String city;
@@ -18,7 +20,7 @@ public class Address {
     }
 
     public void setStreet(String street) {
-        if (street != null && !street.isBlank()) {
+        if (street != null && street.length() > 0) {
             this.street = street;
         }
     }
@@ -28,7 +30,7 @@ public class Address {
     }
 
     public void setCity(String city) {
-        if (city != null && !city.isBlank()) {
+        if (city != null && city.length() > 0) {
             this.city = city;
         }
     }
@@ -38,13 +40,13 @@ public class Address {
     }
 
     public void setPostalCode(String postalCode) {
-        if (postalCode != null && !postalCode.isBlank()) {
+        if (postalCode != null && postalCode.length() > 0) {
             this.postalCode = postalCode;
         }
     }
 
     @Override
     public String toString() {
-        return String.format("%s, %s %s", street, postalCode, city);
+        return street + ", " + postalCode + " " + city;
     }
 }

@@ -11,3 +11,7 @@ java TicTacToeWinner
 ```
 
 The main method is in `TicTacToeWinner.java`. Run it and follow any input prompts.
+
+## Prerequisites
+
+Use indexed arrays, loops and the text operations taught in Topic 4: length(), charAt(), equals(), concatenation, next() and nextLine(). Implement traversals explicitly.

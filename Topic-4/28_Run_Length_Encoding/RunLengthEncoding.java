@@ -23,13 +23,13 @@ public class RunLengthEncoding {
             if (text.charAt(i) == current) {
                 count++;
             } else {
-                result += current + String.valueOf(count);
+                result = result + current + count;
                 current = text.charAt(i);
                 count = 1;
             }
         }
 
-        result += current + String.valueOf(count);
+        result = result + current + count;
         return result;
     }
 }

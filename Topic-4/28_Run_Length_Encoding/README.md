@@ -11,3 +11,11 @@ java RunLengthEncoding
 ```
 
 The main method is in `RunLengthEncoding.java`. Run it and follow any input prompts.
+
+## Prerequisites
+
+Use indexed arrays, loops and the text operations taught in Topic 4: length(), charAt(), equals(), concatenation, next() and nextLine(). Implement traversals explicitly.
+
+## Input and behaviour
+
+Build the result by concatenating each character and its count; use no conversion utilities.

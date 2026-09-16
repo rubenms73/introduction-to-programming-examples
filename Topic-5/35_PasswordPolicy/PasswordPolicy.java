@@ -1,3 +1,5 @@
+/** Constructor arguments must satisfy the exercise preconditions.
+ * Invalid setter values leave the previous valid state unchanged. */
 public class PasswordPolicy {
     private int minimumLength;
     private boolean requireUppercase;
@@ -57,11 +59,11 @@ public class PasswordPolicy {
 
         for (int i = 0; i < password.length(); i++) {
             char c = password.charAt(i);
-            if (Character.isUpperCase(c)) {
+            if (c >= 'A' && c <= 'Z') {
                 hasUppercase = true;
-            } else if (Character.isLowerCase(c)) {
+            } else if (c >= 'a' && c <= 'z') {
                 hasLowercase = true;
-            } else if (Character.isDigit(c)) {
+            } else if (c >= '0' && c <= '9') {
                 hasDigit = true;
             }
         }
@@ -73,8 +75,8 @@ public class PasswordPolicy {
 
     @Override
     public String toString() {
-        return String.format(
-                "PasswordPolicy[length >= %d, uppercase=%b, lowercase=%b, digit=%b]",
-                minimumLength, requireUppercase, requireLowercase, requireDigit);
+        return "PasswordPolicy[length >= " + minimumLength
+                + ", uppercase=" + requireUppercase
+                + ", lowercase=" + requireLowercase + ", digit=" + requireDigit + "]";
     }
 }

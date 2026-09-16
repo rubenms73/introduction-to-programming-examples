@@ -11,3 +11,11 @@ java Main
 ```
 
 `Main.java` demonstrates the classes with sample data.
+
+## Prerequisites
+
+Use classes, constructors, encapsulation, this, composition, toString() and the explicitly explained equality operations. Do not use exceptions or additional utility libraries.
+
+## Input and behaviour
+
+Construct with a non-empty holder name and a finite non-negative balance. Invalid setters leave the previous value unchanged; failed transactions return false.

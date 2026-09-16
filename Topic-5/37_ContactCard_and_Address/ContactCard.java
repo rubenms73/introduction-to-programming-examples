@@ -1,3 +1,5 @@
+/** Constructor arguments must satisfy the exercise preconditions.
+ * Invalid setter values leave the previous valid state unchanged. */
 public class ContactCard {
     private String name;
     private String email;
@@ -14,7 +16,7 @@ public class ContactCard {
     }
 
     public void setName(String name) {
-        if (name != null && !name.isBlank()) {
+        if (name != null && name.length() > 0) {
             this.name = name;
         }
     }
@@ -24,7 +26,7 @@ public class ContactCard {
     }
 
     public void setEmail(String email) {
-        if (email != null && !email.isBlank()) {
+        if (email != null && email.length() > 0) {
             this.email = email;
         }
     }
@@ -48,11 +50,16 @@ public class ContactCard {
             return false;
         }
         ContactCard other = (ContactCard) object;
-        return email != null && email.equalsIgnoreCase(other.email);
+        return email != null && email.equals(other.email);
+    }
+
+    @Override
+    public int hashCode() {
+        return email.hashCode();
     }
 
     @Override
     public String toString() {
-        return String.format("%s <%s>%n%s", name, email, address);
+        return name + " <" + email + ">\n" + address;
     }
 }

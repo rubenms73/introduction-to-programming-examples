@@ -9,7 +9,7 @@ public class BinaryToDecimal {
 
         int decimal = 0;
         int power = 1;
-        boolean valid = true;
+        boolean valid = binary >= 0;
 
         if (binary == 0) {
             System.out.println("Decimal: 0");

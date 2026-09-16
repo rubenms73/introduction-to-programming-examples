@@ -1,16 +1,12 @@
+/** Constructor arguments must satisfy the exercise preconditions.
+ * Invalid setter values leave the previous valid state unchanged. */
 public class BoundedCounter {
     private int minimum;
     private int maximum;
     private int value;
 
     public BoundedCounter(int minimum, int maximum, int initialValue) {
-        if (minimum > maximum) {
-            throw new IllegalArgumentException("Invalid limits");
-        }
-        if (initialValue < minimum || initialValue > maximum) {
-            throw new IllegalArgumentException("Invalid initial value");
-        }
-
+        // Precondition: minimum <= initialValue <= maximum.
         this.minimum = minimum;
         this.maximum = maximum;
         this.value = initialValue;
@@ -74,7 +70,6 @@ public class BoundedCounter {
 
     @Override
     public String toString() {
-        return String.format("Counter[%d..%d] = %d",
-                minimum, maximum, value);
+        return "Counter[" + minimum + ".." + maximum + "] = " + value;
     }
 }

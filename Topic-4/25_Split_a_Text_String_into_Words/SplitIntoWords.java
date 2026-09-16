@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class SplitIntoWords {
@@ -9,7 +8,9 @@ public class SplitIntoWords {
         String sentence = in.nextLine();
 
         String[] words = splitIntoWords(sentence);
-        System.out.println(Arrays.toString(words));
+        for (int i = 0; i < words.length; i++) {
+            System.out.println(words[i]);
+        }
     }
 
     public static String[] splitIntoWords(String text) {
@@ -27,7 +28,11 @@ public class SplitIntoWords {
                 while (i < text.length() && text.charAt(i) != ' ') {
                     i++;
                 }
-                words[position] = text.substring(start, i);
+                String word = "";
+                for (int j = start; j < i; j++) {
+                    word = word + text.charAt(j);
+                }
+                words[position] = word;
                 position++;
             }
         }

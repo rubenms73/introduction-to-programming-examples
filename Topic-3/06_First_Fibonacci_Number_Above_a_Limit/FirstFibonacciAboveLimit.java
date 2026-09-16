@@ -7,6 +7,11 @@ public class FirstFibonacciAboveLimit {
         System.out.print("Limit: ");
         long limit = in.nextLong();
 
+        if (limit < 1 || limit > 1000000000L) {
+            System.out.println("Limit must be between 1 and 1000000000");
+            return;
+        }
+
         long previous = 1;
         long current = 1;
         int position = 1;

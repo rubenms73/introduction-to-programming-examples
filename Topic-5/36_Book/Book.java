@@ -1,3 +1,5 @@
+/** Constructor arguments must satisfy the exercise preconditions.
+ * Invalid setter values leave the previous valid state unchanged. */
 public class Book {
     private String isbn;
     private String title;
@@ -16,7 +18,7 @@ public class Book {
     }
 
     public void setIsbn(String isbn) {
-        if (isbn != null && !isbn.isBlank()) {
+        if (isbn != null && isbn.length() > 0) {
             this.isbn = isbn;
         }
     }
@@ -26,7 +28,7 @@ public class Book {
     }
 
     public void setTitle(String title) {
-        if (title != null && !title.isBlank()) {
+        if (title != null && title.length() > 0) {
             this.title = title;
         }
     }
@@ -36,7 +38,7 @@ public class Book {
     }
 
     public void setAuthor(String author) {
-        if (author != null && !author.isBlank()) {
+        if (author != null && author.length() > 0) {
             this.author = author;
         }
     }
@@ -64,8 +66,12 @@ public class Book {
     }
 
     @Override
+    public int hashCode() {
+        return isbn.hashCode();
+    }
+
+    @Override
     public String toString() {
-        return String.format("%s, by %s (%d) [ISBN: %s]",
-                title, author, year, isbn);
+        return title + ", by " + author + " (" + year + ") [ISBN: " + isbn + "]";
     }
 }

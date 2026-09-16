@@ -17,13 +17,14 @@ public class Anagrams {
     }
 
     public static boolean areAnagrams(String first, String second) {
-        first = first.toLowerCase();
-        second = second.toLowerCase();
 
         int[] counts = new int[26];
 
         for (int i = 0; i < first.length(); i++) {
             char c = first.charAt(i);
+            if (c >= 'A' && c <= 'Z') {
+                c = (char) (c + ('a' - 'A'));
+            }
             if (c < 'a' || c > 'z') {
                 return false;
             }
@@ -32,6 +33,9 @@ public class Anagrams {
 
         for (int i = 0; i < second.length(); i++) {
             char c = second.charAt(i);
+            if (c >= 'A' && c <= 'Z') {
+                c = (char) (c + ('a' - 'A'));
+            }
             if (c < 'a' || c > 'z') {
                 return false;
             }

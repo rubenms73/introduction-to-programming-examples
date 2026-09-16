@@ -7,8 +7,8 @@ public class FibonacciNumber {
         System.out.print("n: ");
         int n = in.nextInt();
 
-        if (n <= 0) {
-            System.out.println("n must be positive");
+        if (n <= 0 || n > 92) {
+            System.out.println("n must be between 1 and 92");
         } else {
             long result = fibonacci(n);
             System.out.printf("Fibonacci number %d is %d%n", n, result);

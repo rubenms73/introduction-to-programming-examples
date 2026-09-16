@@ -11,3 +11,11 @@ java ReverseWords
 ```
 
 The main method is in `ReverseWords.java`. Run it and follow any input prompts.
+
+## Prerequisites
+
+Use indexed arrays, loops and the text operations taught in Topic 4: length(), charAt(), equals(), concatenation, next() and nextLine(). Implement traversals explicitly.
+
+## Input and behaviour
+
+Build the word array using length(), charAt() and concatenation. Keep this exercise self-contained; do not import another exercise.

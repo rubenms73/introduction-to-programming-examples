@@ -11,3 +11,11 @@ java Main
 ```
 
 `Main.java` demonstrates the classes with sample data.
+
+## Prerequisites
+
+Use classes, constructors, encapsulation, this, composition, toString() and the explicitly explained equality operations. Do not use exceptions or additional utility libraries.
+
+## Input and behaviour
+
+Constructor preconditions: non-null, non-empty ISBN, title and author; positive publication year. Compare ISBN text exactly with equals(). Supply a matching hashCode() using the ISBN string code.

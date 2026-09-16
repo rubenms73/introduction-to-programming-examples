@@ -11,3 +11,7 @@ java HarshadNumber
 ```
 
 The main method is in `HarshadNumber.java`. Run it and follow any input prompts.
+
+## Prerequisites
+
+Use the constructs introduced in Topic 3, including static methods, conditions and loops. Process numbers arithmetically; do not manipulate strings or arrays.

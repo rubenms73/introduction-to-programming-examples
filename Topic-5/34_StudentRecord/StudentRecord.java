@@ -1,10 +1,12 @@
+/** Constructor arguments must satisfy the exercise preconditions.
+ * Invalid setter values leave the previous valid state unchanged. */
 public class StudentRecord {
     private String name;
     private double theoryMark;
     private double labMark;
 
     public StudentRecord(String name, double theoryMark, double labMark) {
-        this.name = name;
+        setName(name);
         setTheoryMark(theoryMark);
         setLabMark(labMark);
     }
@@ -14,7 +16,7 @@ public class StudentRecord {
     }
 
     public void setName(String name) {
-        if (name != null && !name.isBlank()) {
+        if (name != null && name.length() > 0) {
             this.name = name;
         }
     }
@@ -49,7 +51,7 @@ public class StudentRecord {
 
     public String report() {
         String result = hasPassed() ? "PASS" : "FAIL";
-        return String.format("%s: %.2f (%s)", name, finalMark(), result);
+        return name + ": " + finalMark() + " (" + result + ")";
     }
 
     @Override

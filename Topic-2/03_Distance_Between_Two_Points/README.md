@@ -11,3 +11,11 @@ java DistanceBetweenPoints
 ```
 
 The main method is in `DistanceBetweenPoints.java`. Run it and follow any input prompts.
+
+## Prerequisites
+
+Use the main/Scanner templates, primitive variables, arithmetic, assignment and console output. No conditionals, loops, arrays or helper methods.
+
+## Input and behaviour
+
+Coordinates are finite real values with magnitudes at most 1000000. Math.sqrt is available.

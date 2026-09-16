@@ -11,3 +11,11 @@ java SplitIntoWords
 ```
 
 The main method is in `SplitIntoWords.java`. Run it and follow any input prompts.
+
+## Prerequisites
+
+Use indexed arrays, loops and the text operations taught in Topic 4: length(), charAt(), equals(), concatenation, next() and nextLine(). Implement traversals explicitly.
+
+## Input and behaviour
+
+Build each word by appending its characters. Use length(), charAt() and concatenation, without split(), substring() or array utility methods. Print one word per line.
