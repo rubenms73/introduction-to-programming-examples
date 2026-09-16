@@ -1,5 +1,7 @@
-public class Main {
-    public static void main(String[] args) {
+public class Main
+{
+    public static void main(String[] args)
+    {
         Address address = new Address("1 Main Street", "Oviedo", "33001");
         ContactCard contact = new ContactCard("Alex", "alex@example.com", address);
         System.out.println(contact);

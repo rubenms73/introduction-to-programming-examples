@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
-public class Anagrams {
-    public static void main(String[] args) {
+public class Anagrams
+{
+    public static void main(String[] args)
+    {
         Scanner in = new Scanner(System.in);
 
         System.out.print("First word: ");
@@ -9,41 +11,53 @@ public class Anagrams {
         System.out.print("Second word: ");
         String second = in.nextLine();
 
-        if (areAnagrams(first, second)) {
+        if (areAnagrams(first, second))
+        {
             System.out.println("They are anagrams");
-        } else {
+        }
+        else
+        {
             System.out.println("They are not anagrams");
         }
     }
 
-    public static boolean areAnagrams(String first, String second) {
+    public static boolean areAnagrams(String first, String second)
+    {
 
         int[] counts = new int[26];
 
-        for (int i = 0; i < first.length(); i++) {
+        for (int i = 0; i < first.length(); i++)
+        {
             char c = first.charAt(i);
-            if (c >= 'A' && c <= 'Z') {
-                c = (char) (c + ('a' - 'A'));
+            if (c >= 'A' && c <= 'Z')
+            {
+                c = (char)(c + ('a' - 'A'));
             }
-            if (c < 'a' || c > 'z') {
+            if (c < 'a' || c > 'z')
+            {
                 return false;
             }
             counts[c - 'a']++;
         }
 
-        for (int i = 0; i < second.length(); i++) {
+        for (int i = 0; i < second.length(); i++)
+        {
             char c = second.charAt(i);
-            if (c >= 'A' && c <= 'Z') {
-                c = (char) (c + ('a' - 'A'));
+            if (c >= 'A' && c <= 'Z')
+            {
+                c = (char)(c + ('a' - 'A'));
             }
-            if (c < 'a' || c > 'z') {
+            if (c < 'a' || c > 'z')
+            {
                 return false;
             }
             counts[c - 'a']--;
         }
 
-        for (int i = 0; i < counts.length; i++) {
-            if (counts[i] != 0) {
+        for (int i = 0; i < counts.length; i++)
+        {
+            if (counts[i] != 0)
+            {
                 return false;
             }
         }

@@ -1,5 +1,7 @@
-public class Main {
-    public static void main(String[] args) {
+public class Main
+{
+    public static void main(String[] args)
+    {
         // These weights belong to this exercise, not to the course assessment.
         StudentRecord first = new StudentRecord("Alex", 7, 8);
         StudentRecord second = new StudentRecord("Sam", 3, 9);

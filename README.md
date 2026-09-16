@@ -52,3 +52,10 @@ compilation and execution times. In Topic 1, run them and observe the results;
 you are not expected to understand or write their algorithms yet. Study loops
 and helper methods after Topic 3. The Hello World Java program is the coding
 example for Topic 1.
+
+## Code style
+
+Java and C examples use Allman style: opening braces go on a new line, aligned
+with the closing braces, and block contents use four spaces per indentation level.
+The `.clang-format` file records these formatting rules. Python and assembly
+follow their own syntax and formatting conventions.

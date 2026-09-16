@@ -1,5 +1,7 @@
-public class Main {
-    public static void main(String[] args) {
+public class Main
+{
+    public static void main(String[] args)
+    {
         CarTrip trip = new CarTrip(200, 12, 1.50);
         System.out.println(trip);
         System.out.printf("Total cost: %.2f euros%n", trip.totalCost());

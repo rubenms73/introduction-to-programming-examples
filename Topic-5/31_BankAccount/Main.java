@@ -1,5 +1,7 @@
-public class Main {
-    public static void main(String[] args) {
+public class Main
+{
+    public static void main(String[] args)
+    {
         BankAccount first = new BankAccount("Alex", 100);
         BankAccount second = new BankAccount("Sam", 50);
         System.out.println("Deposit accepted: " + first.deposit(25));

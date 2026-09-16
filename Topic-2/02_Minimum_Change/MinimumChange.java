@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
-public class MinimumChange {
-    public static void main(String[] args) {
+public class MinimumChange
+{
+    public static void main(String[] args)
+    {
         Scanner in = new Scanner(System.in);
 
         System.out.print("Amount in cents: ");

@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
-public class RunLengthEncoding {
-    public static void main(String[] args) {
+public class RunLengthEncoding
+{
+    public static void main(String[] args)
+    {
         Scanner in = new Scanner(System.in);
 
         System.out.print("Text: ");
@@ -10,8 +12,10 @@ public class RunLengthEncoding {
         System.out.println(encode(text));
     }
 
-    public static String encode(String text) {
-        if (text.length() == 0) {
+    public static String encode(String text)
+    {
+        if (text.length() == 0)
+        {
             return "";
         }
 
@@ -19,10 +23,14 @@ public class RunLengthEncoding {
         char current = text.charAt(0);
         int count = 1;
 
-        for (int i = 1; i < text.length(); i++) {
-            if (text.charAt(i) == current) {
+        for (int i = 1; i < text.length(); i++)
+        {
+            if (text.charAt(i) == current)
+            {
                 count++;
-            } else {
+            }
+            else
+            {
                 result = result + current + count;
                 current = text.charAt(i);
                 count = 1;

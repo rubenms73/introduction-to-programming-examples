@@ -21,21 +21,27 @@
 /* This bound keeps divisor * divisor and number++ within a 32-bit int. */
 #define MAX_LIMIT 1000000000
 
-static int read_limit(int argc, char *argv[]) {
+static int read_limit(int argc, char *argv[])
+{
     char buffer[128];
     const char *text;
-    if (argc == 1) {
+    if (argc == 1)
+    {
         printf("Upper limit (0..%d): ", MAX_LIMIT);
         fflush(stdout);
-        if (!fgets(buffer, sizeof buffer, stdin) ||
-            (!strchr(buffer, '\n') && !feof(stdin))) {
+        if (!fgets(buffer, sizeof buffer, stdin) || (!strchr(buffer, '\n') && !feof(stdin)))
+        {
             fprintf(stderr, "Invalid input.\n");
             exit(EXIT_FAILURE);
         }
         text = buffer;
-    } else if (argc == 2) {
+    }
+    else if (argc == 2)
+    {
         text = argv[1];
-    } else {
+    }
+    else
+    {
         fprintf(stderr, "Usage: %s [limit]\n", argv[0]);
         exit(EXIT_FAILURE);
     }
@@ -43,33 +49,38 @@ static int read_limit(int argc, char *argv[]) {
     errno = 0;
     char *end;
     long value = strtol(text, &end, 10);
-    if (end == text || errno == ERANGE || value < 0 || value > MAX_LIMIT) {
+    if (end == text || errno == ERANGE || value < 0 || value > MAX_LIMIT)
+    {
         fprintf(stderr, "Enter an integer from 0 to %d.\n", MAX_LIMIT);
         exit(EXIT_FAILURE);
     }
-    while (isspace((unsigned char) *end)) {
+    while (isspace((unsigned char)*end))
+    {
         end++;
     }
-    if (*end != '\0') {
+    if (*end != '\0')
+    {
         fprintf(stderr, "Invalid input.\n");
         exit(EXIT_FAILURE);
     }
-    return (int) value;
+    return (int)value;
 }
 
 /* Elapsed wall time, using a monotonic clock on each platform. */
-static double now_seconds(void) {
+static double now_seconds(void)
+{
 #ifdef _WIN32
     LARGE_INTEGER ticks, frequency;
-    if (!QueryPerformanceFrequency(&frequency) ||
-        !QueryPerformanceCounter(&ticks)) {
+    if (!QueryPerformanceFrequency(&frequency) || !QueryPerformanceCounter(&ticks))
+    {
         fprintf(stderr, "Timer unavailable.\n");
         exit(EXIT_FAILURE);
     }
-    return (double) ticks.QuadPart / (double) frequency.QuadPart;
+    return (double)ticks.QuadPart / (double)frequency.QuadPart;
 #else
     struct timespec time;
-    if (clock_gettime(CLOCK_MONOTONIC, &time) != 0) {
+    if (clock_gettime(CLOCK_MONOTONIC, &time) != 0)
+    {
         perror("clock_gettime");
         exit(EXIT_FAILURE);
     }

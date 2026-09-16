@@ -1,39 +1,49 @@
 
-public class MergeSortedArrays {
-    public static void main(String[] args) {
+public class MergeSortedArrays
+{
+    public static void main(String[] args)
+    {
         int[] a = {1, 4, 8};
         int[] b = {2, 3, 9};
 
         int[] merged = merge(a, b);
-        for (int i = 0; i < merged.length; i++) {
+        for (int i = 0; i < merged.length; i++)
+        {
             System.out.println(merged[i]);
         }
     }
 
-    public static int[] merge(int[] a, int[] b) {
+    public static int[] merge(int[] a, int[] b)
+    {
         int[] result = new int[a.length + b.length];
         int i = 0;
         int j = 0;
         int k = 0;
 
-        while (i < a.length && j < b.length) {
-            if (a[i] <= b[j]) {
+        while (i < a.length && j < b.length)
+        {
+            if (a[i] <= b[j])
+            {
                 result[k] = a[i];
                 i++;
-            } else {
+            }
+            else
+            {
                 result[k] = b[j];
                 j++;
             }
             k++;
         }
 
-        while (i < a.length) {
+        while (i < a.length)
+        {
             result[k] = a[i];
             i++;
             k++;
         }
 
-        while (j < b.length) {
+        while (j < b.length)
+        {
             result[k] = b[j];
             j++;
             k++;

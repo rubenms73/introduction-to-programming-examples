@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
-public class ReverseWords {
-    public static void main(String[] args) {
+public class ReverseWords
+{
+    public static void main(String[] args)
+    {
         Scanner in = new Scanner(System.in);
 
         System.out.print("Sentence: ");
@@ -10,13 +12,16 @@ public class ReverseWords {
         System.out.println(reverseWords(sentence));
     }
 
-    public static String reverseWords(String text) {
+    public static String reverseWords(String text)
+    {
         String[] words = splitIntoWords(text);
         String result = "";
 
-        for (int i = words.length - 1; i >= 0; i--) {
+        for (int i = words.length - 1; i >= 0; i--)
+        {
             result += words[i];
-            if (i > 0) {
+            if (i > 0)
+            {
                 result += " ";
             }
         }
@@ -24,23 +29,29 @@ public class ReverseWords {
         return result;
     }
 
-    public static String[] splitIntoWords(String text) {
+    public static String[] splitIntoWords(String text)
+    {
         String[] words = new String[countWords(text)];
         int position = 0;
         int i = 0;
 
-        while (i < text.length()) {
-            while (i < text.length() && text.charAt(i) == ' ') {
+        while (i < text.length())
+        {
+            while (i < text.length() && text.charAt(i) == ' ')
+            {
                 i++;
             }
 
-            if (i < text.length()) {
+            if (i < text.length())
+            {
                 int start = i;
-                while (i < text.length() && text.charAt(i) != ' ') {
+                while (i < text.length() && text.charAt(i) != ' ')
+                {
                     i++;
                 }
                 String word = "";
-                for (int j = start; j < i; j++) {
+                for (int j = start; j < i; j++)
+                {
                     word = word + text.charAt(j);
                 }
                 words[position] = word;
@@ -51,14 +62,19 @@ public class ReverseWords {
         return words;
     }
 
-    public static int countWords(String text) {
+    public static int countWords(String text)
+    {
         int count = 0;
         boolean insideWord = false;
 
-        for (int i = 0; i < text.length(); i++) {
-            if (text.charAt(i) == ' ') {
+        for (int i = 0; i < text.length(); i++)
+        {
+            if (text.charAt(i) == ' ')
+            {
                 insideWord = false;
-            } else if (!insideWord) {
+            }
+            else if (!insideWord)
+            {
                 count++;
                 insideWord = true;
             }

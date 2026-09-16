@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
-public class RussianPeasantMultiplication {
-    public static void main(String[] args) {
+public class RussianPeasantMultiplication
+{
+    public static void main(String[] args)
+    {
         Scanner in = new Scanner(System.in);
 
         System.out.print("First factor: ");
@@ -9,19 +11,25 @@ public class RussianPeasantMultiplication {
         System.out.print("Second factor: ");
         int b = in.nextInt();
 
-        if (a < 0 || b < 0) {
+        if (a < 0 || b < 0)
+        {
             System.out.println("Only non-negative factors are accepted");
-        } else {
+        }
+        else
+        {
             int result = multiply(a, b);
             System.out.println("Result: " + result);
         }
     }
 
-    public static int multiply(int a, int b) {
+    public static int multiply(int a, int b)
+    {
         int result = 0;
 
-        while (b > 0) {
-            if (b % 2 != 0) {
+        while (b > 0)
+        {
+            if (b % 2 != 0)
+            {
                 result += a;
             }
             a *= 2;

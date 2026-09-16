@@ -3,7 +3,8 @@
 /* Implemented by the selected assembly file. No C prime-counting code. */
 extern int count_primes(int limit);
 
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[])
+{
     int limit = read_limit(argc, argv);
 
     double start = now_seconds();
