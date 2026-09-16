@@ -10,9 +10,7 @@ public class CollatzSequence
         long number = in.nextLong();
 
         if (number <= 0)
-        {
             System.out.println("The number must be positive");
-        }
         else
         {
             int steps = 0;
@@ -21,13 +19,9 @@ public class CollatzSequence
             while (number != 1)
             {
                 if (number % 2 == 0)
-                {
                     number = number / 2;
-                }
                 else
-                {
                     number = number * 3 + 1;
-                }
                 steps++;
                 System.out.print(" " + number);
             }

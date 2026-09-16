@@ -57,9 +57,7 @@ public class SplitIntoWords
         for (int i = 0; i < text.length(); i++)
         {
             if (text.charAt(i) == ' ')
-            {
                 insideWord = false;
-            }
             else if (!insideWord)
             {
                 count++;

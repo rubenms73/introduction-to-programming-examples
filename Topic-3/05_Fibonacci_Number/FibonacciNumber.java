@@ -10,9 +10,7 @@ public class FibonacciNumber
         int n = in.nextInt();
 
         if (n <= 0 || n > 92)
-        {
             System.out.println("n must be between 1 and 92");
-        }
         else
         {
             long result = fibonacci(n);
@@ -23,9 +21,7 @@ public class FibonacciNumber
     public static long fibonacci(int n)
     {
         if (n <= 2)
-        {
             return 1;
-        }
 
         long previous = 1;
         long current = 1;

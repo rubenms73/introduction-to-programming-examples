@@ -21,9 +21,7 @@ public class ReverseWords
         {
             result += words[i];
             if (i > 0)
-            {
                 result += " ";
-            }
         }
 
         return result;
@@ -70,9 +68,7 @@ public class ReverseWords
         for (int i = 0; i < text.length(); i++)
         {
             if (text.charAt(i) == ' ')
-            {
                 insideWord = false;
-            }
             else if (!insideWord)
             {
                 count++;

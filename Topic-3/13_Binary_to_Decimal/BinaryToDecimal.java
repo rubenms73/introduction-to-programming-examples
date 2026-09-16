@@ -14,18 +14,14 @@ public class BinaryToDecimal
         boolean valid = binary >= 0;
 
         if (binary == 0)
-        {
             System.out.println("Decimal: 0");
-        }
         else
         {
             while (binary > 0 && valid)
             {
                 int digit = (int)(binary % 10);
                 if (digit != 0 && digit != 1)
-                {
                     valid = false;
-                }
                 else
                 {
                     decimal += digit * power;
@@ -35,13 +31,9 @@ public class BinaryToDecimal
             }
 
             if (valid)
-            {
                 System.out.println("Decimal: " + decimal);
-            }
             else
-            {
                 System.out.println("Invalid binary number");
-            }
         }
     }
 }

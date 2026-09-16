@@ -59,3 +59,7 @@ Java and C examples use Allman style: opening braces go on a new line, aligned
 with the closing braces, and block contents use four spaces per indentation level.
 The `.clang-format` file records these formatting rules. Python and assembly
 follow their own syntax and formatting conventions.
+
+Conditional branches with a single statement omit braces. Braces are retained
+when needed to preserve the association of an `else` with its `if`. Branches
+with multiple statements use braces in Allman style. Loop formatting is unchanged.

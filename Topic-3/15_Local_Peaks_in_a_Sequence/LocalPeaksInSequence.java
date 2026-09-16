@@ -10,9 +10,7 @@ public class LocalPeaksInSequence
         int previous = in.nextInt();
 
         if (previous == 0)
-        {
             System.out.println("Local peaks: 0");
-        }
         else
         {
             int current = in.nextInt();
@@ -22,9 +20,7 @@ public class LocalPeaksInSequence
             {
                 int next = in.nextInt();
                 if (next != 0 && current > previous && current > next)
-                {
                     peaks++;
-                }
                 previous = current;
                 current = next;
             }

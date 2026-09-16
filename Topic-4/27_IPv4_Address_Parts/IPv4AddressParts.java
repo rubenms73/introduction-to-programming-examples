@@ -11,16 +11,12 @@ public class IPv4AddressParts
 
         int[] parts = parseIPv4(address);
         if (parts == null)
-        {
             System.out.println("Invalid IPv4 address");
-        }
         else
-        {
             for (int i = 0; i < parts.length; i++)
             {
                 System.out.println(parts[i]);
             }
-        }
     }
 
     public static int[] parseIPv4(String address)
@@ -34,15 +30,11 @@ public class IPv4AddressParts
             if (i == address.length() || address.charAt(i) == '.')
             {
                 if (partIndex == parts.length)
-                {
                     return null;
-                }
 
                 int value = parsePart(address, partStart, i);
                 if (value < 0)
-                {
                     return null;
-                }
 
                 parts[partIndex] = value;
                 partIndex++;
@@ -51,9 +43,7 @@ public class IPv4AddressParts
         }
 
         if (partIndex != parts.length)
-        {
             return null;
-        }
 
         return parts;
     }
@@ -61,25 +51,19 @@ public class IPv4AddressParts
     public static int parsePart(String text, int start, int end)
     {
         if (start == end || end - start > 3)
-        {
             return -1;
-        }
 
         int value = 0;
         for (int i = start; i < end; i++)
         {
             char c = text.charAt(i);
             if (c < '0' || c > '9')
-            {
                 return -1;
-            }
             value = value * 10 + (c - '0');
         }
 
         if (value > 255)
-        {
             return -1;
-        }
 
         return value;
     }

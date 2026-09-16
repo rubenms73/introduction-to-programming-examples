@@ -21,9 +21,7 @@ public class StudentRecord
     public void setName(String name)
     {
         if (name != null && name.length() > 0)
-        {
             this.name = name;
-        }
     }
 
     public double getTheoryMark()
@@ -34,9 +32,7 @@ public class StudentRecord
     public void setTheoryMark(double theoryMark)
     {
         if (theoryMark >= 0 && theoryMark <= 10)
-        {
             this.theoryMark = theoryMark;
-        }
     }
 
     public double getLabMark()
@@ -47,9 +43,7 @@ public class StudentRecord
     public void setLabMark(double labMark)
     {
         if (labMark >= 0 && labMark <= 10)
-        {
             this.labMark = labMark;
-        }
     }
 
     public double finalMark()

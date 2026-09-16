@@ -10,13 +10,9 @@ public class DecimalToBinary
         int number = in.nextInt();
 
         if (number < 0)
-        {
             System.out.println("The number cannot be negative");
-        }
         else if (number == 0)
-        {
             System.out.println("Binary digits in reverse order: 0");
-        }
         else
         {
             System.out.print("Binary digits in reverse order: ");

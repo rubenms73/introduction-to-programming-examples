@@ -12,13 +12,9 @@ public class Anagrams
         String second = in.nextLine();
 
         if (areAnagrams(first, second))
-        {
             System.out.println("They are anagrams");
-        }
         else
-        {
             System.out.println("They are not anagrams");
-        }
     }
 
     public static boolean areAnagrams(String first, String second)
@@ -30,13 +26,9 @@ public class Anagrams
         {
             char c = first.charAt(i);
             if (c >= 'A' && c <= 'Z')
-            {
                 c = (char)(c + ('a' - 'A'));
-            }
             if (c < 'a' || c > 'z')
-            {
                 return false;
-            }
             counts[c - 'a']++;
         }
 
@@ -44,22 +36,16 @@ public class Anagrams
         {
             char c = second.charAt(i);
             if (c >= 'A' && c <= 'Z')
-            {
                 c = (char)(c + ('a' - 'A'));
-            }
             if (c < 'a' || c > 'z')
-            {
                 return false;
-            }
             counts[c - 'a']--;
         }
 
         for (int i = 0; i < counts.length; i++)
         {
             if (counts[i] != 0)
-            {
                 return false;
-            }
         }
 
         return true;

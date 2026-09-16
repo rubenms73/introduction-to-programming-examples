@@ -26,9 +26,7 @@ public class Address
     public void setStreet(String street)
     {
         if (street != null && street.length() > 0)
-        {
             this.street = street;
-        }
     }
 
     public String getCity()
@@ -39,9 +37,7 @@ public class Address
     public void setCity(String city)
     {
         if (city != null && city.length() > 0)
-        {
             this.city = city;
-        }
     }
 
     public String getPostalCode()
@@ -52,9 +48,7 @@ public class Address
     public void setPostalCode(String postalCode)
     {
         if (postalCode != null && postalCode.length() > 0)
-        {
             this.postalCode = postalCode;
-        }
     }
 
     @Override public String toString()

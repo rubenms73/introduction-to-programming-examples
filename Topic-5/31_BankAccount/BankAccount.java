@@ -19,9 +19,7 @@ public class BankAccount
     public void setHolder(String holder)
     {
         if (holder != null && holder.length() > 0)
-        {
             this.holder = holder;
-        }
     }
 
     public double getBalance()
@@ -32,17 +30,13 @@ public class BankAccount
     public void setBalance(double balance)
     {
         if (balance >= 0)
-        {
             this.balance = balance;
-        }
     }
 
     public boolean deposit(double amount)
     {
         if (amount <= 0)
-        {
             return false;
-        }
         balance += amount;
         return true;
     }
@@ -50,9 +44,7 @@ public class BankAccount
     public boolean withdraw(double amount)
     {
         if (amount <= 0 || amount > balance)
-        {
             return false;
-        }
         balance -= amount;
         return true;
     }
@@ -60,9 +52,7 @@ public class BankAccount
     public boolean transferTo(BankAccount other, double amount)
     {
         if (other == null || !withdraw(amount))
-        {
             return false;
-        }
         other.deposit(amount);
         return true;
     }

@@ -19,9 +19,7 @@ public class CountPrimes
                 divisor++;
             }
             if (divisor * divisor > number)
-            {
                 count++;
-            }
             number++;
         }
         return count;
@@ -40,18 +38,12 @@ public class CountPrimes
                 text = keyboard.nextLine();
             }
             else if (args.length == 1)
-            {
                 text = args[0];
-            }
             else
-            {
                 throw new IllegalArgumentException();
-            }
             limit = Integer.parseInt(text.trim());
             if (limit < 0 || limit > MAX_LIMIT)
-            {
                 throw new IllegalArgumentException();
-            }
         }
         catch (IllegalArgumentException | java.util.NoSuchElementException ex)
         {

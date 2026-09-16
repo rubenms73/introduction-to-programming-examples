@@ -12,9 +12,7 @@ public class RussianPeasantMultiplication
         int b = in.nextInt();
 
         if (a < 0 || b < 0)
-        {
             System.out.println("Only non-negative factors are accepted");
-        }
         else
         {
             int result = multiply(a, b);
@@ -29,9 +27,7 @@ public class RussianPeasantMultiplication
         while (b > 0)
         {
             if (b % 2 != 0)
-            {
                 result += a;
-            }
             a *= 2;
             b /= 2;
         }

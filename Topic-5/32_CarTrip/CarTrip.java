@@ -21,9 +21,7 @@ public class CarTrip
     public void setKilometres(double kilometres)
     {
         if (kilometres >= 0)
-        {
             this.kilometres = kilometres;
-        }
     }
 
     public double getLitres()
@@ -34,9 +32,7 @@ public class CarTrip
     public void setLitres(double litres)
     {
         if (litres >= 0)
-        {
             this.litres = litres;
-        }
     }
 
     public double getFuelCostPerLitre()
@@ -47,9 +43,7 @@ public class CarTrip
     public void setFuelCostPerLitre(double fuelCostPerLitre)
     {
         if (fuelCostPerLitre >= 0)
-        {
             this.fuelCostPerLitre = fuelCostPerLitre;
-        }
     }
 
     public double totalCost()
@@ -60,18 +54,14 @@ public class CarTrip
     public double consumptionPer100Km()
     {
         if (kilometres == 0)
-        {
             return 0;
-        }
         return litres * 100.0 / kilometres;
     }
 
     public double costPerKm()
     {
         if (kilometres == 0)
-        {
             return 0;
-        }
         return totalCost() / kilometres;
     }
 

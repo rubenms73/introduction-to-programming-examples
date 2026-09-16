@@ -38,9 +38,7 @@ public class SaddlePoint
         }
 
         if (!found)
-        {
             System.out.println("There is no saddle point");
-        }
     }
 
     public static boolean isMinimumInRow(int[][] matrix, int row, int col)
@@ -48,9 +46,7 @@ public class SaddlePoint
         for (int j = 0; j < matrix[row].length; j++)
         {
             if (matrix[row][j] < matrix[row][col])
-            {
                 return false;
-            }
         }
         return true;
     }
@@ -60,9 +56,7 @@ public class SaddlePoint
         for (int i = 0; i < matrix.length; i++)
         {
             if (matrix[i][col] > matrix[row][col])
-            {
                 return false;
-            }
         }
         return true;
     }

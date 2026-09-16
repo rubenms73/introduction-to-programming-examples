@@ -14,9 +14,7 @@ int count_primes(int limit)
             divisor++;
         }
         if (divisor * divisor > number)
-        {
             count++;
-        }
         number++;
     }
     return count;

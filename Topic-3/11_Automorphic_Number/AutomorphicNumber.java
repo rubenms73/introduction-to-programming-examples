@@ -10,17 +10,11 @@ public class AutomorphicNumber
         int number = in.nextInt();
 
         if (number <= 0)
-        {
             System.out.println("The number must be positive");
-        }
         else if (isAutomorphic(number))
-        {
             System.out.println("It is automorphic");
-        }
         else
-        {
             System.out.println("It is not automorphic");
-        }
     }
 
     public static boolean isAutomorphic(int number)

@@ -21,9 +21,7 @@ public class ContactCard
     public void setName(String name)
     {
         if (name != null && name.length() > 0)
-        {
             this.name = name;
-        }
     }
 
     public String getEmail()
@@ -34,9 +32,7 @@ public class ContactCard
     public void setEmail(String email)
     {
         if (email != null && email.length() > 0)
-        {
             this.email = email;
-        }
     }
 
     public Address getAddress()
@@ -47,21 +43,15 @@ public class ContactCard
     public void setAddress(Address address)
     {
         if (address != null)
-        {
             this.address = new Address(address);
-        }
     }
 
     @Override public boolean equals(Object object)
     {
         if (this == object)
-        {
             return true;
-        }
         if (!(object instanceof ContactCard))
-        {
             return false;
-        }
         ContactCard other = (ContactCard)object;
         return email != null && email.equals(other.email);
     }

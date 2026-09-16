@@ -24,9 +24,7 @@ public class PasswordPolicy
     public void setMinimumLength(int minimumLength)
     {
         if (minimumLength >= 0)
-        {
             this.minimumLength = minimumLength;
-        }
     }
 
     public boolean isRequireUppercase()
@@ -62,9 +60,7 @@ public class PasswordPolicy
     public boolean isValid(String password)
     {
         if (password == null || password.length() < minimumLength)
-        {
             return false;
-        }
 
         boolean hasUppercase = false;
         boolean hasLowercase = false;
@@ -74,17 +70,11 @@ public class PasswordPolicy
         {
             char c = password.charAt(i);
             if (c >= 'A' && c <= 'Z')
-            {
                 hasUppercase = true;
-            }
             else if (c >= 'a' && c <= 'z')
-            {
                 hasLowercase = true;
-            }
             else if (c >= '0' && c <= '9')
-            {
                 hasDigit = true;
-            }
         }
 
         return (!requireUppercase || hasUppercase) && (!requireLowercase || hasLowercase) &&

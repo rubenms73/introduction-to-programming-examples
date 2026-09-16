@@ -14,17 +14,13 @@ public class RemoveConsecutiveDuplicates
     public static int[] removeDuplicates(int[] values)
     {
         if (values.length == 0)
-        {
             return new int[0];
-        }
 
         int different = 1;
         for (int i = 1; i < values.length; i++)
         {
             if (values[i] != values[i - 1])
-            {
                 different++;
-            }
         }
 
         int[] result = new int[different];

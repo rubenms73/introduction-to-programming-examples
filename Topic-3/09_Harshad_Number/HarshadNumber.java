@@ -10,20 +10,14 @@ public class HarshadNumber
         int number = in.nextInt();
 
         if (number <= 0)
-        {
             System.out.println("The number must be positive");
-        }
         else
         {
             int sum = sumDigits(number);
             if (number % sum == 0)
-            {
                 System.out.println("It is a Harshad number");
-            }
             else
-            {
                 System.out.println("It is not a Harshad number");
-            }
         }
     }
 

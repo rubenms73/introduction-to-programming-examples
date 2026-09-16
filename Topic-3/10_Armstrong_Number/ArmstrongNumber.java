@@ -10,17 +10,11 @@ public class ArmstrongNumber
         int number = in.nextInt();
 
         if (number < 100 || number > 999)
-        {
             System.out.println("The number must have three digits");
-        }
         else if (isArmstrong(number))
-        {
             System.out.println("It is an Armstrong number");
-        }
         else
-        {
             System.out.println("It is not an Armstrong number");
-        }
     }
 
     public static boolean isArmstrong(int number)

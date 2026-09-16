@@ -23,13 +23,9 @@ public class CaesarCipher
         {
             char c = text.charAt(i);
             if (c >= 'a' && c <= 'z')
-            {
                 c = (char)('a' + (c - 'a' + normalisedShift) % 26);
-            }
             else if (c >= 'A' && c <= 'Z')
-            {
                 c = (char)('A' + (c - 'A' + normalisedShift) % 26);
-            }
             result += c;
         }
 

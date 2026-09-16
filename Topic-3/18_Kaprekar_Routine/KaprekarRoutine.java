@@ -10,9 +10,7 @@ public class KaprekarRoutine
         int number = in.nextInt();
 
         if (number < 1000 || number > 9999 || allDigitsEqual(number))
-        {
             System.out.println("Invalid number");
-        }
         else
         {
             int steps = 0;
@@ -34,9 +32,7 @@ public class KaprekarRoutine
         for (int i = 0; i < 4; i++)
         {
             if (number % 10 != digit)
-            {
                 return false;
-            }
             number = number / 10;
         }
         return true;
@@ -47,19 +43,15 @@ public class KaprekarRoutine
         int result = 0;
 
         if (descending)
-        {
             for (int digit = 9; digit >= 0; digit--)
             {
                 result = appendDigitOccurrences(result, number, digit);
             }
-        }
         else
-        {
             for (int digit = 0; digit <= 9; digit++)
             {
                 result = appendDigitOccurrences(result, number, digit);
             }
-        }
 
         return result;
     }
@@ -69,9 +61,7 @@ public class KaprekarRoutine
         for (int i = 0; i < 4; i++)
         {
             if (number % 10 == digit)
-            {
                 result = result * 10 + digit;
-            }
             number = number / 10;
         }
         return result;

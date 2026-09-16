@@ -23,9 +23,7 @@ public class Book
     public void setIsbn(String isbn)
     {
         if (isbn != null && isbn.length() > 0)
-        {
             this.isbn = isbn;
-        }
     }
 
     public String getTitle()
@@ -36,9 +34,7 @@ public class Book
     public void setTitle(String title)
     {
         if (title != null && title.length() > 0)
-        {
             this.title = title;
-        }
     }
 
     public String getAuthor()
@@ -49,9 +45,7 @@ public class Book
     public void setAuthor(String author)
     {
         if (author != null && author.length() > 0)
-        {
             this.author = author;
-        }
     }
 
     public int getYear()
@@ -62,21 +56,15 @@ public class Book
     public void setYear(int year)
     {
         if (year > 0)
-        {
             this.year = year;
-        }
     }
 
     @Override public boolean equals(Object object)
     {
         if (this == object)
-        {
             return true;
-        }
         if (!(object instanceof Book))
-        {
             return false;
-        }
         Book other = (Book)object;
         return isbn != null && isbn.equals(other.isbn);
     }

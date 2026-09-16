@@ -15,9 +15,7 @@ public class RunLengthEncoding
     public static String encode(String text)
     {
         if (text.length() == 0)
-        {
             return "";
-        }
 
         String result = "";
         char current = text.charAt(0);
@@ -26,9 +24,7 @@ public class RunLengthEncoding
         for (int i = 1; i < text.length(); i++)
         {
             if (text.charAt(i) == current)
-            {
                 count++;
-            }
             else
             {
                 result = result + current + count;

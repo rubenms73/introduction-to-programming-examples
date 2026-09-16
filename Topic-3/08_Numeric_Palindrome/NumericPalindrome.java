@@ -10,17 +10,11 @@ public class NumericPalindrome
         int number = in.nextInt();
 
         if (number <= 0)
-        {
             System.out.println("The number must be positive");
-        }
         else if (isPalindrome(number))
-        {
             System.out.println("It is a palindrome");
-        }
         else
-        {
             System.out.println("It is not a palindrome");
-        }
     }
 
     public static boolean isPalindrome(int number)

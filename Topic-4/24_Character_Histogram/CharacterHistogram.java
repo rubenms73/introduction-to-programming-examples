@@ -21,13 +21,9 @@ public class CharacterHistogram
         {
             char c = text.charAt(i);
             if (c >= 'A' && c <= 'Z')
-            {
                 c = (char)(c + ('a' - 'A'));
-            }
             if (c >= 'a' && c <= 'z')
-            {
                 counts[c - 'a']++;
-            }
         }
 
         return counts;

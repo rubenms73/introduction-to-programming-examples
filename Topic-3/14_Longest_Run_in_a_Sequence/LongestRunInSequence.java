@@ -10,9 +10,7 @@ public class LongestRunInSequence
         int value = in.nextInt();
 
         if (value == 0)
-        {
             System.out.println("Empty sequence");
-        }
         else
         {
             int previous = value;
@@ -23,18 +21,12 @@ public class LongestRunInSequence
             while (value != 0)
             {
                 if (value == previous)
-                {
                     currentRun++;
-                }
                 else
-                {
                     currentRun = 1;
-                }
 
                 if (currentRun > bestRun)
-                {
                     bestRun = currentRun;
-                }
 
                 previous = value;
                 value = in.nextInt();

@@ -22,9 +22,7 @@ public class BoundedCounter
     public boolean setMinimum(int minimum)
     {
         if (minimum > maximum || value < minimum)
-        {
             return false;
-        }
         this.minimum = minimum;
         return true;
     }
@@ -37,9 +35,7 @@ public class BoundedCounter
     public boolean setMaximum(int maximum)
     {
         if (maximum < minimum || value > maximum)
-        {
             return false;
-        }
         this.maximum = maximum;
         return true;
     }
@@ -52,9 +48,7 @@ public class BoundedCounter
     public boolean setValue(int value)
     {
         if (value < minimum || value > maximum)
-        {
             return false;
-        }
         this.value = value;
         return true;
     }
@@ -62,9 +56,7 @@ public class BoundedCounter
     public boolean increment()
     {
         if (value == maximum)
-        {
             return false;
-        }
         value++;
         return true;
     }
@@ -72,9 +64,7 @@ public class BoundedCounter
     public boolean decrement()
     {
         if (value == minimum)
-        {
             return false;
-        }
         value--;
         return true;
     }

@@ -20,9 +20,7 @@ public class FirstFibonacciAboveLimit
         int position = 1;
 
         if (current <= limit)
-        {
             position = 2;
-        }
 
         while (current <= limit)
         {

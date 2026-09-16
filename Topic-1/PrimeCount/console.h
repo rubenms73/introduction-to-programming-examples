@@ -37,9 +37,7 @@ static int read_limit(int argc, char *argv[])
         text = buffer;
     }
     else if (argc == 2)
-    {
         text = argv[1];
-    }
     else
     {
         fprintf(stderr, "Usage: %s [limit]\n", argv[0]);
