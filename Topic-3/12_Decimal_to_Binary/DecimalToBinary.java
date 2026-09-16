@@ -9,22 +9,15 @@ public class DecimalToBinary {
 
         if (number < 0) {
             System.out.println("The number cannot be negative");
+        } else if (number == 0) {
+            System.out.println("Binary digits in reverse order: 0");
         } else {
-            System.out.println("Binary: " + toBinary(number));
+            System.out.print("Binary digits in reverse order: ");
+            while (number > 0) {
+                System.out.print(number % 2);
+                number = number / 2;
+            }
+            System.out.println();
         }
-    }
-
-    public static String toBinary(int number) {
-        if (number == 0) {
-            return "0";
-        }
-
-        String binary = "";
-        while (number > 0) {
-            int remainder = number % 2;
-            binary = remainder + binary;
-            number = number / 2;
-        }
-        return binary;
     }
 }
