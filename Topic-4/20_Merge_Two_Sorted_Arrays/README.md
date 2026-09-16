@@ -1,5 +1,17 @@
 # 20 Merge Two Sorted Arrays
 
+## Problem statement
+
+**Input and behaviour:** Print the merged array with an indexed loop, one value per line.
+
+Write a program that receives two sorted arrays and creates a third sorted array containing all their elements.
+
+For example, merging `{1, 4, 8}` and `{2, 3, 9}` should produce `{1, 2, 3, 4, 8, 9}`.
+
+Suggested approach: use one index for each input array and one index for the result. Repeatedly copy the smaller current value into the result array.
+
+## Compile and run
+
 All Java files in this folder belong to the default package. This exercise is
 self-contained and requires only JDK 11 or later.
 
@@ -16,6 +28,3 @@ The main method is in `MergeSortedArrays.java`. Run it and follow any input prom
 
 Use indexed arrays, loops and the text operations taught in Topic 4: length(), charAt(), equals(), concatenation, next() and nextLine(). Implement traversals explicitly.
 
-## Input and behaviour
-
-Print the merged array with an indexed loop, one value per line.

@@ -1,5 +1,7 @@
 # Counting primes: one algorithm, different languages
 
+## Problem statement
+
 Count the prime numbers between 2 and an upper limit `N`, inclusive. Each version
 prints the count and the calculation time. All messages and code are in
 English.

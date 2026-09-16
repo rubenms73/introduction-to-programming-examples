@@ -1,5 +1,11 @@
 # Hello, World!
 
+## Problem statement
+
+Write a program that prints `Hello, World!` followed by a newline. Compare
+implementations in C, Java, Python and assembly, and the steps needed to build
+and run each version. Use the assembly version appropriate for your platform.
+
 The same first program in C, Java, Python and assembly. Every version prints:
 
 ```text

@@ -1,5 +1,15 @@
 # 22 Caesar Cipher
 
+## Problem statement
+
+Write a program that reads a text and an integer shift, and prints the text encrypted with the Caesar cipher.
+
+Letters must be shifted by the indicated amount. Non-letter characters should remain unchanged.
+
+Suggested approach: process the text character by character. For letters, calculate their new position inside the alphabet; for other characters, copy them unchanged.
+
+## Compile and run
+
 All Java files in this folder belong to the default package. This exercise is
 self-contained and requires only JDK 11 or later.
 
