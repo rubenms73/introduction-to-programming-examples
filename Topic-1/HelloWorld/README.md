@@ -25,8 +25,8 @@ this directory.
 cc hello_world.c -o hello_c
 ./hello_c
 
-javac HelloWorld.java
-java HelloWorld
+javac -encoding UTF-8 HelloWorld.java
+java -cp "." HelloWorld
 
 python3 hello_world.py
 ```
@@ -42,14 +42,16 @@ clang -arch arm64 hello_world_arm64.S -o hello_arm64
 
 Requirements: a 64-bit GCC/MinGW-w64 toolchain, a JDK and Python 3. See the
 [toolchain notes](../PrimeCount/README.md#c-java-python-and-x64-assembly-on-windows)
-if GCC is not installed. Run from this directory in PowerShell:
+if GCC is not installed. Run from this directory in PowerShell or CMD.
+Execute each command separately, and run a program only after its compilation succeeds.
+The `.\\` executable prefix works in both terminals:
 
-```powershell
+```text
 gcc hello_world.c -o hello_c.exe
 .\hello_c.exe
 
-javac HelloWorld.java
-java HelloWorld
+javac -encoding UTF-8 HelloWorld.java
+java -cp "." HelloWorld
 
 python hello_world.py
 
@@ -64,11 +66,11 @@ You can replace `python` with `py` if needed on your installation.
 ```sh
 gcc hello_world.c -o hello_c
 gcc hello_world_x64.S -o hello_x64
-javac HelloWorld.java
+javac -encoding UTF-8 HelloWorld.java
 
 ./hello_c
 ./hello_x64
-java HelloWorld
+java -cp "." HelloWorld
 python3 hello_world.py
 ```
 

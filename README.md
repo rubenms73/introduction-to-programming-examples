@@ -32,13 +32,59 @@ Use JDK 11 or later. Each exercise folder contains all its classes in the defaul
 package. Compile each exercise separately; several folders use the name `Main`.
 In an IDE, use one Java project per exercise without `module-info.java`.
 
-From the repository root, for example:
+### Windows (PowerShell and CMD)
+
+Install a JDK (not only a JRE) and ensure its `bin` directory is on `PATH`.
+Open a new terminal after changing `PATH`. Check both commands:
+
+```text
+java -version
+javac -version
+```
+
+In PowerShell, enter your local repository folder (replace the example path):
+
+```powershell
+Set-Location -LiteralPath "C:\Courses\IP\Student examples"
+```
+
+In CMD, use `cd /d` so that the command also changes drives:
+
+```bat
+cd /d "C:\Courses\IP\Student examples"
+```
+
+Then, in either terminal, run these commands one at a time:
+
+```text
+cd "Topic-2\01_Breaking_Down_Seconds"
+javac -encoding UTF-8 BreakingDownSeconds.java
+java -cp "." BreakingDownSeconds
+```
+
+Only run the program if compilation succeeds. This example prompts for input;
+enter `3661` and press Enter to obtain 1 hour, 1 minute and 1 second.
+Other examples have their own class names and source-file lists in their READMEs.
+
+### macOS and Linux
+
+From the repository root:
 
 ```sh
-cd Topic-2/01_Breaking_Down_Seconds
-javac *.java
-java BreakingDownSeconds
+cd "Topic-2/01_Breaking_Down_Seconds"
+javac -encoding UTF-8 BreakingDownSeconds.java
+java -cp "." BreakingDownSeconds
 ```
+
+### Troubleshooting
+
+- If `javac` is not found, check your JDK installation and `PATH`.
+- If Java cannot find the main class, check the current folder, compilation
+  result and class name. Do not append `.java` or `.class` to that name.
+- Keep paths containing spaces in double quotes. Compile each example separately;
+  do not compile all folders together, as several examples contain `Main`.
+- The 37 classroom exercises require only the JDK. C, Python and assembly tools
+  are needed only for their corresponding Topic 1 demonstrations.
 
 Exercises 31–37 include `Main.java` demonstrations. Other examples either prompt
 for input or use sample values in their main method. Exercise numbers follow

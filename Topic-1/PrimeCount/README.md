@@ -60,8 +60,8 @@ with `javac`, and Python 3 (CPython). Run these commands from this directory.
 cc -O2 -std=c11 count_primes.c -o prime_c
 ./prime_c 1000000
 
-javac CountPrimes.java
-java CountPrimes 1000000
+javac -encoding UTF-8 CountPrimes.java
+java -cp "." CountPrimes 1000000
 
 python3 count_primes.py 1000000
 ```
@@ -88,7 +88,7 @@ process**, not only the calculation performed inside it:
 
 ```sh
 /usr/bin/time -p ./prime_c 1000000
-/usr/bin/time -p java CountPrimes 1000000
+/usr/bin/time -p java -cp "." CountPrimes 1000000
 /usr/bin/time -p python3 count_primes.py 1000000
 /usr/bin/time -p ./prime_arm64 1000000
 ```
@@ -118,14 +118,16 @@ install `mingw-w64-ucrt-x86_64-gcc` from that environment. If using PowerShell,
 make sure its `PATH` includes your toolchain's `bin` directory, such as
 `C:\msys64\ucrt64\bin`.
 
-From this directory in PowerShell:
+From this directory in PowerShell or CMD, run each command separately.
+Run an executable only after its compilation succeeds. The `.\\` executable
+prefix works in both terminals:
 
-```powershell
+```text
 gcc -O2 -std=c11 count_primes.c -o prime_c.exe
 .\prime_c.exe 1000000
 
-javac CountPrimes.java
-java CountPrimes 1000000
+javac -encoding UTF-8 CountPrimes.java
+java -cp "." CountPrimes 1000000
 
 python count_primes.py 1000000
 
@@ -145,11 +147,11 @@ With GCC, a JDK and Python 3 installed:
 ```sh
 gcc -O2 -std=c11 count_primes.c -o prime_c
 gcc -O2 assembly/main.c assembly/count_primes_x64.S -o prime_x64
-javac CountPrimes.java
+javac -encoding UTF-8 CountPrimes.java
 
 ./prime_c 1000000
 ./prime_x64 1000000
-java CountPrimes 1000000
+java -cp "." CountPrimes 1000000
 python3 count_primes.py 1000000
 ```
 
@@ -160,7 +162,7 @@ The same x64 `.S` file selects the Linux calling convention automatically.
 Omit the number to enter it interactively, for example:
 
 ```sh
-java CountPrimes
+java -cp "." CountPrimes
 ```
 
 The program prompts for the upper limit. The timer starts **after** reading it.

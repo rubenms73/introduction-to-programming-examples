@@ -15,11 +15,28 @@ Suggested approach: traverse the string looking for dots. Each time a dot is fou
 All Java files in this folder belong to the default package. This exercise is
 self-contained and requires only JDK 11 or later.
 
-From this folder:
+### Windows (PowerShell or CMD)
+
+Open a terminal in this example folder. With a JDK on your `PATH`, run the
+following commands separately. Run the second command only if compilation succeeds.
+
+```text
+javac -encoding UTF-8 IPv4AddressParts.java
+java -cp "." IPv4AddressParts
+```
+
+These commands work in both PowerShell and CMD and require no IDE, Bash or WSL.
+They list source files explicitly and use the current folder as the classpath.
+For terminal setup and paths containing spaces, see the
+[repository instructions](../../README.md#compiling-and-running-java-exercises).
+
+### macOS and Linux
+
+From this example folder:
 
 ```sh
-javac *.java
-java IPv4AddressParts
+javac -encoding UTF-8 IPv4AddressParts.java
+java -cp "." IPv4AddressParts
 ```
 
 The main method is in `IPv4AddressParts.java`. Run it and follow any input prompts.
