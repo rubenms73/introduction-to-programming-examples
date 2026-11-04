@@ -2,7 +2,7 @@
 
 ## Problem statement
 
-**Input and behaviour:** Constructor preconditions: non-null, non-empty text fields and a non-null Address. Compare email text exactly, including letter case, with equals(); supply a matching hashCode(). Copy the address in the constructor, setter and getter.
+**Input and behaviour:** Constructor preconditions: non-null, non-empty text fields and a non-null Address. Compare the email text exactly, including letter case, with `equals()`, and provide a matching `hashCode()`. Copy the address in the constructor, setter and getter.
 
 Design an `Address` class and a `ContactCard` class.
 
@@ -43,5 +43,4 @@ java -cp "." Main
 
 ## Prerequisites
 
-Use classes, constructors, encapsulation, this, composition, toString() and the explicitly explained equality operations. Do not use exceptions or additional utility libraries.
-
+Use classes, constructors, encapsulation, `this`, composition, `toString()` and the equality operations explained in the topic. Do not use exceptions or additional utility libraries.

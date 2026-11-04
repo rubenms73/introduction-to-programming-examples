@@ -48,7 +48,8 @@ public class StudentRecord
 
     public double finalMark()
     {
-        return theoryMark * 0.6 + labMark * 0.4;
+        // Same as 0.6 * theory + 0.4 * lab, but without rounding errors such as 7.199999999999999.
+        return (6 * theoryMark + 4 * labMark) / 10;
     }
 
     public boolean hasPassed()

@@ -4,12 +4,13 @@ public class ReverseWords
 {
     public static void main(String[] args)
     {
-        Scanner in = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
 
         System.out.print("Sentence: ");
-        String sentence = in.nextLine();
+        String sentence = keyboard.nextLine();
 
         System.out.println(reverseWords(sentence));
+        keyboard.close();
     }
 
     public static String reverseWords(String text)

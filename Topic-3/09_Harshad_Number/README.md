@@ -1,4 +1,4 @@
-# 09 Harshad Number
+# 09 Harshad number
 
 ## Problem statement
 

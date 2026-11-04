@@ -4,14 +4,14 @@ public class InvoiceWithDiscountAndVat
 {
     public static void main(String[] args)
     {
-        Scanner in = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
 
         System.out.print("Base price: ");
-        double basePrice = in.nextDouble();
+        double basePrice = keyboard.nextDouble();
         System.out.print("Discount percentage: ");
-        double discountPercentage = in.nextDouble();
+        double discountPercentage = keyboard.nextDouble();
         System.out.print("VAT percentage: ");
-        double vatPercentage = in.nextDouble();
+        double vatPercentage = keyboard.nextDouble();
 
         double discount = basePrice * discountPercentage / 100.0;
         double discountedPrice = basePrice - discount;
@@ -19,5 +19,6 @@ public class InvoiceWithDiscountAndVat
         double finalPrice = discountedPrice + vat;
 
         System.out.printf("Final price: %.2f%n", finalPrice);
+        keyboard.close();
     }
 }

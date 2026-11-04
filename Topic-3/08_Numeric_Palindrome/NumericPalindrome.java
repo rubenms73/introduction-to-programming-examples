@@ -4,10 +4,10 @@ public class NumericPalindrome
 {
     public static void main(String[] args)
     {
-        Scanner in = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
 
         System.out.print("Number: ");
-        int number = in.nextInt();
+        int number = keyboard.nextInt();
 
         if (number <= 0)
             System.out.println("The number must be positive");
@@ -15,6 +15,7 @@ public class NumericPalindrome
             System.out.println("It is a palindrome");
         else
             System.out.println("It is not a palindrome");
+        keyboard.close();
     }
 
     public static boolean isPalindrome(int number)

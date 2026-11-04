@@ -45,5 +45,4 @@ The 60% theory / 40% lab weights are part of this exercise, not the course asses
 
 ## Prerequisites
 
-Use classes, constructors, encapsulation, this, composition, toString() and the explicitly explained equality operations. Do not use exceptions or additional utility libraries.
-
+Use classes, constructors, encapsulation, `this`, composition, `toString()` and the equality operations explained in the topic. Do not use exceptions or additional utility libraries.

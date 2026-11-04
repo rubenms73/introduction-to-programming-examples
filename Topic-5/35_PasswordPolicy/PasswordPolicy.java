@@ -3,17 +3,17 @@
 public class PasswordPolicy
 {
     private int minimumLength;
-    private boolean requireUppercase;
-    private boolean requireLowercase;
-    private boolean requireDigit;
+    private boolean uppercaseRequired;
+    private boolean lowercaseRequired;
+    private boolean digitRequired;
 
-    public PasswordPolicy(int minimumLength, boolean requireUppercase, boolean requireLowercase,
-                          boolean requireDigit)
+    public PasswordPolicy(int minimumLength, boolean uppercaseRequired, boolean lowercaseRequired,
+                          boolean digitRequired)
     {
         setMinimumLength(minimumLength);
-        this.requireUppercase = requireUppercase;
-        this.requireLowercase = requireLowercase;
-        this.requireDigit = requireDigit;
+        this.uppercaseRequired = uppercaseRequired;
+        this.lowercaseRequired = lowercaseRequired;
+        this.digitRequired = digitRequired;
     }
 
     public int getMinimumLength()
@@ -27,34 +27,34 @@ public class PasswordPolicy
             this.minimumLength = minimumLength;
     }
 
-    public boolean isRequireUppercase()
+    public boolean isUppercaseRequired()
     {
-        return requireUppercase;
+        return uppercaseRequired;
     }
 
-    public void setRequireUppercase(boolean requireUppercase)
+    public void setUppercaseRequired(boolean uppercaseRequired)
     {
-        this.requireUppercase = requireUppercase;
+        this.uppercaseRequired = uppercaseRequired;
     }
 
-    public boolean isRequireLowercase()
+    public boolean isLowercaseRequired()
     {
-        return requireLowercase;
+        return lowercaseRequired;
     }
 
-    public void setRequireLowercase(boolean requireLowercase)
+    public void setLowercaseRequired(boolean lowercaseRequired)
     {
-        this.requireLowercase = requireLowercase;
+        this.lowercaseRequired = lowercaseRequired;
     }
 
-    public boolean isRequireDigit()
+    public boolean isDigitRequired()
     {
-        return requireDigit;
+        return digitRequired;
     }
 
-    public void setRequireDigit(boolean requireDigit)
+    public void setDigitRequired(boolean digitRequired)
     {
-        this.requireDigit = requireDigit;
+        this.digitRequired = digitRequired;
     }
 
     public boolean isValid(String password)
@@ -77,13 +77,13 @@ public class PasswordPolicy
                 hasDigit = true;
         }
 
-        return (!requireUppercase || hasUppercase) && (!requireLowercase || hasLowercase) &&
-                (!requireDigit || hasDigit);
+        return (!uppercaseRequired || hasUppercase) && (!lowercaseRequired || hasLowercase) &&
+                (!digitRequired || hasDigit);
     }
 
     @Override public String toString()
     {
-        return "PasswordPolicy[length >= " + minimumLength + ", uppercase=" + requireUppercase +
-                ", lowercase=" + requireLowercase + ", digit=" + requireDigit + "]";
+        return "PasswordPolicy[length >= " + minimumLength + ", uppercase=" + uppercaseRequired +
+                ", lowercase=" + lowercaseRequired + ", digit=" + digitRequired + "]";
     }
 }

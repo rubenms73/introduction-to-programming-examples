@@ -1,8 +1,8 @@
-# 06 First Fibonacci Number Above a Limit
+# 06 First Fibonacci number above a limit
 
 ## Problem statement
 
-**Input and behaviour:** Use a positive integer limit no greater than 1000000000; report values outside that interval.
+**Input and behaviour:** The limit is a positive integer no greater than 1000000000; report any value outside that range.
 
 Write a program that reads a positive limit and prints the first Fibonacci number greater than that limit.
 
@@ -44,4 +44,3 @@ The main method is in `FirstFibonacciAboveLimit.java`. Run it and follow any inp
 ## Prerequisites
 
 Use the constructs introduced in Topic 3, including static methods, conditions and loops. Process numbers arithmetically; do not manipulate strings or arrays.
-

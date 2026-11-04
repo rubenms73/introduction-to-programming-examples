@@ -1,8 +1,8 @@
-# 26 Reverse the Order of Words
+# 26 Reverse the order of words
 
 ## Problem statement
 
-**Input and behaviour:** Build the word array using length(), charAt() and concatenation. Keep this exercise self-contained; do not import another exercise.
+**Input and behaviour:** Build the array of words using `length()`, `charAt()` and concatenation. Keep this exercise self-contained; do not import code from another exercise.
 
 Write a program that reads a sentence and prints its words in reverse order, without using `String.split()`.
 
@@ -43,5 +43,4 @@ The main method is in `ReverseWords.java`. Run it and follow any input prompts.
 
 ## Prerequisites
 
-Use indexed arrays, loops and the text operations taught in Topic 4: length(), charAt(), equals(), concatenation, next() and nextLine(). Implement traversals explicitly.
-
+Use indexed arrays, loops and the text operations taught in Topic 4: `length()`, `charAt()`, `equals()`, concatenation, `next()` and `nextLine()`. Write every traversal explicitly.

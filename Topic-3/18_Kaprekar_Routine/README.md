@@ -1,4 +1,4 @@
-# 18 Kaprekar Routine
+# 18 Kaprekar's routine
 
 ## Problem statement
 

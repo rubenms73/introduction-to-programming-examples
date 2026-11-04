@@ -4,10 +4,10 @@ public class MinimumChange
 {
     public static void main(String[] args)
     {
-        Scanner in = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
 
         System.out.print("Amount in cents: ");
-        int amount = in.nextInt();
+        int amount = keyboard.nextInt();
 
         int notes500 = amount / 50000;
         amount = amount % 50000;
@@ -54,5 +54,6 @@ public class MinimumChange
         System.out.println("5 cent coins: " + coins5Cent);
         System.out.println("2 cent coins: " + coins2Cent);
         System.out.println("1 cent coins: " + coins1Cent);
+        keyboard.close();
     }
 }

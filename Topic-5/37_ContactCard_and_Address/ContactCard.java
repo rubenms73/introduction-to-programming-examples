@@ -48,12 +48,10 @@ public class ContactCard
 
     @Override public boolean equals(Object object)
     {
-        if (this == object)
-            return true;
         if (!(object instanceof ContactCard))
             return false;
         ContactCard other = (ContactCard)object;
-        return email != null && email.equals(other.email);
+        return email.equals(other.email);
     }
 
     @Override public int hashCode()

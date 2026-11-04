@@ -61,12 +61,10 @@ public class Book
 
     @Override public boolean equals(Object object)
     {
-        if (this == object)
-            return true;
         if (!(object instanceof Book))
             return false;
         Book other = (Book)object;
-        return isbn != null && isbn.equals(other.isbn);
+        return isbn.equals(other.isbn);
     }
 
     @Override public int hashCode()

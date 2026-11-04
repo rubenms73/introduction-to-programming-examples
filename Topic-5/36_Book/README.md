@@ -2,7 +2,7 @@
 
 ## Problem statement
 
-**Input and behaviour:** Constructor preconditions: non-null, non-empty ISBN, title and author; positive publication year. Compare ISBN text exactly with equals(). Supply a matching hashCode() using the ISBN string code.
+**Input and behaviour:** Constructor preconditions: non-null, non-empty ISBN, title and author; positive publication year. Compare the ISBN text exactly with `equals()`, and provide a matching `hashCode()` based on the ISBN string's code.
 
 Design a `Book` class that stores an ISBN, a title, an author and a publication year.
 
@@ -43,5 +43,4 @@ java -cp "." Main
 
 ## Prerequisites
 
-Use classes, constructors, encapsulation, this, composition, toString() and the explicitly explained equality operations. Do not use exceptions or additional utility libraries.
-
+Use classes, constructors, encapsulation, `this`, composition, `toString()` and the equality operations explained in the topic. Do not use exceptions or additional utility libraries.

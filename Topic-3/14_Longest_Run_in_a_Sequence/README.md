@@ -1,4 +1,4 @@
-# 14 Longest Run in a Sequence
+# 14 Longest run in a sequence
 
 ## Problem statement
 

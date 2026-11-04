@@ -4,12 +4,12 @@ public class SquareRootByBisection
 {
     public static void main(String[] args)
     {
-        Scanner in = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
 
         System.out.print("Number: ");
-        double number = in.nextDouble();
+        double number = keyboard.nextDouble();
         System.out.print("Tolerance: ");
-        double tolerance = in.nextDouble();
+        double tolerance = keyboard.nextDouble();
 
         if (number < 0 || number > 1000000 || tolerance < 0.000000001 || tolerance > 1)
             System.out.println("Invalid input");
@@ -18,6 +18,7 @@ public class SquareRootByBisection
             double result = squareRoot(number, tolerance);
             System.out.printf("Approximation: %.8f%n", result);
         }
+        keyboard.close();
     }
 
     public static double squareRoot(double number, double tolerance)

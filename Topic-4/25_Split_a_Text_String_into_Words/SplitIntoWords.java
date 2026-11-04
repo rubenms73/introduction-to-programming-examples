@@ -4,16 +4,17 @@ public class SplitIntoWords
 {
     public static void main(String[] args)
     {
-        Scanner in = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
 
         System.out.print("Sentence: ");
-        String sentence = in.nextLine();
+        String sentence = keyboard.nextLine();
 
         String[] words = splitIntoWords(sentence);
         for (int i = 0; i < words.length; i++)
         {
             System.out.println(words[i]);
         }
+        keyboard.close();
     }
 
     public static String[] splitIntoWords(String text)

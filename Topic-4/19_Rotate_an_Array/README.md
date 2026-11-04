@@ -1,4 +1,4 @@
-# 19 Rotate an Array
+# 19 Rotate an array
 
 ## Problem statement
 
@@ -45,5 +45,4 @@ The main method is in `RotateArray.java`. Run it and follow any input prompts.
 
 ## Prerequisites
 
-Use indexed arrays, loops and the text operations taught in Topic 4: length(), charAt(), equals(), concatenation, next() and nextLine(). Implement traversals explicitly.
-
+Use indexed arrays, loops and the text operations taught in Topic 4: `length()`, `charAt()`, `equals()`, concatenation, `next()` and `nextLine()`. Write every traversal explicitly.

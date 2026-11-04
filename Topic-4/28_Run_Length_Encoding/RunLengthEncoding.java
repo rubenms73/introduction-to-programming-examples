@@ -4,12 +4,13 @@ public class RunLengthEncoding
 {
     public static void main(String[] args)
     {
-        Scanner in = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
 
         System.out.print("Text: ");
-        String text = in.nextLine();
+        String text = keyboard.nextLine();
 
         System.out.println(encode(text));
+        keyboard.close();
     }
 
     public static String encode(String text)

@@ -2,7 +2,7 @@
 
 ## Problem statement
 
-**Input and behaviour:** Construct with a non-empty holder name and a finite non-negative balance. Invalid setters leave the previous value unchanged; failed transactions return false.
+**Input and behaviour:** The constructor receives a non-empty holder name and a finite, non-negative balance. Invalid setters leave the previous value unchanged; failed transactions return `false`.
 
 Design a `BankAccount` class with an account holder, a balance and operations for deposit, withdrawal and transfer.
 
@@ -43,5 +43,4 @@ java -cp "." Main
 
 ## Prerequisites
 
-Use classes, constructors, encapsulation, this, composition, toString() and the explicitly explained equality operations. Do not use exceptions or additional utility libraries.
-
+Use classes, constructors, encapsulation, `this`, composition, `toString()` and the equality operations explained in the topic. Do not use exceptions or additional utility libraries.

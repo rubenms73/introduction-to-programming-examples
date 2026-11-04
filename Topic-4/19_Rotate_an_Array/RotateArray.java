@@ -4,16 +4,16 @@ public class RotateArray
 {
     public static void main(String[] args)
     {
-        Scanner in = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
 
         System.out.print("Size: ");
-        int size = in.nextInt();
+        int size = keyboard.nextInt();
         int[] values = new int[size];
 
         for (int i = 0; i < values.length; i++)
         {
             System.out.print("Value " + i + ": ");
-            values[i] = in.nextInt();
+            values[i] = keyboard.nextInt();
         }
 
         rotateRight(values);
@@ -21,6 +21,7 @@ public class RotateArray
         {
             System.out.println(values[i]);
         }
+        keyboard.close();
     }
 
     public static void rotateRight(int[] values)

@@ -1,8 +1,8 @@
-# 07 Collatz Sequence
+# 07 Collatz sequence
 
 ## Problem statement
 
-**Input and behaviour:** Use positive starting values no greater than 1000000 for this classroom exercise.
+**Input and behaviour:** In this exercise, the starting value is a positive integer no greater than 1000000.
 
 Write a program that reads a positive integer and prints its Collatz sequence.
 
@@ -44,4 +44,3 @@ The main method is in `CollatzSequence.java`. Run it and follow any input prompt
 ## Prerequisites
 
 Use the constructs introduced in Topic 3, including static methods, conditions and loops. Process numbers arithmetically; do not manipulate strings or arrays.
-

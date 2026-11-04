@@ -4,21 +4,21 @@ public class LocalPeaksInSequence
 {
     public static void main(String[] args)
     {
-        Scanner in = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
 
         System.out.println("Enter positive integers ending in 0:");
-        int previous = in.nextInt();
+        int previous = keyboard.nextInt();
 
         if (previous == 0)
             System.out.println("Local peaks: 0");
         else
         {
-            int current = in.nextInt();
+            int current = keyboard.nextInt();
             int peaks = 0;
 
             while (current != 0)
             {
-                int next = in.nextInt();
+                int next = keyboard.nextInt();
                 if (next != 0 && current > previous && current > next)
                     peaks++;
                 previous = current;
@@ -27,5 +27,6 @@ public class LocalPeaksInSequence
 
             System.out.println("Local peaks: " + peaks);
         }
+        keyboard.close();
     }
 }

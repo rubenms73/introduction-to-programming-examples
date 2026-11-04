@@ -1,4 +1,4 @@
-# 15 Local Peaks in a Sequence
+# 15 Local peaks in a sequence
 
 ## Problem statement
 

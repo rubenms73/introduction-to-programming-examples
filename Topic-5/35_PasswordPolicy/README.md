@@ -2,11 +2,11 @@
 
 ## Problem statement
 
-**Input and behaviour:** Use a non-negative minimum length. Required uppercase letters are A-Z, lowercase letters are a-z, and digits are 0-9. Detect these ranges with character comparisons.
+**Input and behaviour:** Use a non-negative minimum length. Uppercase letters are A-Z, lowercase letters a-z and digits 0-9. Detect these ranges with character comparisons.
 
 Design a class that validates passwords according to a configurable policy.
 
-The class must include constructors, getters, setters and a `toString()` method. The policy may include minimum length, at least one upper-case letter, at least one lower-case letter and at least one digit.
+The class must include constructors, getters, setters and a `toString()` method. The policy may include minimum length, at least one uppercase letter, at least one lowercase letter and at least one digit.
 
 Suggested approach: store the rules as attributes. To validate a password, traverse it once and remember whether each required kind of character has appeared.
 
@@ -43,5 +43,4 @@ java -cp "." Main
 
 ## Prerequisites
 
-Use classes, constructors, encapsulation, this, composition, toString() and the explicitly explained equality operations. Do not use exceptions or additional utility libraries.
-
+Use classes, constructors, encapsulation, `this`, composition, `toString()` and the equality operations explained in the topic. Do not use exceptions or additional utility libraries.

@@ -2,7 +2,7 @@
 
 ## Problem statement
 
-**Input and behaviour:** Construct with finite non-negative values. If distance is zero, the consumption and cost per kilometre methods return zero.
+**Input and behaviour:** The constructor receives finite, non-negative values. If the distance is zero, the methods for consumption and cost per kilometre return zero.
 
 Design a `CarTrip` class that stores kilometres travelled, litres consumed and fuel cost.
 
@@ -43,5 +43,4 @@ java -cp "." Main
 
 ## Prerequisites
 
-Use classes, constructors, encapsulation, this, composition, toString() and the explicitly explained equality operations. Do not use exceptions or additional utility libraries.
-
+Use classes, constructors, encapsulation, `this`, composition, `toString()` and the equality operations explained in the topic. Do not use exceptions or additional utility libraries.

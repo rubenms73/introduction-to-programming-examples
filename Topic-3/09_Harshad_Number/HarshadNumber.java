@@ -4,10 +4,10 @@ public class HarshadNumber
 {
     public static void main(String[] args)
     {
-        Scanner in = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
 
         System.out.print("Number: ");
-        int number = in.nextInt();
+        int number = keyboard.nextInt();
 
         if (number <= 0)
             System.out.println("The number must be positive");
@@ -19,6 +19,7 @@ public class HarshadNumber
             else
                 System.out.println("It is not a Harshad number");
         }
+        keyboard.close();
     }
 
     public static int sumDigits(int number)

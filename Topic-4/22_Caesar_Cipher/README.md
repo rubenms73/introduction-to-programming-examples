@@ -1,4 +1,4 @@
-# 22 Caesar Cipher
+# 22 Caesar cipher
 
 ## Problem statement
 
@@ -7,6 +7,28 @@ Write a program that reads a text and an integer shift, and prints the text encr
 Letters must be shifted by the indicated amount. Non-letter characters should remain unchanged.
 
 Suggested approach: process the text character by character. For letters, calculate their new position inside the alphabet; for other characters, copy them unchanged.
+
+## How the shift is normalised
+
+The alphabet has 26 letters, so shifting by 29 is the same as shifting by 3, and shifting by -1 is the same as shifting by 25. Before encrypting, `encrypt` turns the shift into an equivalent value between 0 and 25:
+
+```java
+int normalisedShift = shift % 26;
+if (normalisedShift < 0)
+    normalisedShift += 26;
+```
+
+In Java, `%` keeps the sign of the left operand, so `-1 % 26` is `-1`, not `25`. Adding 26 to a negative remainder moves it into the range 0 to 25.
+
+| `shift` | `shift % 26` | `normalisedShift` | Effect |
+| ---: | ---: | ---: | --- |
+| 3 | 3 | 3 | `a` → `d` |
+| 29 | 3 | 3 | the same as 3 |
+| 26 | 0 | 0 | no change |
+| -1 | -1 | 25 | `a` → `z`, one letter back |
+| -27 | -1 | 25 | the same as -1 |
+
+With a shift between 0 and 25, the new position of a lowercase letter is `(c - 'a' + normalisedShift) % 26`, which is always a valid position from 0 to 25. Uppercase letters work the same way with `'A'`.
 
 ## Compile and run
 
@@ -41,4 +63,4 @@ The main method is in `CaesarCipher.java`. Run it and follow any input prompts.
 
 ## Prerequisites
 
-Use indexed arrays, loops and the text operations taught in Topic 4: length(), charAt(), equals(), concatenation, next() and nextLine(). Implement traversals explicitly.
+Use indexed arrays, loops and the text operations taught in Topic 4: `length()`, `charAt()`, `equals()`, concatenation, `next()` and `nextLine()`. Write every traversal explicitly.

@@ -2,7 +2,7 @@
 
 ## Problem statement
 
-**Input and behaviour:** Use non-empty English words containing letters A-Z or a-z. Ignore letter case using character comparisons and arithmetic.
+**Input and behaviour:** The words are non-empty and contain only the English letters A-Z and a-z. Ignore letter case, using character comparisons and arithmetic.
 
 Write a program that reads two words and determines whether they are anagrams.
 
@@ -43,5 +43,4 @@ The main method is in `Anagrams.java`. Run it and follow any input prompts.
 
 ## Prerequisites
 
-Use indexed arrays, loops and the text operations taught in Topic 4: length(), charAt(), equals(), concatenation, next() and nextLine(). Implement traversals explicitly.
-
+Use indexed arrays, loops and the text operations taught in Topic 4: `length()`, `charAt()`, `equals()`, concatenation, `next()` and `nextLine()`. Write every traversal explicitly.

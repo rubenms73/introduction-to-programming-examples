@@ -4,10 +4,10 @@ public class IPv4AddressParts
 {
     public static void main(String[] args)
     {
-        Scanner in = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
 
         System.out.print("IPv4 address: ");
-        String address = in.nextLine();
+        String address = keyboard.nextLine();
 
         int[] parts = parseIPv4(address);
         if (parts == null)
@@ -17,54 +17,44 @@ public class IPv4AddressParts
             {
                 System.out.println(parts[i]);
             }
+        keyboard.close();
     }
 
     public static int[] parseIPv4(String address)
     {
         int[] parts = new int[4];
         int partIndex = 0;
-        int partStart = 0;
+        int value = 0;
+        int digits = 0;
 
-        for (int i = 0; i <= address.length(); i++)
+        for (int i = 0; i < address.length(); i++)
         {
-            if (i == address.length() || address.charAt(i) == '.')
+            char c = address.charAt(i);
+            if (c == '.')
             {
-                if (partIndex == parts.length)
+                // A dot closes the current part, which cannot be empty or the fourth one.
+                if (digits == 0 || partIndex == 3)
                     return null;
-
-                int value = parsePart(address, partStart, i);
-                if (value < 0)
-                    return null;
-
                 parts[partIndex] = value;
                 partIndex++;
-                partStart = i + 1;
+                value = 0;
+                digits = 0;
             }
+            else if (c >= '0' && c <= '9')
+            {
+                value = value * 10 + (c - '0');
+                digits++;
+                if (digits > 3 || value > 255)
+                    return null;
+            }
+            else
+                return null;
         }
 
-        if (partIndex != parts.length)
+        // The last part has no dot after it.
+        if (digits == 0 || partIndex != 3)
             return null;
-
+        parts[3] = value;
         return parts;
-    }
-
-    public static int parsePart(String text, int start, int end)
-    {
-        if (start == end || end - start > 3)
-            return -1;
-
-        int value = 0;
-        for (int i = start; i < end; i++)
-        {
-            char c = text.charAt(i);
-            if (c < '0' || c > '9')
-                return -1;
-            value = value * 10 + (c - '0');
-        }
-
-        if (value > 255)
-            return -1;
-
-        return value;
     }
 }

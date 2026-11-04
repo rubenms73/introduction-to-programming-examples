@@ -4,10 +4,10 @@ public class CollatzSequence
 {
     public static void main(String[] args)
     {
-        Scanner in = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
 
         System.out.print("Number: ");
-        long number = in.nextLong();
+        long number = keyboard.nextLong();
 
         if (number <= 0)
             System.out.println("The number must be positive");
@@ -28,5 +28,6 @@ public class CollatzSequence
 
             System.out.printf("%nSteps: %d%n", steps);
         }
+        keyboard.close();
     }
 }

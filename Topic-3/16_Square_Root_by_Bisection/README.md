@@ -1,8 +1,8 @@
-# 16 Square Root by Bisection
+# 16 Square root by bisection
 
 ## Problem statement
 
-**Input and behaviour:** Use finite numbers between 0 and 1000000 and a tolerance between 0.000000001 and 1; report values outside these intervals.
+**Input and behaviour:** The number is finite and between 0 and 1000000, and the tolerance is between 0.000000001 and 1; report any value outside these ranges.
 
 Write a program that reads a non-negative real number and approximates its square root using the bisection method.
 
@@ -44,4 +44,3 @@ The main method is in `SquareRootByBisection.java`. Run it and follow any input 
 ## Prerequisites
 
 Use the constructs introduced in Topic 3, including static methods, conditions and loops. Process numbers arithmetically; do not manipulate strings or arrays.
-

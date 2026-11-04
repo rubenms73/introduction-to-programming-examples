@@ -4,10 +4,10 @@ public class ArmstrongNumber
 {
     public static void main(String[] args)
     {
-        Scanner in = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
 
         System.out.print("Three-digit number: ");
-        int number = in.nextInt();
+        int number = keyboard.nextInt();
 
         if (number < 100 || number > 999)
             System.out.println("The number must have three digits");
@@ -15,6 +15,7 @@ public class ArmstrongNumber
             System.out.println("It is an Armstrong number");
         else
             System.out.println("It is not an Armstrong number");
+        keyboard.close();
     }
 
     public static boolean isArmstrong(int number)

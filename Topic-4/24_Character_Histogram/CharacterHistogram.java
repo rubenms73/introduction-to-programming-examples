@@ -4,13 +4,14 @@ public class CharacterHistogram
 {
     public static void main(String[] args)
     {
-        Scanner in = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
 
         System.out.print("Text: ");
-        String text = in.nextLine();
+        String text = keyboard.nextLine();
 
         int[] histogram = letterHistogram(text);
         printHistogram(histogram);
+        keyboard.close();
     }
 
     public static int[] letterHistogram(String text)

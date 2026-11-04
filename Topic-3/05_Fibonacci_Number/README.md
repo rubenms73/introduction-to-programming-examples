@@ -1,8 +1,8 @@
-# 05 Fibonacci Number
+# 05 Fibonacci number
 
 ## Problem statement
 
-**Input and behaviour:** Use 1 <= n <= 92 so that the Fibonacci result fits in long; report other values as invalid.
+**Input and behaviour:** Use 1 <= n <= 92, so that the result fits in a `long`; report any other value as invalid.
 
 Write a program that reads a positive integer `n` and prints the `n`th Fibonacci number.
 
@@ -44,4 +44,3 @@ The main method is in `FibonacciNumber.java`. Run it and follow any input prompt
 ## Prerequisites
 
 Use the constructs introduced in Topic 3, including static methods, conditions and loops. Process numbers arithmetically; do not manipulate strings or arrays.
-

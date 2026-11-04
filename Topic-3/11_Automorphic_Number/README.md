@@ -1,8 +1,8 @@
-# 11 Automorphic Number
+# 11 Automorphic number
 
 ## Problem statement
 
-**Input and behaviour:** Use a positive int. Store both its square and the power of ten in long variables.
+**Input and behaviour:** The input is a positive `int`. Store both its square and the power of ten in `long` variables.
 
 Write a program that reads a positive integer `n` and determines whether it is automorphic.
 
@@ -44,4 +44,3 @@ The main method is in `AutomorphicNumber.java`. Run it and follow any input prom
 ## Prerequisites
 
 Use the constructs introduced in Topic 3, including static methods, conditions and loops. Process numbers arithmetically; do not manipulate strings or arrays.
-

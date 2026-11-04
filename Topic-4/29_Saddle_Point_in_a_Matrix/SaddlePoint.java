@@ -4,21 +4,22 @@ public class SaddlePoint
 {
     public static void main(String[] args)
     {
-        Scanner in = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
         System.out.print("Rows and columns: ");
-        int rows = in.nextInt();
-        int columns = in.nextInt();
+        int rows = keyboard.nextInt();
+        int columns = keyboard.nextInt();
         int[][] matrix = new int[rows][columns];
         System.out.println("Matrix values, row by row:");
         for (int row = 0; row < rows; row++)
         {
             for (int col = 0; col < columns; col++)
             {
-                matrix[row][col] = in.nextInt();
+                matrix[row][col] = keyboard.nextInt();
             }
         }
 
         printSaddlePoints(matrix);
+        keyboard.close();
     }
 
     public static void printSaddlePoints(int[][] matrix)

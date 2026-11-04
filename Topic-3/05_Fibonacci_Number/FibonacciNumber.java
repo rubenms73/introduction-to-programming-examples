@@ -4,10 +4,10 @@ public class FibonacciNumber
 {
     public static void main(String[] args)
     {
-        Scanner in = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
 
         System.out.print("n: ");
-        int n = in.nextInt();
+        int n = keyboard.nextInt();
 
         if (n <= 0 || n > 92)
             System.out.println("n must be between 1 and 92");
@@ -16,6 +16,7 @@ public class FibonacciNumber
             long result = fibonacci(n);
             System.out.printf("Fibonacci number %d is %d%n", n, result);
         }
+        keyboard.close();
     }
 
     public static long fibonacci(int n)

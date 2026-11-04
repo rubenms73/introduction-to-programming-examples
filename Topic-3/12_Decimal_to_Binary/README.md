@@ -1,4 +1,4 @@
-# 12 Decimal to Binary
+# 12 Decimal to binary
 
 ## Problem statement
 
@@ -42,4 +42,3 @@ The main method is in `DecimalToBinary.java`. Run it and follow any input prompt
 ## Prerequisites
 
 Use the constructs introduced in Topic 3, including static methods, conditions and loops. Process numbers arithmetically; do not manipulate strings or arrays.
-

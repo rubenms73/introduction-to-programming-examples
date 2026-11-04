@@ -1,4 +1,3 @@
-
 public class RemoveConsecutiveDuplicates
 {
     public static void main(String[] args)

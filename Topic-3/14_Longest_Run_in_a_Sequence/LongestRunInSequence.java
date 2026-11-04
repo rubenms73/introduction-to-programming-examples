@@ -4,10 +4,10 @@ public class LongestRunInSequence
 {
     public static void main(String[] args)
     {
-        Scanner in = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
 
         System.out.println("Enter positive integers ending in 0:");
-        int value = in.nextInt();
+        int value = keyboard.nextInt();
 
         if (value == 0)
             System.out.println("Empty sequence");
@@ -17,7 +17,7 @@ public class LongestRunInSequence
             int currentRun = 1;
             int bestRun = 1;
 
-            value = in.nextInt();
+            value = keyboard.nextInt();
             while (value != 0)
             {
                 if (value == previous)
@@ -29,10 +29,11 @@ public class LongestRunInSequence
                     bestRun = currentRun;
 
                 previous = value;
-                value = in.nextInt();
+                value = keyboard.nextInt();
             }
 
             System.out.println("Longest run: " + bestRun);
         }
+        keyboard.close();
     }
 }

@@ -2,7 +2,7 @@
 
 ## Problem statement
 
-**Input and behaviour:** Constructor precondition: minimum <= initialValue <= maximum. Invalid changes and attempts to pass a limit return false without changing the counter. reset() sets the value to minimum.
+**Input and behaviour:** Constructor precondition: `minimum` <= `initialValue` <= `maximum`. Invalid changes and attempts to go past a limit return `false` without changing the counter. `reset()` sets the value to `minimum`.
 
 Design a counter class with a minimum value, a maximum value and a current value.
 
@@ -43,5 +43,4 @@ java -cp "." Main
 
 ## Prerequisites
 
-Use classes, constructors, encapsulation, this, composition, toString() and the explicitly explained equality operations. Do not use exceptions or additional utility libraries.
-
+Use classes, constructors, encapsulation, `this`, composition, `toString()` and the equality operations explained in the topic. Do not use exceptions or additional utility libraries.

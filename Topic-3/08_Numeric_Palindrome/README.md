@@ -1,8 +1,8 @@
-# 08 Numeric Palindrome
+# 08 Numeric palindrome
 
 ## Problem statement
 
-**Input and behaviour:** Use a positive int. Reverse the digits numerically in a long variable; do not convert the number to text.
+**Input and behaviour:** The input is a positive `int`. Reverse its digits arithmetically in a `long` variable; do not convert the number to text.
 
 Write a program that reads a positive integer and determines whether it is a palindrome.
 
@@ -44,4 +44,3 @@ The main method is in `NumericPalindrome.java`. Run it and follow any input prom
 ## Prerequisites
 
 Use the constructs introduced in Topic 3, including static methods, conditions and loops. Process numbers arithmetically; do not manipulate strings or arrays.
-

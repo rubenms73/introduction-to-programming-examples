@@ -1,4 +1,4 @@
-# 21 Remove Consecutive Duplicates
+# 21 Remove consecutive duplicates
 
 ## Problem statement
 
@@ -43,5 +43,4 @@ The main method is in `RemoveConsecutiveDuplicates.java`. Run it and follow any 
 
 ## Prerequisites
 
-Use indexed arrays, loops and the text operations taught in Topic 4: length(), charAt(), equals(), concatenation, next() and nextLine(). Implement traversals explicitly.
-
+Use indexed arrays, loops and the text operations taught in Topic 4: `length()`, `charAt()`, `equals()`, concatenation, `next()` and `nextLine()`. Write every traversal explicitly.

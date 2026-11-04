@@ -1,8 +1,8 @@
-# 03 Distance Between Two Points
+# 03 Distance between two points
 
 ## Problem statement
 
-**Input and behaviour:** Coordinates are finite real values with magnitudes at most 1000000. Math.sqrt is available.
+**Input and behaviour:** The coordinates are finite real numbers whose absolute values are at most 1000000. You may use `Math.sqrt`.
 
 Write a program that reads the coordinates of two points, `(x1, y1)` and `(x2, y2)`, and calculates the Euclidean distance between them.
 
@@ -43,5 +43,4 @@ The main method is in `DistanceBetweenPoints.java`. Run it and follow any input 
 
 ## Prerequisites
 
-Use the main/Scanner templates, primitive variables, arithmetic, assignment and console output. No conditionals, loops, arrays or helper methods.
-
+Use the `main` and `Scanner` templates, primitive variables, arithmetic, assignment and console output. Do not use conditionals, loops, arrays or helper methods.

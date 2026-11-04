@@ -1,4 +1,4 @@
-# 10 Armstrong Number
+# 10 Armstrong number
 
 ## Problem statement
 

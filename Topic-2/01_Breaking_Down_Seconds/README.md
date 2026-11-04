@@ -1,8 +1,8 @@
-# 01 Breaking Down Seconds
+# 01 Breaking down seconds
 
 ## Problem statement
 
-**Input and behaviour:** Input is a non-negative integer number of seconds that fits in int.
+**Input and behaviour:** The input is a non-negative number of seconds that fits in an `int`.
 
 Write a program that reads a number of seconds and expresses it as hours, minutes and remaining seconds.
 
@@ -43,5 +43,4 @@ The main method is in `BreakingDownSeconds.java`. Run it and follow any input pr
 
 ## Prerequisites
 
-Use the main/Scanner templates, primitive variables, arithmetic, assignment and console output. No conditionals, loops, arrays or helper methods.
-
+Use the `main` and `Scanner` templates, primitive variables, arithmetic, assignment and console output. Do not use conditionals, loops, arrays or helper methods.

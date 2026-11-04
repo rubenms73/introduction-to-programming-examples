@@ -4,12 +4,12 @@ public class RussianPeasantMultiplication
 {
     public static void main(String[] args)
     {
-        Scanner in = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
 
         System.out.print("First factor: ");
-        int a = in.nextInt();
+        int a = keyboard.nextInt();
         System.out.print("Second factor: ");
-        int b = in.nextInt();
+        int b = keyboard.nextInt();
 
         if (a < 0 || b < 0)
             System.out.println("Only non-negative factors are accepted");
@@ -18,6 +18,7 @@ public class RussianPeasantMultiplication
             int result = multiply(a, b);
             System.out.println("Result: " + result);
         }
+        keyboard.close();
     }
 
     public static int multiply(int a, int b)

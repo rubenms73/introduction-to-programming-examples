@@ -1,4 +1,4 @@
-# 30 Tic Tac Toe Winner
+# 30 Tic-tac-toe winner
 
 ## Problem statement
 
@@ -41,4 +41,4 @@ The main method is in `TicTacToeWinner.java`. Run it and follow any input prompt
 
 ## Prerequisites
 
-Use indexed arrays, loops and the text operations taught in Topic 4: length(), charAt(), equals(), concatenation, next() and nextLine(). Implement traversals explicitly.
+Use indexed arrays, loops and the text operations taught in Topic 4: `length()`, `charAt()`, `equals()`, concatenation, `next()` and `nextLine()`. Write every traversal explicitly.

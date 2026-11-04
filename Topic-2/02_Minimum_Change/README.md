@@ -1,8 +1,8 @@
-# 02 Minimum Change
+# 02 Minimum change
 
 ## Problem statement
 
-**Input and behaviour:** Input is a non-negative amount in cents that fits in int. Use only sequential statements and individual variables; print every denomination count.
+**Input and behaviour:** The input is a non-negative amount in cents that fits in an `int`. Use only sequential statements and separate variables, and print the count for every denomination.
 
 Write a program that reads a non-negative amount of money in cents and prints the minimum number of notes and coins of each denomination needed to represent it.
 
@@ -41,5 +41,4 @@ The main method is in `MinimumChange.java`. Run it and follow any input prompts.
 
 ## Prerequisites
 
-Use the main/Scanner templates, primitive variables, arithmetic, assignment and console output. No conditionals, loops, arrays or helper methods.
-
+Use the `main` and `Scanner` templates, primitive variables, arithmetic, assignment and console output. Do not use conditionals, loops, arrays or helper methods.

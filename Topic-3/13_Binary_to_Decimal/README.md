@@ -1,8 +1,8 @@
-# 13 Binary to Decimal
+# 13 Binary to decimal
 
 ## Problem statement
 
-**Input and behaviour:** Read a non-negative long whose decimal digits represent binary digits. Reject negative input or digits other than 0 and 1.
+**Input and behaviour:** Read a non-negative `long` whose decimal digits stand for binary digits. Reject negative input and any digit other than 0 or 1.
 
 Write a program that reads an integer whose digits are only `0` and `1`, and calculates its decimal value.
 
@@ -46,4 +46,3 @@ The main method is in `BinaryToDecimal.java`. Run it and follow any input prompt
 ## Prerequisites
 
 Use the constructs introduced in Topic 3, including static methods, conditions and loops. Process numbers arithmetically; do not manipulate strings or arrays.
-

@@ -1,4 +1,4 @@
-# 17 Russian Peasant Multiplication
+# 17 Russian peasant multiplication
 
 ## Problem statement
 
