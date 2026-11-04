@@ -13,7 +13,7 @@ Exercise numbers match the classroom exercise handout.
 | [21 Remove consecutive duplicates](21_Remove_Consecutive_Duplicates/) | `java -cp "." RemoveConsecutiveDuplicates` |
 | [22 Caesar cipher](22_Caesar_Cipher/) | `java -cp "." CaesarCipher` |
 | [23 Anagrams](23_Anagrams/) | `java -cp "." Anagrams` |
-| [24 Character histogram](24_Character_Histogram/) | `java -cp "." CharacterHistogram` |
+| [24 Letter histogram](24_Letter_Histogram/) | `java -cp "." LetterHistogram` |
 | [25 Split a text string into words](25_Split_a_Text_String_into_Words/) | `java -cp "." SplitIntoWords` |
 | [26 Reverse the order of words](26_Reverse_the_Order_of_Words/) | `java -cp "." ReverseWords` |
 | [27 IPv4 address parts](27_IPv4_Address_Parts/) | `java -cp "." IPv4AddressParts` |

@@ -1,4 +1,4 @@
-# 24 Character histogram
+# 24 Letter histogram
 
 ## Problem statement
 
@@ -21,8 +21,8 @@ Open a terminal in this example folder. With a JDK on your `PATH`, run the
 following commands separately. Run the second command only if compilation succeeds.
 
 ```text
-javac -encoding UTF-8 CharacterHistogram.java
-java -cp "." CharacterHistogram
+javac -encoding UTF-8 LetterHistogram.java
+java -cp "." LetterHistogram
 ```
 
 These commands work in both PowerShell and CMD and require no IDE, Bash or WSL.
@@ -35,11 +35,11 @@ For terminal setup and paths containing spaces, see the
 From this example folder:
 
 ```sh
-javac -encoding UTF-8 CharacterHistogram.java
-java -cp "." CharacterHistogram
+javac -encoding UTF-8 LetterHistogram.java
+java -cp "." LetterHistogram
 ```
 
-The main method is in `CharacterHistogram.java`. Run it and follow any input prompts.
+The main method is in `LetterHistogram.java`. Run it and follow any input prompts.
 
 ## Prerequisites
 

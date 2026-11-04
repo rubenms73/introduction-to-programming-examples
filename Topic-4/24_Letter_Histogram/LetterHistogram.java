@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class CharacterHistogram
+public class LetterHistogram
 {
     public static void main(String[] args)
     {
