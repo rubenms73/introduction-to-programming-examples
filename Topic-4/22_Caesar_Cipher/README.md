@@ -2,33 +2,11 @@
 
 ## Problem statement
 
-Write a program that reads a text and an integer shift, and prints the text encrypted with the Caesar cipher.
+Write a program that reads a text and prints it encrypted with a simple Caesar cipher that moves every letter one position forward in the alphabet: a becomes b, b becomes c, and z becomes a. Uppercase letters work the same way, and non-letter characters remain unchanged.
 
-Letters must be shifted by the indicated amount. Non-letter characters should remain unchanged.
+Then write a method that decrypts the text, moving each letter one position back, and check that it recovers the original text.
 
-Suggested approach: process the text character by character. For letters, calculate their new position inside the alphabet; for other characters, copy them unchanged.
-
-## How the shift is normalised
-
-The alphabet has 26 letters, so shifting by 29 is the same as shifting by 3, and shifting by -1 is the same as shifting by 25. Before encrypting, `encrypt` turns the shift into an equivalent value between 0 and 25:
-
-```java
-int normalisedShift = shift % 26;
-if (normalisedShift < 0)
-    normalisedShift += 26;
-```
-
-In Java, `%` keeps the sign of the left operand, so `-1 % 26` is `-1`, not `25`. Adding 26 to a negative remainder moves it into the range 0 to 25.
-
-| `shift` | `shift % 26` | `normalisedShift` | Effect |
-| ---: | ---: | ---: | --- |
-| 3 | 3 | 3 | `a` → `d` |
-| 29 | 3 | 3 | the same as 3 |
-| 26 | 0 | 0 | no change |
-| -1 | -1 | 25 | `a` → `z`, one letter back |
-| -27 | -1 | 25 | the same as -1 |
-
-With a shift between 0 and 25, the new position of a lowercase letter is `(c - 'a' + normalisedShift) % 26`, which is always a valid position from 0 to 25. Uppercase letters work the same way with `'A'`.
+Suggested approach: process the text character by character. A letter moves to the next one, except z and Z, which go back to the start of the alphabet. Decrypting does the opposite.
 
 ## Compile and run
 

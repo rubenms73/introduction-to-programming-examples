@@ -8,29 +8,47 @@ public class CaesarCipher
 
         System.out.print("Text: ");
         String text = keyboard.nextLine();
-        System.out.print("Shift: ");
-        int shift = keyboard.nextInt();
 
-        System.out.println(encrypt(text, shift));
+        String encrypted = encrypt(text);
+        System.out.println("Encrypted: " + encrypted);
+        System.out.println("Decrypted: " + decrypt(encrypted));
         keyboard.close();
     }
 
-    public static String encrypt(String text, int shift)
+    public static String encrypt(String text)
     {
         String result = "";
-        // Turn any shift into an equivalent one between 0 and 25.
-        // In Java, % keeps the sign, so -1 % 26 is -1: adding 26 gives 25.
-        int normalisedShift = shift % 26;
-        if (normalisedShift < 0)
-            normalisedShift += 26;
 
         for (int i = 0; i < text.length(); i++)
         {
             char c = text.charAt(i);
-            if (c >= 'a' && c <= 'z')
-                c = (char)('a' + (c - 'a' + normalisedShift) % 26);
-            else if (c >= 'A' && c <= 'Z')
-                c = (char)('A' + (c - 'A' + normalisedShift) % 26);
+            // z and Z go back to the start of the alphabet.
+            if (c == 'z')
+                c = 'a';
+            else if (c == 'Z')
+                c = 'A';
+            else if ((c >= 'a' && c < 'z') || (c >= 'A' && c < 'Z'))
+                c++;
+            result += c;
+        }
+
+        return result;
+    }
+
+    public static String decrypt(String text)
+    {
+        String result = "";
+
+        for (int i = 0; i < text.length(); i++)
+        {
+            char c = text.charAt(i);
+            // a and A go to the end of the alphabet.
+            if (c == 'a')
+                c = 'z';
+            else if (c == 'A')
+                c = 'Z';
+            else if ((c > 'a' && c <= 'z') || (c > 'A' && c <= 'Z'))
+                c--;
             result += c;
         }
 
