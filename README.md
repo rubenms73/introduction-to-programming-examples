@@ -14,7 +14,7 @@ PrimeCount to compare calculation times.
 
 ## Classroom exercises
 
-Java solutions to the 37 classroom exercises.
+Java solutions to the 38 classroom exercises.
 Each exercise is self-contained, uses the default package and includes its own
 compile and run instructions. Class-design exercises also include a `main`
 demonstration.
@@ -83,7 +83,7 @@ java -cp "." BreakingDownSeconds
   result and class name. Do not append `.java` or `.class` to that name.
 - Keep paths containing spaces in double quotes. Compile each example separately;
   do not compile all folders together, as several examples contain `Main`.
-- The 37 classroom exercises require only the JDK. C, Python and assembly tools
+- The 38 classroom exercises require only the JDK. C, Python and assembly tools
   are needed only for their corresponding Topic 1 demonstrations.
 
 Exercises 31–37 include `Main.java` demonstrations. Other examples either prompt

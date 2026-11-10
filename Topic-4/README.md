@@ -20,3 +20,4 @@ Exercise numbers match the classroom exercise handout.
 | [28 Run-length encoding](28_Run_Length_Encoding/) | `java -cp "." RunLengthEncoding` |
 | [29 Saddle point in a matrix](29_Saddle_Point_in_a_Matrix/) | `java -cp "." SaddlePoint` |
 | [30 Tic-tac-toe winner](30_Tic_Tac_Toe_Winner/) | `java -cp "." TicTacToeWinner` |
+| [38 Matrix product](38_Matrix_Product/) | `java -cp "." MatrixProduct` |
