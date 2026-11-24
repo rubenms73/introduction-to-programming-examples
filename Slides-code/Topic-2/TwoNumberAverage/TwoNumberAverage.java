@@ -5,6 +5,11 @@ import java.util.Scanner;
  */
 public class TwoNumberAverage
 {
+    /**
+     * Reads the two numbers and displays their integer average.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);

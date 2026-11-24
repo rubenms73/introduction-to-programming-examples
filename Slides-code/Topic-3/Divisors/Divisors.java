@@ -5,6 +5,11 @@ import java.util.Scanner;
  */
 public class Divisors
 {
+    /**
+     * Reads a positive integer and prints its divisors, one per line.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);

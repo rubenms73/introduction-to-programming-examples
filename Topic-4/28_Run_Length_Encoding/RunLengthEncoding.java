@@ -1,7 +1,13 @@
 import java.util.Scanner;
 
+/** Compresses a text with run-length encoding. */
 public class RunLengthEncoding
 {
+    /**
+     * Reads a text and displays it encoded.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);
@@ -13,6 +19,13 @@ public class RunLengthEncoding
         keyboard.close();
     }
 
+    /**
+     * Replaces each run of equal characters with the character and the
+     * length of the run ("aaabcc" gives "a3b1c2").
+     *
+     * @param text the text
+     * @return the encoded text
+     */
     public static String encode(String text)
     {
         if (text.length() == 0)

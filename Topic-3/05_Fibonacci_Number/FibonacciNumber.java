@@ -1,7 +1,14 @@
 import java.util.Scanner;
 
+/** Calculates the n-th number of the Fibonacci sequence. */
 public class FibonacciNumber
 {
+    /**
+     * Reads n and displays the n-th Fibonacci number. Above 92 the result
+     * does not fit in a long.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);
@@ -19,6 +26,13 @@ public class FibonacciNumber
         keyboard.close();
     }
 
+    /**
+     * Calculates the n-th Fibonacci number. The first two are 1 and each of
+     * the next ones is the sum of the two previous ones.
+     *
+     * @param n the position, from 1 to 92
+     * @return the Fibonacci number at position n
+     */
     public static long fibonacci(int n)
     {
         if (n <= 2)

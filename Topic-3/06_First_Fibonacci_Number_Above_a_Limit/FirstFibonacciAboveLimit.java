@@ -1,7 +1,14 @@
 import java.util.Scanner;
 
+/** Finds the first Fibonacci number greater than a limit. */
 public class FirstFibonacciAboveLimit
 {
+    /**
+     * Reads the limit and displays the first Fibonacci number above it and
+     * its position.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);

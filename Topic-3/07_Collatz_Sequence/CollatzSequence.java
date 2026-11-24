@@ -1,7 +1,15 @@
 import java.util.Scanner;
 
+/** Prints the Collatz sequence of a positive number. */
 public class CollatzSequence
 {
+    /**
+     * Reads the number and prints its sequence until it reaches 1: even
+     * numbers are halved and odd numbers become 3n + 1. Then it displays the
+     * number of steps.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);

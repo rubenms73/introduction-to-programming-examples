@@ -5,7 +5,13 @@ import java.util.Scanner;
  */
 public class Prime
 {
-    // Version 3: a method that returns as soon as the answer is known
+    /**
+     * Version 3: decides whether a number is prime with a method that returns
+     * as soon as the answer is known.
+     *
+     * @param number the number to check
+     * @return true if number is prime, false otherwise
+     */
     public static boolean isPrime(int number)
     {
         if (number <= 1)
@@ -16,6 +22,12 @@ public class Prime
         return true;
     }
 
+    /**
+     * Reads an integer and says whether it is prime with each of the three
+     * versions.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);

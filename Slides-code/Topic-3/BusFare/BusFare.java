@@ -5,7 +5,14 @@ import java.util.Scanner;
  */
 public class BusFare
 {
-    // Returns -1 for an unknown destination
+    /**
+     * Calculates the fare for a destination. People under 18 and over 64
+     * pay a reduced fare.
+     *
+     * @param destination the destination: 1, 2 or 3
+     * @param age the age of the passenger
+     * @return the fare, or -1 for an unknown destination
+     */
     public static int fare(int destination, int age)
     {
         int price;
@@ -20,6 +27,11 @@ public class BusFare
         return price;
     }
 
+    /**
+     * Reads the destination and the age and displays the fare.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);

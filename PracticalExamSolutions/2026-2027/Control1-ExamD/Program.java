@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+/** Solution to the first lab control, exam D: the next abundant number. */
 public class Program
 {
     /**

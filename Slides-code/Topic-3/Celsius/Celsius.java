@@ -5,11 +5,23 @@ import java.util.Scanner;
  */
 public class Celsius
 {
+    /**
+     * Converts a temperature from degrees Celsius to degrees Fahrenheit.
+     *
+     * @param celsius the temperature in degrees Celsius
+     * @return the same temperature in degrees Fahrenheit
+     */
     public static double celsiusToFahrenheit(double celsius)
     {
         return celsius * 1.8 + 32;
     }
 
+    /**
+     * Reads a temperature in degrees Celsius and displays it in degrees
+     * Fahrenheit.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);

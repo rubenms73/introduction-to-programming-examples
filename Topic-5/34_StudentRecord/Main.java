@@ -1,5 +1,11 @@
+/** Tests the StudentRecord class. */
 public class Main
 {
+    /**
+     * Creates two records, displays their reports and changes a mark.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         // These weights belong to this exercise, not to the course assessment.

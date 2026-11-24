@@ -1,5 +1,11 @@
+/** Tests the Book class. */
 public class Main
 {
+    /**
+     * Creates three books and compares them with equals.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Book first = new Book("9780134685991", "Effective Java", "Joshua Bloch", 2018);

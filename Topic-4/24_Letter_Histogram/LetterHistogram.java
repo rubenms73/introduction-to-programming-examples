@@ -1,7 +1,13 @@
 import java.util.Scanner;
 
+/** Counts how many times each letter appears in a text. */
 public class LetterHistogram
 {
+    /**
+     * Reads a text and prints its histogram.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);
@@ -14,6 +20,13 @@ public class LetterHistogram
         keyboard.close();
     }
 
+    /**
+     * Counts the letters of a text, ignoring case. Position 0 counts the a,
+     * position 1 the b, and so on.
+     *
+     * @param text the text
+     * @return an array of 26 counters
+     */
     public static int[] letterHistogram(String text)
     {
         int[] counts = new int[26];
@@ -30,6 +43,11 @@ public class LetterHistogram
         return counts;
     }
 
+    /**
+     * Prints the letters that appear at least once and their counters.
+     *
+     * @param counts the 26 counters
+     */
     public static void printHistogram(int[] counts)
     {
         for (int i = 0; i < counts.length; i++)

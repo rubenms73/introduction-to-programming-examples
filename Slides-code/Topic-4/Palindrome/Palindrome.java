@@ -5,6 +5,12 @@ import java.util.Scanner;
  */
 public class Palindrome
 {
+    /**
+     * Reads a text and says whether it is a palindrome. Two indexes move
+     * from the ends towards the centre while the characters are equal.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);

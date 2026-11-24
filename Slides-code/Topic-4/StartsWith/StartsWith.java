@@ -4,6 +4,12 @@
  */
 public class StartsWith
 {
+    /**
+     * Decides whether a letter is a vowel, uppercase or lowercase.
+     *
+     * @param c the letter to check
+     * @return true if c is a vowel, false otherwise
+     */
     public static boolean isVowel(char c)
     {
         if (c >= 'A' && c <= 'Z')
@@ -12,6 +18,11 @@ public class StartsWith
                 c == 'o' || c == 'u';
     }
 
+    /**
+     * Displays how many command-line words start with a vowel.
+     *
+     * @param args the words to check
+     */
     public static void main(String[] args)
     {
         int vowels = 0;

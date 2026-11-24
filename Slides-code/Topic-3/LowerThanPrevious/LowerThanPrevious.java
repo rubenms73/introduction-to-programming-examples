@@ -6,6 +6,12 @@ import java.util.Scanner;
  */
 public class LowerThanPrevious
 {
+    /**
+     * Reads the sequence and displays how many numbers are lower than
+     * the previous one.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);

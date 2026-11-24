@@ -5,6 +5,12 @@ import java.util.Scanner;
  */
 public class PercentageVariation
 {
+    /**
+     * Reads the initial and final values and displays the percentage change.
+     * Nothing is displayed when the initial value is zero.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);

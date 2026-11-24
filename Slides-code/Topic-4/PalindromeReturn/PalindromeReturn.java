@@ -5,6 +5,13 @@ import java.util.Scanner;
  */
 public class PalindromeReturn
 {
+    /**
+     * Decides whether a text reads the same from left to right and from
+     * right to left.
+     *
+     * @param text the text to check
+     * @return true if text is a palindrome, false otherwise
+     */
     public static boolean isPalindrome(String text)
     {
         int i = 0;
@@ -20,6 +27,11 @@ public class PalindromeReturn
         return true;
     }
 
+    /**
+     * Reads a text and says whether it is a palindrome.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);

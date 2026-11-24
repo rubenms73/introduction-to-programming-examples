@@ -1,7 +1,13 @@
 import java.util.Scanner;
 
+/** Reverses the order of the words of a sentence. */
 public class ReverseWords
 {
+    /**
+     * Reads a sentence and displays it with its words in reverse order.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);
@@ -13,6 +19,13 @@ public class ReverseWords
         keyboard.close();
     }
 
+    /**
+     * Joins the words of a text from the last to the first, separated by
+     * one space.
+     *
+     * @param text the text
+     * @return the words of text in reverse order
+     */
     public static String reverseWords(String text)
     {
         String[] words = splitIntoWords(text);
@@ -28,6 +41,13 @@ public class ReverseWords
         return result;
     }
 
+    /**
+     * Splits a text into words. Each iteration skips the spaces and then
+     * copies the characters up to the next space.
+     *
+     * @param text the text
+     * @return an array with the words of text
+     */
     public static String[] splitIntoWords(String text)
     {
         String[] words = new String[countWords(text)];
@@ -55,6 +75,13 @@ public class ReverseWords
         return words;
     }
 
+    /**
+     * Counts the words of a text: a word starts at each character that is
+     * not a space and comes after a space or at the start.
+     *
+     * @param text the text
+     * @return the number of words
+     */
     public static int countWords(String text)
     {
         int count = 0;

@@ -5,6 +5,12 @@ import java.util.Scanner;
  */
 public class CountDigits
 {
+    /**
+     * Reads an integer and displays how many digits it has. A do-while loop
+     * is used so that 0 counts as one digit.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);

@@ -1,7 +1,13 @@
 import java.util.Scanner;
 
+/** Encrypts and decrypts a text with a Caesar cipher with shift 1. */
 public class CaesarCipher
 {
+    /**
+     * Reads a text and displays it encrypted and decrypted again.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);
@@ -15,6 +21,13 @@ public class CaesarCipher
         keyboard.close();
     }
 
+    /**
+     * Replaces each letter with the next one in the alphabet. Other
+     * characters do not change.
+     *
+     * @param text the text to encrypt
+     * @return the encrypted text
+     */
     public static String encrypt(String text)
     {
         String result = "";
@@ -35,6 +48,13 @@ public class CaesarCipher
         return result;
     }
 
+    /**
+     * Replaces each letter with the previous one in the alphabet. Other
+     * characters do not change.
+     *
+     * @param text the text to decrypt
+     * @return the decrypted text
+     */
     public static String decrypt(String text)
     {
         String result = "";

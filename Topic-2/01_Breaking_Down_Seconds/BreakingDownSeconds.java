@@ -1,7 +1,13 @@
 import java.util.Scanner;
 
+/** Breaks down an amount of seconds into hours, minutes and seconds. */
 public class BreakingDownSeconds
 {
+    /**
+     * Reads the seconds and displays the hours, minutes and seconds.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);

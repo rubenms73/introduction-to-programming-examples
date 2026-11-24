@@ -1,5 +1,11 @@
+/** Tests the CarTrip class. */
 public class Main
 {
+    /**
+     * Creates a trip and displays its costs and consumption.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         CarTrip trip = new CarTrip(200, 12, 1.50);

@@ -1,5 +1,12 @@
+/** Tests the BankAccount class. */
 public class Main
 {
+    /**
+     * Creates two accounts and tries a deposit, a transfer and a withdrawal
+     * that is too large.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         BankAccount first = new BankAccount("Alex", 100);

@@ -3,6 +3,12 @@
  */
 public class Main
 {
+    /**
+     * Creates several points and shows their operations, the defensive copy
+     * and the copy constructor.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Point p = new Point(new double[] {3, 4});

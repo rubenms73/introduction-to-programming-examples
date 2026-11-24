@@ -1,7 +1,13 @@
 import java.util.Scanner;
 
+/** Multiplies two integer matrices. */
 public class MatrixProduct
 {
+    /**
+     * Reads two matrices and prints their product.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);
@@ -19,6 +25,13 @@ public class MatrixProduct
         keyboard.close();
     }
 
+    /**
+     * Reads the number of rows and columns of a matrix and then its values,
+     * row by row.
+     *
+     * @param keyboard the scanner to read from
+     * @return a new matrix with the values read
+     */
     public static int[][] readMatrix(Scanner keyboard)
     {
         System.out.print("Rows and columns: ");
@@ -34,6 +47,14 @@ public class MatrixProduct
         return matrix;
     }
 
+    /**
+     * Multiplies two matrices.
+     *
+     * @param a the first matrix
+     * @param b the second matrix
+     * @return the product a * b, or null if the columns of a do not match
+     * the rows of b
+     */
     public static int[][] multiply(int[][] a, int[][] b)
     {
         // The columns of a must match the rows of b.
@@ -49,6 +70,11 @@ public class MatrixProduct
         return result;
     }
 
+    /**
+     * Prints a matrix, one row per line.
+     *
+     * @param matrix the matrix to print
+     */
     public static void printMatrix(int[][] matrix)
     {
         for (int i = 0; i < matrix.length; i++)

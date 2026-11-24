@@ -1,7 +1,14 @@
 import java.util.Scanner;
 
+/** Converts a non-negative decimal number to binary. */
 public class DecimalToBinary
 {
+    /**
+     * Reads the number and prints its binary digits in reverse order: each
+     * remainder of dividing by 2 is the next digit.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);

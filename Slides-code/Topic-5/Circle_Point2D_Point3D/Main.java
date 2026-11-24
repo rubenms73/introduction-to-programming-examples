@@ -3,6 +3,12 @@
  */
 public class Main
 {
+    /**
+     * Shows composition with Circle and Point2D and inheritance with
+     * Point3D.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         // Constructors and the radius filter

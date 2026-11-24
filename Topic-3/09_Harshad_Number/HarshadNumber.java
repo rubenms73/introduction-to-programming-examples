@@ -1,7 +1,16 @@
 import java.util.Scanner;
 
+/**
+ * Decides whether a positive number is a Harshad number, that is,
+ * divisible by the sum of its digits.
+ */
 public class HarshadNumber
 {
+    /**
+     * Reads the number and says whether it is a Harshad number.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);
@@ -22,6 +31,12 @@ public class HarshadNumber
         keyboard.close();
     }
 
+    /**
+     * Adds the digits of a number.
+     *
+     * @param number a positive number
+     * @return the sum of its digits
+     */
     public static int sumDigits(int number)
     {
         int sum = 0;

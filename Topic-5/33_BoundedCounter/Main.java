@@ -1,5 +1,11 @@
+/** Tests the BoundedCounter class. */
 public class Main
 {
+    /**
+     * Creates a counter and tries to go past its limits.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         BoundedCounter counter = new BoundedCounter(0, 2, 1);

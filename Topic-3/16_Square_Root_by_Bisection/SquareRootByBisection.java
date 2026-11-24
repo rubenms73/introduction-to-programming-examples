@@ -1,7 +1,13 @@
 import java.util.Scanner;
 
+/** Calculates an approximation of a square root with the bisection method. */
 public class SquareRootByBisection
 {
+    /**
+     * Reads the number and the tolerance and displays the approximation.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);
@@ -21,6 +27,15 @@ public class SquareRootByBisection
         keyboard.close();
     }
 
+    /**
+     * Approximates the square root of a number. The root is always in
+     * [low, high]; each step halves the interval until it is smaller than
+     * the tolerance.
+     *
+     * @param number a number from 0 to 1000000
+     * @param tolerance the maximum width of the final interval
+     * @return the middle of the final interval
+     */
     public static double squareRoot(double number, double tolerance)
     {
         double low = 0.0;

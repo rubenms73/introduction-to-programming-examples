@@ -5,6 +5,11 @@ import java.util.Scanner;
  */
 public class MaximumOfThree
 {
+    /**
+     * Reads three integers and displays the largest one.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);

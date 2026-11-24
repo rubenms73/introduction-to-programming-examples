@@ -5,6 +5,11 @@ import java.util.Scanner;
  */
 public class DaysInMonth
 {
+    /**
+     * Reads a month and displays its number of days.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);

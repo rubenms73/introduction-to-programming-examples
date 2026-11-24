@@ -1,7 +1,16 @@
 import java.util.Scanner;
 
+/**
+ * Finds the longest run of equal consecutive values in a sequence that
+ * ends with 0.
+ */
 public class LongestRunInSequence
 {
+    /**
+     * Reads the sequence and displays the length of its longest run.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);

@@ -1,7 +1,13 @@
 import java.util.Scanner;
 
+/** Checks an IPv4 address and extracts its four parts. */
 public class IPv4AddressParts
 {
+    /**
+     * Reads an address and prints its parts or says that it is invalid.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);
@@ -18,6 +24,14 @@ public class IPv4AddressParts
         keyboard.close();
     }
 
+    /**
+     * Extracts the four parts of an address such as "192.168.1.10". Each
+     * part must have from 1 to 3 digits and a value up to 255.
+     *
+     * @param address the address
+     * @return an array with the four parts, or null if the address is not
+     * valid
+     */
     public static int[] parseIPv4(String address)
     {
         int[] parts = new int[4];

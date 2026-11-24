@@ -3,6 +3,12 @@
  */
 public class Main
 {
+    /**
+     * Creates several circles and shows how constructors, setters,
+     * references and the copy constructor work.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Circle c1 = new Circle();

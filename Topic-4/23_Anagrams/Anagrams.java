@@ -1,7 +1,13 @@
 import java.util.Scanner;
 
+/** Decides whether two words are anagrams. */
 public class Anagrams
 {
+    /**
+     * Reads two words and says whether they are anagrams.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);
@@ -18,6 +24,16 @@ public class Anagrams
         keyboard.close();
     }
 
+    /**
+     * Decides whether two words have the same letters, ignoring case. The
+     * letters of the first word add 1 to their counter and those of the
+     * second subtract 1, so all the counters must end at 0.
+     *
+     * @param first the first word
+     * @param second the second word
+     * @return true if they are anagrams, false otherwise or if a word has a
+     * character that is not a letter
+     */
     public static boolean areAnagrams(String first, String second)
     {
         int[] counts = new int[26];

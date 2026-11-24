@@ -3,6 +3,11 @@
  */
 public class Main
 {
+    /**
+     * Creates two patients and shows how the setters filter the values.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Patient ana = new Patient("Ana", "García", 60, 1.65, "A-1024");

@@ -3,6 +3,11 @@
  */
 public class Main
 {
+    /**
+     * Converts two amounts with the static methods of Converter.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         // Static methods are called with the class name, without creating objects

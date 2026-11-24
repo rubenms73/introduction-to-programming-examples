@@ -1,7 +1,16 @@
 import java.util.Scanner;
 
+/**
+ * Decides whether a positive number is automorphic, that is, whether
+ * its square ends with the number itself.
+ */
 public class AutomorphicNumber
 {
+    /**
+     * Reads the number and says whether it is automorphic.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);
@@ -18,6 +27,14 @@ public class AutomorphicNumber
         keyboard.close();
     }
 
+    /**
+     * Decides whether the square of a number ends with the number. The
+     * modulus is 10 raised to the number of digits, so the remainder of the
+     * division gives the last digits of the square.
+     *
+     * @param number a positive number
+     * @return true if number is automorphic, false otherwise
+     */
     public static boolean isAutomorphic(int number)
     {
         long square = (long)number * number;

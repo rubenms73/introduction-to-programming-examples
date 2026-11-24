@@ -1,7 +1,17 @@
 import java.util.Scanner;
 
+/**
+ * Applies the Kaprekar routine to a four-digit number until it reaches
+ * 6174.
+ */
 public class KaprekarRoutine
 {
+    /**
+     * Reads the number and prints each step of the routine and the number
+     * of steps.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);
@@ -27,6 +37,13 @@ public class KaprekarRoutine
         keyboard.close();
     }
 
+    /**
+     * Decides whether the four digits of a number are equal. The routine
+     * does not work for numbers such as 1111.
+     *
+     * @param number a four-digit number
+     * @return true if the four digits are equal, false otherwise
+     */
     public static boolean allDigitsEqual(int number)
     {
         int digit = number % 10;
@@ -39,6 +56,12 @@ public class KaprekarRoutine
         return true;
     }
 
+    /**
+     * Builds the number with the four digits in descending order.
+     *
+     * @param number a number with at most four digits
+     * @return the digits of number sorted from largest to smallest
+     */
     public static int descendingDigits(int number)
     {
         // Take the four digits, leading zeros included, from 9 down to 0.
@@ -56,6 +79,12 @@ public class KaprekarRoutine
         return result;
     }
 
+    /**
+     * Reverses the four digits of a number, leading zeros included.
+     *
+     * @param number a number with at most four digits
+     * @return the number with its four digits reversed (4310 gives 134)
+     */
     public static int reverseFourDigits(int number)
     {
         int result = 0;

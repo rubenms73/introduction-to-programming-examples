@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+/** Solution to the first lab control, exam A: the next prime palindrome. */
 public class Program
 {
     /**

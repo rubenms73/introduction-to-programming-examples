@@ -1,7 +1,13 @@
 import java.util.Scanner;
 
+/** Calculates the distance between two points in the plane. */
 public class DistanceBetweenPoints
 {
+    /**
+     * Reads the coordinates of both points and displays their distance.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);

@@ -1,3 +1,7 @@
+/**
+ * Solution to the second lab control, group PL-02: removing an element
+ * from an array and generating random codes.
+ */
 public class Program
 {
     /**

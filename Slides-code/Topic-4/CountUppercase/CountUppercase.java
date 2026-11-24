@@ -5,6 +5,12 @@ import java.util.Scanner;
  */
 public class CountUppercase
 {
+    /**
+     * Reads a word and displays how many uppercase letters it has between the
+     * first and the last letter.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);

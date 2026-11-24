@@ -5,6 +5,11 @@ import java.util.Scanner;
  */
 public class MaximumOfTwo
 {
+    /**
+     * Reads two integers and displays the larger one.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);

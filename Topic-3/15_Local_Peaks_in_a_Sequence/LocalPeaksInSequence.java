@@ -1,7 +1,18 @@
 import java.util.Scanner;
 
+/**
+ * Counts the local peaks of a sequence that ends with 0: the values
+ * greater than the previous one and the next one.
+ */
 public class LocalPeaksInSequence
 {
+    /**
+     * Reads the sequence and displays the number of local peaks. It keeps
+     * the previous, current and next values; the first and last values are
+     * never peaks.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);

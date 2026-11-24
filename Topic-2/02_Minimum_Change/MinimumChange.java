@@ -1,7 +1,18 @@
 import java.util.Scanner;
 
+/**
+ * Breaks down an amount of money into the minimum number of euro notes
+ * and coins.
+ */
 public class MinimumChange
 {
+    /**
+     * Reads the amount in cents and displays how many notes and coins of
+     * each value are needed. Each division gives the units of one value and
+     * the remainder is what is left for the smaller values.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);

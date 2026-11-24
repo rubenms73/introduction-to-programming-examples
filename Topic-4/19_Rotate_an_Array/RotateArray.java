@@ -1,7 +1,13 @@
 import java.util.Scanner;
 
+/** Rotates an array one position to the right. */
 public class RotateArray
 {
+    /**
+     * Reads an array, rotates it and prints it.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);
@@ -22,6 +28,12 @@ public class RotateArray
         keyboard.close();
     }
 
+    /**
+     * Moves each element one position to the right; the last element goes
+     * to the first position. The array is changed in place.
+     *
+     * @param values the array to rotate
+     */
     public static void rotateRight(int[] values)
     {
         if (values.length > 1)

@@ -3,6 +3,11 @@
  */
 public class CinemaSeats
 {
+    /**
+     * Prints one line per row with the labels of its seats.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         int rows = 3;

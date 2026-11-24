@@ -1,11 +1,22 @@
 import java.util.Locale;
 import java.util.Scanner;
 
+/**
+ * Counts the prime numbers up to a limit and measures how long the
+ * calculation takes.
+ */
 public class CountPrimes
 {
+    /** The largest limit accepted. */
     private static final int MAX_LIMIT = 1_000_000_000;
 
-    // Count primes in [2, limit] by trying divisors up to the square root.
+    /**
+     * Counts the primes in [2, limit]. Each number is checked by trying
+     * divisors up to its square root.
+     *
+     * @param limit the upper limit, from 0 to MAX_LIMIT
+     * @return how many primes there are between 2 and limit
+     */
     public static int countPrimes(int limit)
     {
         int count = 0;
@@ -23,6 +34,12 @@ public class CountPrimes
         return count;
     }
 
+    /**
+     * Takes the limit from the command line or, if there is none, from the
+     * keyboard, and displays the number of primes and the time taken.
+     *
+     * @param args optionally, the upper limit
+     */
     public static void main(String[] args)
     {
         int limit;

@@ -1,7 +1,13 @@
 import java.util.Scanner;
 
+/** Multiplies two non-negative numbers with the Russian peasant method. */
 public class RussianPeasantMultiplication
 {
+    /**
+     * Reads the two factors and displays their product.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);
@@ -21,6 +27,14 @@ public class RussianPeasantMultiplication
         keyboard.close();
     }
 
+    /**
+     * Multiplies two numbers by doubling a and halving b: when b is odd,
+     * the current value of a is added to the result.
+     *
+     * @param a the first factor
+     * @param b the second factor
+     * @return a * b
+     */
     public static int multiply(int a, int b)
     {
         int result = 0;

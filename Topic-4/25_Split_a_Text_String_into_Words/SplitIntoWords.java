@@ -1,7 +1,13 @@
 import java.util.Scanner;
 
+/** Splits a sentence into the words separated by spaces. */
 public class SplitIntoWords
 {
+    /**
+     * Reads a sentence and prints its words, one per line.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);
@@ -15,6 +21,13 @@ public class SplitIntoWords
         keyboard.close();
     }
 
+    /**
+     * Splits a text into words. Each iteration skips the spaces and then
+     * copies the characters up to the next space.
+     *
+     * @param text the text
+     * @return an array with the words of text
+     */
     public static String[] splitIntoWords(String text)
     {
         String[] words = new String[countWords(text)];
@@ -42,6 +55,13 @@ public class SplitIntoWords
         return words;
     }
 
+    /**
+     * Counts the words of a text: a word starts at each character that is
+     * not a space and comes after a space or at the start.
+     *
+     * @param text the text
+     * @return the number of words
+     */
     public static int countWords(String text)
     {
         int count = 0;

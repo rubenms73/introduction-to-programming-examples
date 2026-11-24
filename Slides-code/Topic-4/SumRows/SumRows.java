@@ -5,6 +5,13 @@ import java.util.Scanner;
  */
 public class SumRows
 {
+    /**
+     * Reads the number of rows and columns of a matrix and then its
+     * components, row by row.
+     *
+     * @param keyboard the scanner to read from
+     * @return a new matrix with the values read
+     */
     public static float[][] readFloatMatrix(Scanner keyboard)
     {
         System.out.print("Rows and columns: ");
@@ -19,6 +26,12 @@ public class SumRows
         return matrix;
     }
 
+    /**
+     * Adds the components of each row of a matrix.
+     *
+     * @param matrix the matrix
+     * @return an array with the sum of each row
+     */
     public static float[] sumByRows(float[][] matrix)
     {
         float[] sums = new float[matrix.length];
@@ -27,6 +40,12 @@ public class SumRows
         return sums;
     }
 
+    /**
+     * Adds the components of an array.
+     *
+     * @param values the array
+     * @return the sum of the components
+     */
     public static float sumFloatArray(float[] values)
     {
         float sum = 0;
@@ -35,6 +54,11 @@ public class SumRows
         return sum;
     }
 
+    /**
+     * Reads a matrix and prints the sum of each row.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);

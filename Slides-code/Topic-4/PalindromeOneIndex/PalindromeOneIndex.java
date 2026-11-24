@@ -5,6 +5,12 @@ import java.util.Scanner;
  */
 public class PalindromeOneIndex
 {
+    /**
+     * Reads a text and says whether it is a palindrome. A single index i is
+     * used: the character at i is compared with the one at length - 1 - i.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);

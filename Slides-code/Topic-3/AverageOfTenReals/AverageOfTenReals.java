@@ -5,6 +5,11 @@ import java.util.Scanner;
  */
 public class AverageOfTenReals
 {
+    /**
+     * Reads the ten numbers and displays their average.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);

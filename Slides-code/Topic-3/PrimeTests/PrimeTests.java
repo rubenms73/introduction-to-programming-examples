@@ -3,6 +3,12 @@
  */
 public class PrimeTests
 {
+    /**
+     * Decides whether a number is prime.
+     *
+     * @param number the number to check
+     * @return true if number is prime, false otherwise
+     */
     public static boolean isPrime(int number)
     {
         if (number <= 1)
@@ -13,7 +19,13 @@ public class PrimeTests
         return true;
     }
 
-    // Returns 1 if the check fails and 0 if it passes
+    /**
+     * Checks isPrime with one number and prints a message if it fails.
+     *
+     * @param number the number to check
+     * @param expected the result that isPrime should return
+     * @return 1 if the check fails and 0 if it passes
+     */
     public static int checkPrime(int number, boolean expected)
     {
         boolean actual = isPrime(number);
@@ -27,6 +39,11 @@ public class PrimeTests
         return 0;
     }
 
+    /**
+     * Runs all the checks and displays the number of failures.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         int failures = 0;

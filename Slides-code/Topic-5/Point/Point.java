@@ -5,21 +5,31 @@
  */
 public class Point
 {
+    /** The coordinates; the length of the array is the dimension. */
     private double[] coordinates;
 
-    // A two-dimensional point at the origin
+    /** Creates a two-dimensional point at the origin. */
     public Point()
     {
         this(2);
     }
 
-    // A point at the origin; dimension must be positive
+    /**
+     * Creates a point at the origin.
+     *
+     * @param dimension the dimension; it must be positive
+     */
     public Point(int dimension)
     {
         coordinates = new double[dimension];
     }
 
-    // values must not be null; the coordinates are copied
+    /**
+     * Creates a point with the given coordinates. The values are copied, so
+     * later changes to the array do not change the point.
+     *
+     * @param values the coordinates; it must not be null
+     */
     public Point(double[] values)
     {
         this(values.length);
@@ -27,30 +37,54 @@ public class Point
             coordinates[i] = values[i];
     }
 
-    // Copy constructor; point must not be null
+    /**
+     * Copy constructor: creates a point equal to the given one.
+     *
+     * @param point the point to copy; it must not be null
+     */
     public Point(Point point)
     {
         this(point.coordinates);
     }
 
+    /**
+     * Returns the dimension of the point.
+     *
+     * @return the number of coordinates
+     */
     public int dimension()
     {
         return coordinates.length;
     }
 
-    // index goes from 0 to dimension() - 1
+    /**
+     * Returns one coordinate.
+     *
+     * @param index the position, from 0 to dimension() - 1
+     * @return the coordinate at that position
+     */
     public double getCoordinate(int index)
     {
         return coordinates[index];
     }
 
-    // index goes from 0 to dimension() - 1
+    /**
+     * Changes one coordinate.
+     *
+     * @param index the position, from 0 to dimension() - 1
+     * @param value the new value of the coordinate
+     */
     public void setCoordinate(int index, double value)
     {
         coordinates[index] = value;
     }
 
-    // Square root of the sum of the squared coordinates
+    /**
+     * Calculates the norm: the square root of the sum of the squared
+     * coordinates.
+     *
+     * @return the norm of the point
+     */
     public double norm()
     {
         double sum = 0;
@@ -59,7 +93,12 @@ public class Point
         return Math.sqrt(sum);
     }
 
-    // point must not be null and must have the same dimension
+    /**
+     * Calculates the dot product with another point.
+     *
+     * @param point a point with the same dimension; it must not be null
+     * @return the sum of the products of the coordinates
+     */
     public double dotProduct(Point point)
     {
         double sum = 0;
@@ -68,7 +107,12 @@ public class Point
         return sum;
     }
 
-    // point must not be null and must have the same dimension
+    /**
+     * Calculates the distance to another point.
+     *
+     * @param point a point with the same dimension; it must not be null
+     * @return the distance between both points
+     */
     public double distance(Point point)
     {
         double sum = 0;
@@ -80,8 +124,14 @@ public class Point
         return Math.sqrt(sum);
     }
 
-    // Both norms must be nonzero. Rounding can push the result
-    // slightly outside [-1, 1], so it is clamped to that interval.
+    /**
+     * Calculates the cosine of the angle with another point. Both norms must
+     * be nonzero. Rounding can push the result slightly outside [-1, 1], so
+     * it is clamped to that interval.
+     *
+     * @param point a point with the same dimension
+     * @return the cosine of the angle, between -1 and 1
+     */
     private double cosine(Point point)
     {
         double result = dotProduct(point) / (norm() * point.norm());
@@ -92,13 +142,24 @@ public class Point
         return result;
     }
 
-    // Angle in radians; both norms must be nonzero
+    /**
+     * Calculates the angle with another point. Both norms must be nonzero.
+     *
+     * @param point a point with the same dimension
+     * @return the angle in radians, between 0 and pi
+     */
     public double angle(Point point)
     {
         return Math.acos(cosine(point));
     }
 
-    // The zero vector is orthogonal to every vector
+    /**
+     * Checks whether this point and another one are orthogonal. The zero
+     * vector is orthogonal to every vector.
+     *
+     * @param point a point with the same dimension
+     * @return true if the cosine of the angle is practically zero
+     */
     public boolean isOrthogonal(Point point)
     {
         if (norm() == 0 || point.norm() == 0)
@@ -106,6 +167,11 @@ public class Point
         return Math.abs(cosine(point)) <= 1e-12;
     }
 
+    /**
+     * Returns the coordinates with two decimals, for example "(3.00, 4.00)".
+     *
+     * @return the text that represents the point
+     */
     @Override
     public String toString()
     {
@@ -119,7 +185,14 @@ public class Point
         return text + ")";
     }
 
-    // Exact comparison: it does not check whether two points are merely close
+    /**
+     * Two points are equal when they have the same dimension and the same
+     * coordinates. The comparison is exact: it does not check whether two
+     * points are merely close.
+     *
+     * @param obj the object to compare with
+     * @return true if obj is a point with the same coordinates
+     */
     @Override
     public boolean equals(Object obj)
     {

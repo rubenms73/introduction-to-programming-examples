@@ -5,6 +5,13 @@ import java.util.Scanner;
  */
 public class SumMatrices
 {
+    /**
+     * Reads the number of rows and columns of a matrix and then its
+     * components, row by row.
+     *
+     * @param keyboard the scanner to read from
+     * @return a new matrix with the values read
+     */
     public static int[][] readIntMatrix(Scanner keyboard)
     {
         System.out.print("Rows and columns: ");
@@ -19,6 +26,11 @@ public class SumMatrices
         return matrix;
     }
 
+    /**
+     * Prints a matrix, one row per line.
+     *
+     * @param matrix the matrix to print
+     */
     public static void printIntMatrix(int[][] matrix)
     {
         for (int i = 0; i < matrix.length; i++)
@@ -29,6 +41,11 @@ public class SumMatrices
         }
     }
 
+    /**
+     * Reads two matrices and prints their sum.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);

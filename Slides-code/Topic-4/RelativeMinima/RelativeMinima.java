@@ -5,6 +5,12 @@ import java.util.Scanner;
  */
 public class RelativeMinima
 {
+    /**
+     * Reads the size of an array and then its components.
+     *
+     * @param keyboard the scanner to read from
+     * @return a new array with the values read
+     */
     public static double[] readDoubleArray(Scanner keyboard)
     {
         System.out.print("Array size: ");
@@ -17,6 +23,13 @@ public class RelativeMinima
         return values;
     }
 
+    /**
+     * Counts the relative minima: the values lower than the previous one
+     * and the next one. The first and last values are never minima.
+     *
+     * @param values the time series
+     * @return the number of relative minima
+     */
     public static int countRelativeMinima(double[] values)
     {
         int count = 0;
@@ -27,6 +40,11 @@ public class RelativeMinima
         return count;
     }
 
+    /**
+     * Reads a time series and displays its number of relative minima.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);

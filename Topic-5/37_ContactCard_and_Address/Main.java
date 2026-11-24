@@ -1,5 +1,11 @@
+/** Tests the ContactCard and Address classes. */
 public class Main
 {
+    /**
+     * Shows that the contact card keeps its own copy of the address.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Address address = new Address("1 Main Street", "Oviedo", "33001");

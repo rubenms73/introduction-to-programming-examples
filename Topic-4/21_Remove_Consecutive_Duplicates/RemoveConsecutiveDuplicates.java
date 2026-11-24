@@ -1,5 +1,11 @@
+/** Removes the consecutive repeated values of an array. */
 public class RemoveConsecutiveDuplicates
 {
+    /**
+     * Removes the duplicates of an example array and prints the result.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         int[] values = {1, 1, 2, 2, 2, 5, 7, 7};
@@ -8,6 +14,14 @@ public class RemoveConsecutiveDuplicates
             System.out.println(result[i]);
     }
 
+    /**
+     * Builds a new array without consecutive repeated values. A first pass
+     * counts the values that differ from the previous one, to know the
+     * size of the result.
+     *
+     * @param values the original array
+     * @return a new array without consecutive duplicates
+     */
     public static int[] removeDuplicates(int[] values)
     {
         if (values.length == 0)

@@ -5,6 +5,12 @@ import java.util.Scanner;
  */
 public class Temperatures
 {
+    /**
+     * Calculates the average of the components of an array.
+     *
+     * @param v a non-empty array
+     * @return the average of the components of v
+     */
     public static double average(int[] v)
     {
         long sum = 0;
@@ -13,6 +19,12 @@ public class Temperatures
         return (double) sum / v.length;
     }
 
+    /**
+     * Finds the largest component of an array.
+     *
+     * @param v a non-empty array
+     * @return the largest component of v
+     */
     public static int maximum(int[] v)
     {
         int max = v[0];
@@ -22,6 +34,11 @@ public class Temperatures
         return max;
     }
 
+    /**
+     * Reads the 24 temperatures and displays their maximum and average.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);

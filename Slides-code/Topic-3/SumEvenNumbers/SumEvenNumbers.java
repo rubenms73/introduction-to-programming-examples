@@ -5,6 +5,11 @@ import java.util.Scanner;
  */
 public class SumEvenNumbers
 {
+    /**
+     * Reads a number and displays the sum of the even numbers from 2 up to it.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);

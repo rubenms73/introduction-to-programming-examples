@@ -5,6 +5,11 @@ import java.util.Scanner;
  */
 public class AddTwoNumbers
 {
+    /**
+     * Reads the two numbers and displays their sum.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);
