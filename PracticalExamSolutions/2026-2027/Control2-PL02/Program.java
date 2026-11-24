@@ -1,23 +1,40 @@
 public class Program
 {
-    // Shifts the elements after index one position to the left and puts
-    // fillValue in the last position. It changes the array it receives,
-    // so it returns the same reference.
+    /**
+     * Removes the element at position index: the elements after it move
+     * one position to the left and fillValue goes into the last position.
+     * The method changes the array it receives, so it returns the same
+     * reference.
+     *
+     * @param values the array to change
+     * @param index the position of the element to remove
+     * @param fillValue the value for the last position
+     * @return the same array, already changed
+     */
     public static int[] removeFixed(int[] values, int index, int fillValue)
     {
+        // Each element takes the value of the next one
         for (int i = index; i < values.length - 1; i++)
             values[i] = values[i + 1];
+        // The last position is now free
         values[values.length - 1] = fillValue;
         return values;
     }
 
-    // Even positions get a random letter and odd positions a random digit.
-    // Math.random() * 26 is in [0, 26), so the cast gives 0..25, and
-    // adding it to 'A' gives a letter from 'A' to 'Z'.
+    /**
+     * Builds a random code that alternates letters and digits: even
+     * positions get an uppercase letter and odd positions a digit.
+     *
+     * @param length the number of characters of the code
+     * @return the code (for example "K3B7Q" for length 5)
+     */
     public static String randomCode(int length)
     {
         String code = "";
         for (int i = 0; i < length; i++)
+            // Math.random() * 26 is in [0, 26), so the cast gives 0..25,
+            // and adding it to 'A' gives a letter from 'A' to 'Z'.
+            // The same idea with '0' and 10 gives a digit.
             if (i % 2 == 0)
                 code += (char) ('A' + (int) (Math.random() * 26));
             else
@@ -25,7 +42,11 @@ public class Program
         return code;
     }
 
-    // Prints the components of an array on one line
+    /**
+     * Prints the components of an array on one line.
+     *
+     * @param values the array to print
+     */
     public static void printArray(int[] values)
     {
         for (int i = 0; i < values.length; i++)
@@ -33,6 +54,11 @@ public class Program
         System.out.println();
     }
 
+    /**
+     * Tests both methods, showing the expected and the actual result.
+     *
+     * @param args not used
+     */
     public static void main(String[] args)
     {
         // Exercise 1: the example and the boundary cases
