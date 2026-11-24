@@ -1,5 +1,8 @@
 public class Program
 {
+    // Shifts the elements after index one position to the left and puts
+    // fillValue in the last position. It changes the array it receives,
+    // so it returns the same reference.
     public static int[] removeFixed(int[] values, int index, int fillValue)
     {
         for (int i = index; i < values.length - 1; i++)
@@ -8,6 +11,9 @@ public class Program
         return values;
     }
 
+    // Even positions get a random letter and odd positions a random digit.
+    // Math.random() * 26 is in [0, 26), so the cast gives 0..25, and
+    // adding it to 'A' gives a letter from 'A' to 'Z'.
     public static String randomCode(int length)
     {
         String code = "";
@@ -19,6 +25,7 @@ public class Program
         return code;
     }
 
+    // Prints the components of an array on one line
     public static void printArray(int[] values)
     {
         for (int i = 0; i < values.length; i++)
@@ -28,6 +35,8 @@ public class Program
 
     public static void main(String[] args)
     {
+        // Exercise 1: the example and the boundary cases
+        // (one element and the last index)
         int[] values = {4, 7, 2, 9};
         int[] result = removeFixed(values, 1, 0);
         System.out.print("Expected 4 2 9 0, actual ");
@@ -38,7 +47,8 @@ public class Program
         System.out.print("Expected 1 2 7, actual ");
         printArray(removeFixed(new int[] {1, 2, 3}, 2, 7));
 
-        // The codes are random: check that they alternate letters and digits
+        // Exercise 2: the codes are random, so we check that they
+        // have the right length and alternate letters and digits
         System.out.println("Length 0: expected an empty code, actual \"" + randomCode(0) + "\"");
         System.out.println("Length 1: expected a letter, actual " + randomCode(1));
         System.out.println("Length 5: expected letter-digit-letter-digit-letter, actual " + randomCode(5));

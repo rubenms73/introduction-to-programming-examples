@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Program
 {
+    // Adds the divisors of number that are smaller than number
     public static int sumOfProperDivisors(int number)
     {
         int sum = 0;
@@ -11,6 +12,8 @@ public class Program
         return sum;
     }
 
+    // Tries n + 1, n + 2, ... until the sum of the proper divisors
+    // is greater than the number, that is, until it is abundant
     public static int nextAbundant(int n)
     {
         int candidate = n + 1;
@@ -19,6 +22,7 @@ public class Program
         return candidate;
     }
 
+    // Reads n, calls the method and displays the result
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);
