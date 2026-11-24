@@ -120,3 +120,9 @@ follow their own syntax and formatting conventions.
 Loops and conditional branches whose body is a single statement omit braces.
 Braces are retained when needed to preserve the association of an `else` with
 its `if`. Bodies with several statements use braces in Allman style.
+
+Every Java class, attribute, constructor and method has a Javadoc comment
+(`/** ... */`) that explains what it does, with `@param` for each parameter and
+`@return` for the result. Short `//` comments inside the methods explain the
+steps that are harder to follow. To generate the HTML documentation of a
+program, run `javadoc -d doc *.java` in its folder.
