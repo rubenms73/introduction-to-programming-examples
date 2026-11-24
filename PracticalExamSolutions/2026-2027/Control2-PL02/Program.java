@@ -23,7 +23,7 @@ public class Program
         return code;
     }
 
-    public static void show(int[] values)
+    public static void printArray(int[] values)
     {
         for (int i = 0; i < values.length; i++)
         {
@@ -37,12 +37,12 @@ public class Program
         int[] values = {4, 7, 2, 9};
         int[] result = removeFixed(values, 1, 0);
         System.out.print("Expected 4 2 9 0, actual ");
-        show(result);
+        printArray(result);
         System.out.println("Same array: expected true, actual " + (result == values));
         System.out.print("Expected -1, actual ");
-        show(removeFixed(new int[] {8}, 0, -1));
+        printArray(removeFixed(new int[] {8}, 0, -1));
         System.out.print("Expected 1 2 7, actual ");
-        show(removeFixed(new int[] {1, 2, 3}, 2, 7));
+        printArray(removeFixed(new int[] {1, 2, 3}, 2, 7));
 
         // The codes are random: check that they alternate letters and digits
         System.out.println("Length 0: expected an empty code, actual \"" + randomCode(0) + "\"");
