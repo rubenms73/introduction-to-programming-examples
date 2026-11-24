@@ -1,15 +1,11 @@
 import java.util.Scanner;
 
-/**
- * Laboratory Control 1, model D: the next abundant number.
- */
 public class Program
 {
-    // Sum of the divisors smaller than the number
     public static int sumOfProperDivisors(int number)
     {
         int sum = 0;
-        for (int divisor = 1; divisor <= number / 2; divisor++)
+        for (int divisor = 1; divisor < number; divisor++)
         {
             if (number % divisor == 0)
                 sum += divisor;
@@ -30,7 +26,6 @@ public class Program
     public static void main(String[] args)
     {
         Scanner keyboard = new Scanner(System.in);
-        System.out.print("n: ");
         int n = keyboard.nextInt();
         System.out.println(nextAbundant(n));
         keyboard.close();
