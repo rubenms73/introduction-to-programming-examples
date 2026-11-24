@@ -26,6 +26,14 @@ Solutions are grouped by topic, following the classroom exercise handout:
 - [Topic 4: Arrays, Strings and Matrices](Topic-4/README.md)
 - [Topic 5: Classes and Objects](Topic-5/README.md)
 
+## Class examples
+
+[Programs explained in the theory classes](Class-examples/README.md), grouped by
+topic. They are not numbered; each one follows the slides of its topic.
+
+- Topic 5: [Circle, Point2D and Point3D](Class-examples/Topic-5/Circle_Point2D_Point3D/README.md):
+  composition, inheritance, `protected`, `super` and deep copy.
+
 ## Compiling and running Java exercises
 
 Use JDK 11 or later. Each exercise folder contains all its classes in the default
