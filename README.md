@@ -32,6 +32,11 @@ Solutions are grouped by topic, following the classroom exercise handout:
 grouped by topic from Topic 1 to Topic 5. When a slide shows only a fragment,
 the program adds what is needed to run it.
 
+## Practical exam solutions
+
+[Solutions to the laboratory controls](PracticalExamSolutions/README.md),
+grouped by academic year, with each handout and a runnable `Program.java`.
+
 ## Compiling and running Java exercises
 
 Use JDK 11 or later. Each exercise folder contains all its classes in the default
