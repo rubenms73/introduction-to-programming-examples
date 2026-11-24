@@ -4,7 +4,7 @@ Each exercise is self-contained and uses the default Java package. Open an
 exercise folder for its compile and run instructions. Requires JDK 11 or later.
 The commands in each example README support Windows (PowerShell and CMD),
 macOS and Linux. Compile inside one example folder at a time.
-Exercise numbers match the classroom exercise handout.
+Exercise numbers match the additional exercises handout.
 
 | Exercise | Run after compiling this example |
 | --- | --- |
