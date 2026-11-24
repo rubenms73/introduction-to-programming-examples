@@ -1,0 +1,87 @@
+# folder ; main class ; standard input (\n = new line) ; command-line arguments
+PracticalExamSolutions/2026-2027/Control1-ExamA ; Program ; 31
+PracticalExamSolutions/2026-2027/Control1-ExamD ; Program ; 12
+PracticalExamSolutions/2026-2027/Control2-PL02 ; Program ;
+Slides-code/Topic-1/HelloWorld ; HelloWorld ;
+Slides-code/Topic-1/Welcome ; Welcome ;
+Slides-code/Topic-2/AddTwoNumbers ; AddTwoNumbers ; 12 30
+Slides-code/Topic-2/AreaOfCircle ; AreaOfCircle ; 2
+Slides-code/Topic-2/TwoNumberAverage ; TwoNumberAverage ; 7 4
+Slides-code/Topic-2/TwoNumberTrueAverage ; TwoNumberTrueAverage ; 7 4
+Slides-code/Topic-3/Acceleration ; Acceleration ;
+Slides-code/Topic-3/AverageOfTenReals ; AverageOfTenReals ; 1 2 3 4 5 6 7 8 9 10
+Slides-code/Topic-3/BusFare ; BusFare ; 2 70
+Slides-code/Topic-3/Celsius ; Celsius ; 25
+Slides-code/Topic-3/CinemaSeats ; CinemaSeats ;
+Slides-code/Topic-3/Combinatorial ; Combinatorial ;
+Slides-code/Topic-3/ConeArea ; ConeArea ; 3 5
+Slides-code/Topic-3/CountDigits ; CountDigits ; -4507
+Slides-code/Topic-3/DaysInMonth ; DaysInMonth ; 4
+Slides-code/Topic-3/Divisors ; Divisors ; 12
+Slides-code/Topic-3/FinalGrade ; FinalGrade ; 7.5
+Slides-code/Topic-3/LowerThanPrevious ; LowerThanPrevious ; 5 3 4 2 1 0
+Slides-code/Topic-3/MaximumOfThree ; MaximumOfThree ; 4 9 7
+Slides-code/Topic-3/MaximumOfTwo ; MaximumOfTwo ; 4 9
+Slides-code/Topic-3/PercentageVariation ; PercentageVariation ; 80 100
+Slides-code/Topic-3/Prime ; Prime ; 29
+Slides-code/Topic-3/PrimeTests ; PrimeTests ;
+Slides-code/Topic-3/SumEvenNumbers ; SumEvenNumbers ; 10
+Slides-code/Topic-3/SumPositiveNumbers ; SumPositiveNumbers ; 5 3 8 0
+Slides-code/Topic-4/CountUppercase ; CountUppercase ; HeLLoWorlD
+Slides-code/Topic-4/LinearSearch ; LinearSearch ; 5 4 8 1 9 2 9
+Slides-code/Topic-4/LinearSearchBreak ; LinearSearchBreak ; 5 4 8 1 9 2 9
+Slides-code/Topic-4/LinearSearchReturn ; LinearSearchReturn ; 5 4 8 1 9 2 7
+Slides-code/Topic-4/MatrixProduct ; MatrixProduct ; 2 3 1 2 3 4 5 6 3 2 7 8 9 10 11 12
+Slides-code/Topic-4/Palindrome ; Palindrome ; racecar
+Slides-code/Topic-4/PalindromeOneIndex ; PalindromeOneIndex ; racecar
+Slides-code/Topic-4/PalindromeReturn ; PalindromeReturn ; racecar
+Slides-code/Topic-4/RelativeMinima ; RelativeMinima ; 7 3 1 4 2 5 0 6
+Slides-code/Topic-4/StartsWith ; StartsWith ; ; apple Banana orange tree Umbrella
+Slides-code/Topic-4/SumMatrices ; SumMatrices ; 2 3 1 2 3 4 5 6 2 3 10 20 30 40 50 60
+Slides-code/Topic-4/SumRows ; SumRows ; 2 3 1 2 3 4 5 6
+Slides-code/Topic-4/Temperatures ; Temperatures ; 8 7 7 6 6 6 7 9 11 13 15 17 18 19 20 20 19 17 15 13 12 11 10 9
+Slides-code/Topic-5/Circle ; Main ;
+Slides-code/Topic-5/Circle_Point2D_Point3D ; Main ;
+Slides-code/Topic-5/Converter ; Main ;
+Slides-code/Topic-5/Patient ; Main ;
+Slides-code/Topic-5/Point ; Main ;
+Topic-1/HelloWorld ; HelloWorld ;
+Topic-1/PrimeCount ; CountPrimes ; ; 1000
+Topic-2/01_Breaking_Down_Seconds ; BreakingDownSeconds ; 3725
+Topic-2/02_Minimum_Change ; MinimumChange ; 18788
+Topic-2/03_Distance_Between_Two_Points ; DistanceBetweenPoints ; 0 0 3 4
+Topic-2/04_Invoice_With_Discount_and_VAT ; InvoiceWithDiscountAndVat ; 100 10 21
+Topic-3/05_Fibonacci_Number ; FibonacciNumber ; 10
+Topic-3/06_First_Fibonacci_Number_Above_a_Limit ; FirstFibonacciAboveLimit ; 100
+Topic-3/07_Collatz_Sequence ; CollatzSequence ; 6
+Topic-3/08_Numeric_Palindrome ; NumericPalindrome ; 12321
+Topic-3/09_Harshad_Number ; HarshadNumber ; 18
+Topic-3/10_Armstrong_Number ; ArmstrongNumber ; 153
+Topic-3/11_Automorphic_Number ; AutomorphicNumber ; 76
+Topic-3/12_Decimal_to_Binary ; DecimalToBinary ; 13
+Topic-3/13_Binary_to_Decimal ; BinaryToDecimal ; 1101
+Topic-3/14_Longest_Run_in_a_Sequence ; LongestRunInSequence ; 1 2 2 2 3 3 0
+Topic-3/15_Local_Peaks_in_a_Sequence ; LocalPeaksInSequence ; 1 3 2 5 4 0
+Topic-3/16_Square_Root_by_Bisection ; SquareRootByBisection ; 2 0.000001
+Topic-3/17_Russian_Peasant_Multiplication ; RussianPeasantMultiplication ; 13 11
+Topic-3/18_Kaprekar_Routine ; KaprekarRoutine ; 3524
+Topic-4/19_Rotate_an_Array ; RotateArray ; 4 1 2 3 4
+Topic-4/20_Merge_Two_Sorted_Arrays ; MergeSortedArrays ;
+Topic-4/21_Remove_Consecutive_Duplicates ; RemoveConsecutiveDuplicates ;
+Topic-4/22_Caesar_Cipher ; CaesarCipher ; Hello, Zoe!
+Topic-4/23_Anagrams ; Anagrams ; Listen\nSilent
+Topic-4/24_Letter_Histogram ; LetterHistogram ; Hello World
+Topic-4/25_Split_a_Text_String_into_Words ; SplitIntoWords ;   the quick  brown fox 
+Topic-4/26_Reverse_the_Order_of_Words ; ReverseWords ; the quick brown fox
+Topic-4/27_IPv4_Address_Parts ; IPv4AddressParts ; 192.168.1.10
+Topic-4/28_Run_Length_Encoding ; RunLengthEncoding ; aaabccdddd
+Topic-4/29_Saddle_Point_in_a_Matrix ; SaddlePoint ; 3 3 1 2 3 4 5 6 7 8 9
+Topic-4/30_Tic_Tac_Toe_Winner ; TicTacToeWinner ;
+Topic-4/38_Matrix_Product ; MatrixProduct ; 2 3 1 2 3 4 5 6 3 2 7 8 9 10 11 12
+Topic-5/31_BankAccount ; Main ;
+Topic-5/32_CarTrip ; Main ;
+Topic-5/33_BoundedCounter ; Main ;
+Topic-5/34_StudentRecord ; Main ;
+Topic-5/35_PasswordPolicy ; Main ;
+Topic-5/36_Book ; Main ;
+Topic-5/37_ContactCard_and_Address ; Main ;

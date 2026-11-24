@@ -1,5 +1,7 @@
 # Introduction to Programming
 
+University of Oviedo · Rubén Muñiz Sánchez
+
 Code examples for Introduction to Programming at the University of Oviedo.
 
 ## Topic 1: languages and execution
@@ -101,6 +103,14 @@ Exercises 31–37 include `Main.java` demonstrations. Other examples either prom
 for input or use sample values in their main method. Exercise numbers follow
 the additional exercises handout. Introductory solutions assume inputs within the
 exercise's intended domain and numeric range.
+
+## Checking the examples
+
+Run `python3 tools/check_examples.py` (Windows: `py -3 tools/check_examples.py`)
+with JDK 11 or later on `PATH` to compile every Java example on its own, run it
+with the input listed in `tools/examples.txt` and compare its output with the
+one stored in `tools/expected`. GitHub Actions runs the same check with JDK 11,
+17, 21 and 25 on Windows, macOS and Linux.
 
 ## Topic 1 demonstration
 

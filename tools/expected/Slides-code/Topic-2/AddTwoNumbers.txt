@@ -1,0 +1,1 @@
+Two integers (0..1000): Their sum is 42

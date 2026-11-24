@@ -1,0 +1,2 @@
+Enter positive integers ending in 0:
+Longest run: 3

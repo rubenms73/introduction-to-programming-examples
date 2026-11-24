@@ -1,0 +1,1 @@
+Decimal number: Binary digits in reverse order: 1011

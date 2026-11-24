@@ -1,0 +1,12 @@
+c1: Circle[centre=(3, 4), r=2]
+c2 (invalid radius -5): Circle[centre=(0, 0), r=1]
+Area of c1: 12.57
+Area of a circle of radius 2: 12.57
+After copy.setX(10):
+  c1:   Circle[centre=(3, 4), r=2]
+  copy: Circle[centre=(10, 4), r=2]
+Copy of null: Circle[centre=(0, 0), r=1]
+p: (1, 2, 2)
+p.getX(): 1
+p.norm(): 3.00
+After q.setZ(7), p: (1, 2, 2), q: (1, 2, 7)

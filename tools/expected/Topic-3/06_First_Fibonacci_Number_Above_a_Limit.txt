@@ -1,0 +1,2 @@
+Limit: First Fibonacci number above 100: 144
+Position: 12

@@ -1,0 +1,4 @@
+200.0 km, 12.0 litres, 1.5 euro/litre
+Total cost: 18.00 euros
+Consumption: 6.00 litres/100 km
+Cost: 0.09 euros/km

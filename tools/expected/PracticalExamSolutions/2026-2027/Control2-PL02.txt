@@ -1,0 +1,7 @@
+Expected 4 2 9 0, actual 4 2 9 0 
+Same array: expected true, actual true
+Expected -1, actual -1 
+Expected 1 2 7, actual 1 2 7 
+Length 0: expected an empty code, actual ""
+Length 1: expected a letter, actual <random code>
+Length 5: expected letter-digit-letter-digit-letter, actual <random code>

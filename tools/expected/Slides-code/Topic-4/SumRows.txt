@@ -1,0 +1,2 @@
+Rows and columns: Components: Row 0: 6.00
+Row 1: 15.00

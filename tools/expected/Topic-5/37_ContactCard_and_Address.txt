@@ -1,0 +1,5 @@
+Alex <alex@example.com>
+1 Main Street, 33001 Oviedo
+After changing the original address: 1 Main Street, 33001 Oviedo
+After changing the returned copy: 1 Main Street, 33001 Oviedo
+After explicitly updating the address: 1 Main Street, 33001 Aviles

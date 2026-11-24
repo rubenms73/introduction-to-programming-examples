@@ -1,0 +1,4 @@
+Ana García (A-1024)
+BMI: 22.0
+Weight after setWeight(-70): 60.0
+The BMI of a patient with unknown data cannot be calculated

@@ -1,0 +1,1 @@
+Text: racecar is a palindrome

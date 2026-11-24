@@ -1,0 +1,5 @@
+Deposit accepted: true
+Transfer accepted: true
+Alex: 85.0 euro
+Sam: 90.0 euro
+Excessive withdrawal accepted: false

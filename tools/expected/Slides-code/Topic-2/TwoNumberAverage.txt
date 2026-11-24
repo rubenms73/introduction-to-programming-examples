@@ -1,0 +1,1 @@
+Two integers (0..1000): Integer average: 5

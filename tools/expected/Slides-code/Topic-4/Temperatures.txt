@@ -1,0 +1,2 @@
+Day temperatures: Maximum: 20
+Average: 12.29

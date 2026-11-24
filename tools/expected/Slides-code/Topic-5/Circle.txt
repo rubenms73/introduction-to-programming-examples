@@ -1,0 +1,10 @@
+c1: Circle[(0, 0), r=1]
+c2: Circle[(0, 0), r=5]
+c3: Circle[(10, 20), r=8]
+Area of c3: 201.06
+c1 after setRadius(-4): Circle[(0, 0), r=1]
+c2 after e.setRadius(7): Circle[(0, 0), r=7]
+e and c2 are the same object: true
+c2: Circle[(0, 0), r=7], copy: Circle[(0, 0), r=2]
+copy equals c2: false
+c3 is larger

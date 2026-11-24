@@ -1,0 +1,2 @@
+Primes up to 1000: 168
+Calculation time: <time> s

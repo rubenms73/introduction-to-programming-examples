@@ -1,0 +1,6 @@
+Counter[0..2] = 1
+Increment accepted: true
+Increment at maximum accepted: false
+Counter[0..2] = 2
+After reset: Counter[0..2] = 0
+Decrement at minimum accepted: false

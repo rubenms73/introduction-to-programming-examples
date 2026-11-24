@@ -1,0 +1,1 @@
+Enter a positive number (0 to finish): Enter a positive number (0 to finish): Enter a positive number (0 to finish): Enter a positive number (0 to finish): Sum: 16

@@ -1,0 +1,1 @@
+Three-digit number: It is an Armstrong number
