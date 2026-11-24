@@ -26,20 +26,11 @@ Solutions are grouped by topic, following the classroom exercise handout:
 - [Topic 4: Arrays, Strings and Matrices](Topic-4/README.md)
 - [Topic 5: Classes and Objects](Topic-5/README.md)
 
-## Class examples
+## Code from the slides
 
-[Programs explained in the theory classes](Class-examples/README.md), grouped by
-topic. They are not numbered; each one follows the slides of its topic.
-
-- Topic 5:
-  - [Circle, Point2D and Point3D](Class-examples/Topic-5/Circle_Point2D_Point3D/README.md):
-    composition, inheritance, `protected`, `super` and deep copy.
-  - [Patient](Class-examples/Topic-5/Patient/README.md): `String` attributes,
-    setters that filter values and `this(...)`.
-  - [Point](Class-examples/Topic-5/Point/README.md): an array attribute,
-    defensive copying and methods that receive another point.
-
-Each example includes a `Main.java` program that runs it.
+[Complete programs for the code in the theory slides](Slides-code/README.md),
+grouped by topic from Topic 1 to Topic 5. When a slide shows only a fragment,
+the program adds what is needed to run it.
 
 ## Compiling and running Java exercises
 
