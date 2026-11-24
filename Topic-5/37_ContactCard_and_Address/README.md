@@ -2,7 +2,7 @@
 
 ## Problem statement
 
-**Input and behaviour:** Constructor preconditions: non-null, non-empty text fields and a non-null Address. Compare the email text exactly, including letter case, with `equals()`, and provide a matching `hashCode()`. Copy the address in the constructor, setter and getter.
+**Input and behaviour:** Constructor preconditions: non-null, non-empty text fields and a non-null Address. Compare the email text exactly, including letter case, with `equals()`. Copy the address in the constructor, setter and getter.
 
 Design an `Address` class and a `ContactCard` class.
 

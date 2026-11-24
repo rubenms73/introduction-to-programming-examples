@@ -54,11 +54,6 @@ public class ContactCard
         return email.equals(other.email);
     }
 
-    @Override public int hashCode()
-    {
-        return email.hashCode();
-    }
-
     @Override public String toString()
     {
         return name + " <" + email + ">\n" + address;

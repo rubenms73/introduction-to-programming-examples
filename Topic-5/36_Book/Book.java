@@ -67,11 +67,6 @@ public class Book
         return isbn.equals(other.isbn);
     }
 
-    @Override public int hashCode()
-    {
-        return isbn.hashCode();
-    }
-
     @Override public String toString()
     {
         return title + ", by " + author + " (" + year + ") [ISBN: " + isbn + "]";

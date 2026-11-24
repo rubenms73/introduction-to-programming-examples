@@ -2,7 +2,7 @@
 
 ## Problem statement
 
-**Input and behaviour:** Constructor preconditions: non-null, non-empty ISBN, title and author; positive publication year. Compare the ISBN text exactly with `equals()`, and provide a matching `hashCode()` based on the ISBN string's code.
+**Input and behaviour:** Constructor preconditions: non-null, non-empty ISBN, title and author; positive publication year. Compare the ISBN text exactly with `equals()`.
 
 Design a `Book` class that stores an ISBN, a title, an author and a publication year.
 
