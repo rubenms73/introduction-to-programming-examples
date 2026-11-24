@@ -3,9 +3,7 @@ public class Program
     public static int[] removeFixed(int[] values, int index, int fillValue)
     {
         for (int i = index; i < values.length - 1; i++)
-        {
             values[i] = values[i + 1];
-        }
         values[values.length - 1] = fillValue;
         return values;
     }
@@ -14,21 +12,17 @@ public class Program
     {
         String code = "";
         for (int i = 0; i < length; i++)
-        {
             if (i % 2 == 0)
                 code += (char) ('A' + (int) (Math.random() * 26));
             else
                 code += (char) ('0' + (int) (Math.random() * 10));
-        }
         return code;
     }
 
     public static void printArray(int[] values)
     {
         for (int i = 0; i < values.length; i++)
-        {
             System.out.print(values[i] + " ");
-        }
         System.out.println();
     }
 

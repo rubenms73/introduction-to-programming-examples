@@ -15,19 +15,15 @@ public class MaximumOfThree
 
         int maximum;
         if (a >= b)
-        {
             if (a >= c)
                 maximum = a;
             else
                 maximum = c;
-        }
         else
-        {
             if (b >= c)
                 maximum = b;
             else
                 maximum = c;
-        }
         System.out.printf("Maximum: %d\n", maximum);
         keyboard.close();
     }

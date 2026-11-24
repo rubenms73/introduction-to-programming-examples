@@ -10,9 +10,7 @@ public class CinemaSeats
         for (int row = 1; row <= rows; row++)
         {
             for (int seat = 1; seat <= seatsPerRow; seat++)
-            {
                 System.out.printf("R%d-S%d ", row, seat);
-            }
             System.out.println();
         }
     }

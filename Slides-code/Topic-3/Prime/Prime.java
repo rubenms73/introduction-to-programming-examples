@@ -11,10 +11,8 @@ public class Prime
         if (number <= 1)
             return false;
         for (int divisor = 2; divisor <= number / 2; divisor++)
-        {
             if (number % divisor == 0)
                 return false;
-        }
         return true;
     }
 
@@ -28,24 +26,20 @@ public class Prime
         boolean isPrime = number > 1;
         int divisor = 2;
         while (divisor <= number / 2 && isPrime)
-        {
             if (number % divisor == 0)
                 isPrime = false;
             else
                 divisor++;
-        }
         System.out.println("while:  " + isPrime);
 
         // Version 2: the same search with break
         boolean isPrimeBreak = number > 1;
         for (int d = 2; d <= number / 2; d++)
-        {
             if (number % d == 0)
             {
                 isPrimeBreak = false;
                 break;
             }
-        }
         System.out.println("break:  " + isPrimeBreak);
 
         System.out.println("method: " + isPrime(number));

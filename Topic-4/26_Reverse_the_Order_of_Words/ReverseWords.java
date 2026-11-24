@@ -37,22 +37,16 @@ public class ReverseWords
         while (i < text.length())
         {
             while (i < text.length() && text.charAt(i) == ' ')
-            {
                 i++;
-            }
 
             if (i < text.length())
             {
                 int start = i;
                 while (i < text.length() && text.charAt(i) != ' ')
-                {
                     i++;
-                }
                 String word = "";
                 for (int j = start; j < i; j++)
-                {
                     word = word + text.charAt(j);
-                }
                 words[position] = word;
                 position++;
             }
@@ -67,7 +61,6 @@ public class ReverseWords
         boolean insideWord = false;
 
         for (int i = 0; i < text.length(); i++)
-        {
             if (text.charAt(i) == ' ')
                 insideWord = false;
             else if (!insideWord)
@@ -75,7 +68,6 @@ public class ReverseWords
                 count++;
                 insideWord = true;
             }
-        }
 
         return count;
     }

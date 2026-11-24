@@ -16,9 +16,7 @@ public class PalindromeOneIndex
         while (i < text.length() / 2 &&
                 text.charAt(i) ==
                 text.charAt(text.length() - 1 - i))
-        {
             i++;
-        }
 
         if (i < text.length() / 2)
             System.out.printf("%s is not a palindrome\n", text);

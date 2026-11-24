@@ -23,7 +23,6 @@ public class RunLengthEncoding
         int count = 1;
 
         for (int i = 1; i < text.length(); i++)
-        {
             if (text.charAt(i) == current)
                 count++;
             else
@@ -32,7 +31,6 @@ public class RunLengthEncoding
                 current = text.charAt(i);
                 count = 1;
             }
-        }
 
         result = result + current + count;
         return result;

@@ -28,12 +28,8 @@ public class MatrixProduct
 
         System.out.println("Values, row by row:");
         for (int i = 0; i < rows; i++)
-        {
             for (int j = 0; j < columns; j++)
-            {
                 matrix[i][j] = keyboard.nextInt();
-            }
-        }
 
         return matrix;
     }
@@ -46,15 +42,9 @@ public class MatrixProduct
 
         int[][] result = new int[a.length][b[0].length];
         for (int i = 0; i < result.length; i++)
-        {
             for (int j = 0; j < result[0].length; j++)
-            {
                 for (int k = 0; k < b.length; k++)
-                {
                     result[i][j] += a[i][k] * b[k][j];
-                }
-            }
-        }
 
         return result;
     }
@@ -64,9 +54,7 @@ public class MatrixProduct
         for (int i = 0; i < matrix.length; i++)
         {
             for (int j = 0; j < matrix[i].length; j++)
-            {
                 System.out.print(matrix[i][j] + " ");
-            }
             System.out.println();
         }
     }

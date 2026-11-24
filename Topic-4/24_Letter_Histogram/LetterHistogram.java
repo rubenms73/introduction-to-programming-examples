@@ -33,12 +33,10 @@ public class LetterHistogram
     public static void printHistogram(int[] counts)
     {
         for (int i = 0; i < counts.length; i++)
-        {
             if (counts[i] > 0)
             {
                 char letter = (char)('a' + i);
                 System.out.printf("%c: %d%n", letter, counts[i]);
             }
-        }
     }
 }

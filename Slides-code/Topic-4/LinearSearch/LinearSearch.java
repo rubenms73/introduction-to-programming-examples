@@ -13,9 +13,7 @@ public class LinearSearch
         int[] values = new int[size];
         System.out.print("Components: ");
         for (int i = 0; i < values.length; i++)
-        {
             values[i] = keyboard.nextInt();
-        }
         return values;
     }
 
@@ -29,9 +27,7 @@ public class LinearSearch
         int i = 0;
 
         while (i < v.length && v[i] != number)
-        {
             i++;
-        }
 
         if (i < v.length)
             System.out.printf("%d is in the array\n", number);

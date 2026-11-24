@@ -7,9 +7,7 @@ public class MergeSortedArrays
 
         int[] merged = merge(a, b);
         for (int i = 0; i < merged.length; i++)
-        {
             System.out.println(merged[i]);
-        }
     }
 
     public static int[] merge(int[] a, int[] b)

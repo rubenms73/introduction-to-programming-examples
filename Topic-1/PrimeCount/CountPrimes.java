@@ -15,9 +15,7 @@ public class CountPrimes
         {
             int divisor = 2;
             while (divisor * divisor <= number && number % divisor != 0)
-            {
                 divisor++;
-            }
             if (divisor * divisor > number)
                 count++;
             number++;

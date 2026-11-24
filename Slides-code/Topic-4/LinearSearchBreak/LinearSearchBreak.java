@@ -13,9 +13,7 @@ public class LinearSearchBreak
         int[] values = new int[size];
         System.out.print("Components: ");
         for (int i = 0; i < values.length; i++)
-        {
             values[i] = keyboard.nextInt();
-        }
         return values;
     }
 

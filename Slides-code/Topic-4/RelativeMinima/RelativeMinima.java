@@ -13,9 +13,7 @@ public class RelativeMinima
         double[] values = new double[size];
         System.out.print("Components: ");
         for (int i = 0; i < values.length; i++)
-        {
             values[i] = keyboard.nextDouble();
-        }
         return values;
     }
 
@@ -23,11 +21,9 @@ public class RelativeMinima
     {
         int count = 0;
         for (int i = 1; i < values.length - 1; i++)
-        {
             if (values[i] < values[i - 1] &&
                     values[i] < values[i + 1])
                 count++;
-        }
         return count;
     }
 

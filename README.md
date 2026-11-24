@@ -117,6 +117,6 @@ with the closing braces, and block contents use four spaces per indentation leve
 The `.clang-format` file records these formatting rules. Python and assembly
 follow their own syntax and formatting conventions.
 
-Conditional branches with a single statement omit braces. Braces are retained
-when needed to preserve the association of an `else` with its `if`. Branches
-with multiple statements use braces in Allman style. Loop formatting is unchanged.
+Loops and conditional branches whose body is a single statement omit braces.
+Braces are retained when needed to preserve the association of an `else` with
+its `if`. Bodies with several statements use braces in Allman style.

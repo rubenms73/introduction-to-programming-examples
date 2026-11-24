@@ -11,9 +11,7 @@ public class SplitIntoWords
 
         String[] words = splitIntoWords(sentence);
         for (int i = 0; i < words.length; i++)
-        {
             System.out.println(words[i]);
-        }
         keyboard.close();
     }
 
@@ -26,22 +24,16 @@ public class SplitIntoWords
         while (i < text.length())
         {
             while (i < text.length() && text.charAt(i) == ' ')
-            {
                 i++;
-            }
 
             if (i < text.length())
             {
                 int start = i;
                 while (i < text.length() && text.charAt(i) != ' ')
-                {
                     i++;
-                }
                 String word = "";
                 for (int j = start; j < i; j++)
-                {
                     word = word + text.charAt(j);
-                }
                 words[position] = word;
                 position++;
             }
@@ -56,7 +48,6 @@ public class SplitIntoWords
         boolean insideWord = false;
 
         for (int i = 0; i < text.length(); i++)
-        {
             if (text.charAt(i) == ' ')
                 insideWord = false;
             else if (!insideWord)
@@ -64,7 +55,6 @@ public class SplitIntoWords
                 count++;
                 insideWord = true;
             }
-        }
 
         return count;
     }

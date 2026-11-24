@@ -24,9 +24,7 @@ public class Point
     {
         this(values.length);
         for (int i = 0; i < values.length; i++)
-        {
             coordinates[i] = values[i];
-        }
     }
 
     // Copy constructor; point must not be null
@@ -57,9 +55,7 @@ public class Point
     {
         double sum = 0;
         for (int i = 0; i < coordinates.length; i++)
-        {
             sum += coordinates[i] * coordinates[i];
-        }
         return Math.sqrt(sum);
     }
 
@@ -68,9 +64,7 @@ public class Point
     {
         double sum = 0;
         for (int i = 0; i < coordinates.length; i++)
-        {
             sum += coordinates[i] * point.coordinates[i];
-        }
         return sum;
     }
 
@@ -135,10 +129,8 @@ public class Point
         if (coordinates.length != other.coordinates.length)
             return false;
         for (int i = 0; i < coordinates.length; i++)
-        {
             if (coordinates[i] != other.coordinates[i])
                 return false;
-        }
         return true;
     }
 }

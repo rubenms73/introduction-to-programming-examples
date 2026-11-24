@@ -7,10 +7,8 @@ public class Program
         if (n < 2)
             return false;
         for (int divisor = 2; divisor <= n / 2; divisor++)
-        {
             if (n % divisor == 0)
                 return false;
-        }
         return true;
     }
 
@@ -29,9 +27,7 @@ public class Program
     {
         int candidate = n + 1;
         while (reverse(candidate) != candidate || !isPrime(candidate))
-        {
             candidate++;
-        }
         return candidate;
     }
 

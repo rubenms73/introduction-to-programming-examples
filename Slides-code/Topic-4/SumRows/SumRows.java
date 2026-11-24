@@ -14,12 +14,8 @@ public class SumRows
         float[][] matrix = new float[rows][columns];
         System.out.print("Components: ");
         for (int i = 0; i < matrix.length; i++)
-        {
             for (int j = 0; j < matrix[i].length; j++)
-            {
                 matrix[i][j] = keyboard.nextFloat();
-            }
-        }
         return matrix;
     }
 
@@ -27,9 +23,7 @@ public class SumRows
     {
         float[] sums = new float[matrix.length];
         for (int i = 0; i < matrix.length; i++)
-        {
             sums[i] = sumFloatArray(matrix[i]);
-        }
         return sums;
     }
 
@@ -37,9 +31,7 @@ public class SumRows
     {
         float sum = 0;
         for (int i = 0; i < values.length; i++)
-        {
             sum += values[i];
-        }
         return sum;
     }
 
@@ -49,9 +41,7 @@ public class SumRows
         float[][] matrix = readFloatMatrix(keyboard);
         float[] sums = sumByRows(matrix);
         for (int i = 0; i < sums.length; i++)
-        {
             System.out.printf("Row %d: %.2f\n", i, sums[i]);
-        }
         keyboard.close();
     }
 }

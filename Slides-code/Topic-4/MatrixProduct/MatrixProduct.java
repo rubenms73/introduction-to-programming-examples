@@ -14,12 +14,8 @@ public class MatrixProduct
         int[][] matrix = new int[rows][columns];
         System.out.print("Components: ");
         for (int i = 0; i < matrix.length; i++)
-        {
             for (int j = 0; j < matrix[i].length; j++)
-            {
                 matrix[i][j] = keyboard.nextInt();
-            }
-        }
         return matrix;
     }
 
@@ -28,9 +24,7 @@ public class MatrixProduct
         for (int i = 0; i < matrix.length; i++)
         {
             for (int j = 0; j < matrix[i].length; j++)
-            {
                 System.out.printf(" %d ", matrix[i][j]);
-            }
             System.out.println();
         }
     }
@@ -42,15 +36,9 @@ public class MatrixProduct
             return null;
         int[][] c = new int[a.length][b[0].length];
         for (int i = 0; i < c.length; i++)
-        {
             for (int j = 0; j < c[0].length; j++)
-            {
                 for (int k = 0; k < b.length; k++)
-                {
                     c[i][j] += a[i][k] * b[k][j];
-                }
-            }
-        }
         return c;
     }
 

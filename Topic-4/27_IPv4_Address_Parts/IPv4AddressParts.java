@@ -14,9 +14,7 @@ public class IPv4AddressParts
             System.out.println("Invalid IPv4 address");
         else
             for (int i = 0; i < parts.length; i++)
-            {
                 System.out.println(parts[i]);
-            }
         keyboard.close();
     }
 

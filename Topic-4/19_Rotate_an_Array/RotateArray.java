@@ -18,9 +18,7 @@ public class RotateArray
 
         rotateRight(values);
         for (int i = 0; i < values.length; i++)
-        {
             System.out.println(values[i]);
-        }
         keyboard.close();
     }
 
@@ -30,9 +28,7 @@ public class RotateArray
         {
             int last = values[values.length - 1];
             for (int i = values.length - 1; i > 0; i--)
-            {
                 values[i] = values[i - 1];
-            }
             values[0] = last;
         }
     }

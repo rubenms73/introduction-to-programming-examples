@@ -14,12 +14,8 @@ public class SumMatrices
         int[][] matrix = new int[rows][columns];
         System.out.print("Components: ");
         for (int i = 0; i < matrix.length; i++)
-        {
             for (int j = 0; j < matrix[i].length; j++)
-            {
                 matrix[i][j] = keyboard.nextInt();
-            }
-        }
         return matrix;
     }
 
@@ -28,9 +24,7 @@ public class SumMatrices
         for (int i = 0; i < matrix.length; i++)
         {
             for (int j = 0; j < matrix[i].length; j++)
-            {
                 System.out.printf(" %d ", matrix[i][j]);
-            }
             System.out.println();
         }
     }
@@ -45,12 +39,8 @@ public class SumMatrices
         int[][] sum = new int[matrix1.length][matrix1[0].length];
 
         for (int i = 0; i < sum.length; i++)
-        {
             for (int j = 0; j < sum[i].length; j++)
-            {
                 sum[i][j] = matrix1[i][j] + matrix2[i][j];
-            }
-        }
 
         printIntMatrix(sum);
         keyboard.close();
