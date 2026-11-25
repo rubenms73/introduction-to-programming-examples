@@ -131,8 +131,10 @@ public class CarTrip
      *
      * @return the text that represents the trip
      */
-    @Override public String toString()
+    @Override
+    public String toString()
     {
-        return kilometres + " km, " + litres + " litres, " + fuelCostPerLitre + " euro/litre";
+        return String.format("%s km, %s litres, %s euro/litre",
+                kilometres, litres, fuelCostPerLitre);
     }
 }

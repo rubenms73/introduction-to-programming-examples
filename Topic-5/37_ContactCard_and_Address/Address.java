@@ -108,8 +108,9 @@ public class Address
      *
      * @return the text that represents the address
      */
-    @Override public String toString()
+    @Override
+    public String toString()
     {
-        return street + ", " + postalCode + " " + city;
+        return String.format("%s, %s %s", street, postalCode, city);
     }
 }

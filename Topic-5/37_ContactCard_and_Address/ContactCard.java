@@ -101,12 +101,22 @@ public class ContactCard
      * @param object the object to compare with
      * @return true if object is a contact card with the same email
      */
-    @Override public boolean equals(Object object)
+    @Override
+    public boolean equals(Object object)
     {
+        if (this == object)
+            // The same object: it is equal to itself.
+            return true;
         if (!(object instanceof ContactCard))
+            // null, or an object of another class.
             return false;
-        ContactCard other = (ContactCard)object;
-        return email.equals(other.email);
+        ContactCard other = (ContactCard) object;
+        if (email == null)
+            // No email: equal only if the other one has no email either.
+            return other.email == null;
+        else
+            // Compare the texts, not the references.
+            return email.equals(other.email);
     }
 
     /**
@@ -114,8 +124,9 @@ public class ContactCard
      *
      * @return the text that represents the contact card
      */
-    @Override public String toString()
+    @Override
+    public String toString()
     {
-        return name + " <" + email + ">\n" + address;
+        return String.format("%s <%s>\n%s", name, email, address);
     }
 }

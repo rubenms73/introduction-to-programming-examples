@@ -123,7 +123,7 @@ public class StudentRecord
     public String report()
     {
         String result = hasPassed() ? "PASS" : "FAIL";
-        return name + ": " + finalMark() + " (" + result + ")";
+        return String.format("%s: %s (%s)", name, finalMark(), result);
     }
 
     /**
@@ -131,7 +131,8 @@ public class StudentRecord
      *
      * @return the text that represents the record
      */
-    @Override public String toString()
+    @Override
+    public String toString()
     {
         return report();
     }

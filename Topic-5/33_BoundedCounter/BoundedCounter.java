@@ -141,8 +141,9 @@ public class BoundedCounter
      *
      * @return the text that represents the counter
      */
-    @Override public String toString()
+    @Override
+    public String toString()
     {
-        return "Counter[" + minimum + ".." + maximum + "] = " + value;
+        return String.format("Counter[%d..%d] = %d", minimum, maximum, value);
     }
 }

@@ -126,12 +126,22 @@ public class Book
      * @param object the object to compare with
      * @return true if object is a book with the same ISBN
      */
-    @Override public boolean equals(Object object)
+    @Override
+    public boolean equals(Object object)
     {
+        if (this == object)
+            // The same object: it is equal to itself.
+            return true;
         if (!(object instanceof Book))
+            // null, or an object of another class.
             return false;
-        Book other = (Book)object;
-        return isbn.equals(other.isbn);
+        Book other = (Book) object;
+        if (isbn == null)
+            // No ISBN: equal only if the other one has no ISBN either.
+            return other.isbn == null;
+        else
+            // Compare the texts, not the references.
+            return isbn.equals(other.isbn);
     }
 
     /**
@@ -139,8 +149,9 @@ public class Book
      *
      * @return the text that represents the book
      */
-    @Override public String toString()
+    @Override
+    public String toString()
     {
-        return title + ", by " + author + " (" + year + ") [ISBN: " + isbn + "]";
+        return String.format("%s, by %s (%d) [ISBN: %s]", title, author, year, isbn);
     }
 }

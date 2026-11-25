@@ -154,9 +154,10 @@ public class PasswordPolicy
      *
      * @return the text that represents the policy
      */
-    @Override public String toString()
+    @Override
+    public String toString()
     {
-        return "PasswordPolicy[length >= " + minimumLength + ", uppercase=" + uppercaseRequired +
-                ", lowercase=" + lowercaseRequired + ", digit=" + digitRequired + "]";
+        return String.format("PasswordPolicy[length >= %d, uppercase=%b, lowercase=%b, digit=%b]",
+                minimumLength, uppercaseRequired, lowercaseRequired, digitRequired);
     }
 }

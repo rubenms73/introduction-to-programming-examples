@@ -115,8 +115,9 @@ public class BankAccount
      *
      * @return the text that represents the account
      */
-    @Override public String toString()
+    @Override
+    public String toString()
     {
-        return holder + ": " + balance + " euro";
+        return String.format("%s: %s euro", holder, balance);
     }
 }
