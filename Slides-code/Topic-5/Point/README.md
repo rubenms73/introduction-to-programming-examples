@@ -9,6 +9,9 @@ coordinates are stored in an array of `double`.
   dimension is its length.
 - **Defensive copying.** The constructors copy the coordinates, so changing the
   original array or point later does not change the new point.
+- **Valid objects.** A dimension that is not positive, a `null` or empty array
+  and a `null` point give the two-dimensional origin. The constructors check
+  them with an `if`; no exceptions are used.
 - **Methods that receive another object of the same class:** `dotProduct`,
   `distance`, `angle` and `isOrthogonal`. They can use `point.coordinates`
   directly because the code is inside `Point`.

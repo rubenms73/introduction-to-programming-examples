@@ -93,6 +93,7 @@ public class Circle
     /**
      * Changes the radius when the new value is positive.
      * Other values leave the current radius unchanged.
+     *
      * @param radius the proposed radius
      */
     public void setRadius(int radius)
@@ -103,6 +104,7 @@ public class Circle
 
     /**
      * Calculates the area of the circle.
+     *
      * @return the area of the circle
      */
     public double area()

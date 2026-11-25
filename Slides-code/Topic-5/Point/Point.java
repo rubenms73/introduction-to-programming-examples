@@ -1,7 +1,7 @@
 /**
  * A point of any dimension with real coordinates.
- * The dimension is positive and the coordinates are finite,
- * between -1000000 and 1000000.
+ * The dimension is always positive. In these examples the coordinates are
+ * finite, between -1000000 and 1000000.
  */
 public class Point
 {
@@ -15,36 +15,54 @@ public class Point
     }
 
     /**
-     * Creates a point at the origin.
+     * Creates a point at the origin. A dimension that is not positive gives
+     * a two-dimensional point.
      *
-     * @param dimension the dimension; it must be positive
+     * @param dimension the dimension
      */
     public Point(int dimension)
     {
-        coordinates = new double[dimension];
+        if (dimension > 0)
+            // Valid dimension: a point with that many coordinates.
+            coordinates = new double[dimension];
+        else
+            // Not positive: a two-dimensional point.
+            coordinates = new double[2];
     }
 
     /**
      * Creates a point with the given coordinates. The values are copied, so
-     * later changes to the array do not change the point.
+     * later changes to the array do not change the point. If the array is
+     * null or empty, the point is the two-dimensional origin.
      *
-     * @param values the coordinates; it must not be null
+     * @param values the coordinates
      */
     public Point(double[] values)
     {
-        this(values.length);
-        for (int i = 0; i < values.length; i++)
-            coordinates[i] = values[i];
+        this();
+        if (values != null && values.length > 0)
+        {
+            coordinates = new double[values.length];
+            for (int i = 0; i < values.length; i++)
+                coordinates[i] = values[i];
+        }
     }
 
     /**
-     * Copy constructor: creates a point equal to the given one.
+     * Copy constructor: creates a point equal to the given one. If point is
+     * null, the new point is the two-dimensional origin.
      *
-     * @param point the point to copy; it must not be null
+     * @param point the point to copy
      */
     public Point(Point point)
     {
-        this(point.coordinates);
+        this();
+        if (point != null)
+        {
+            coordinates = new double[point.coordinates.length];
+            for (int i = 0; i < coordinates.length; i++)
+                coordinates[i] = point.coordinates[i];
+        }
     }
 
     /**
