@@ -5,5 +5,6 @@
 | 26 October 2026 | Control 1, model A: [handout](Control1-ExamA/ExamA.pdf) · [solution](Control1-ExamA/) | `nextPrimePalindrome` |
 | 28 October 2026 | Control 1, model D: [handout](Control1-ExamD/ExamD.pdf) · [solution](Control1-ExamD/) | `nextAbundant` |
 | 23 November 2026 | Control 2, PL-02: [handout](Control2-PL02/ExamPL02.pdf) · [solution](Control2-PL02/) | `removeFixed`, `randomCode` |
+| 25 November 2026 | Control 2, PL-01: [handout](Control2-PL01/ExamPL01.pdf) · [solution](Control2-PL01/) | `insertNew`, `removeConsonants` |
 
 Control 1 covers Topics 1–3; Control 2 covers Topics 1–4.

@@ -1,0 +1,11 @@
+Expected 1 9 2 3, actual 1 9 2 3 
+Original array: expected 1 2 3, actual 1 2 3 
+New array: expected true, actual true
+Expected 9 1 2 3, actual 9 1 2 3 
+Expected 1 2 3 9, actual 1 2 3 9 
+Expected 5, actual 5 
+Expected "A ue oue", actual "A ue oue"
+Expected "aa 17!", actual "aa 17!"
+Expected "", actual ""
+Expected "", actual ""
+Expected "AEIOU aeiou", actual "AEIOU aeiou"
