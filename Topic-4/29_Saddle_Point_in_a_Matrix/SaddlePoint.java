@@ -41,7 +41,7 @@ public class SaddlePoint
             for (int col = 0; col < matrix[row].length; col++)
                 if (isMinimumInRow(matrix, row, col) && isMaximumInColumn(matrix, row, col))
                 {
-                    System.out.printf("Saddle point at (%d, %d): %d%n", row, col, matrix[row][col]);
+                    System.out.printf("Saddle point at (%d, %d): %d\n", row, col, matrix[row][col]);
                     found = true;
                 }
 

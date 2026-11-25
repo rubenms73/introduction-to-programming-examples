@@ -54,7 +54,7 @@ public class LetterHistogram
             if (counts[i] > 0)
             {
                 char letter = (char)('a' + i);
-                System.out.printf("%c: %d%n", letter, counts[i]);
+                System.out.printf("%c: %d\n", letter, counts[i]);
             }
     }
 }

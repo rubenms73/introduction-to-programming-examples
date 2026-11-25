@@ -22,7 +22,7 @@ public class SquareRootByBisection
         else
         {
             double result = squareRoot(number, tolerance);
-            System.out.printf("Approximation: %.8f%n", result);
+            System.out.printf("Approximation: %.8f\n", result);
         }
         keyboard.close();
     }

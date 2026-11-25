@@ -33,8 +33,8 @@ public class FirstFibonacciAboveLimit
                 position++;
             }
 
-            System.out.printf("First Fibonacci number above %d: %d%n", limit, current);
-            System.out.printf("Position: %d%n", position);
+            System.out.printf("First Fibonacci number above %d: %d\n", limit, current);
+            System.out.printf("Position: %d\n", position);
         }
         keyboard.close();
     }

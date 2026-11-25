@@ -26,7 +26,7 @@ public class InvoiceWithDiscountAndVat
         double vat = discountedPrice * vatPercentage / 100.0;
         double finalPrice = discountedPrice + vat;
 
-        System.out.printf("Final price: %.2f%n", finalPrice);
+        System.out.printf("Final price: %.2f\n", finalPrice);
         keyboard.close();
     }
 }

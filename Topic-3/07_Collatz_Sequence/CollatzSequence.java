@@ -34,7 +34,7 @@ public class CollatzSequence
                 System.out.print(" " + number);
             }
 
-            System.out.printf("%nSteps: %d%n", steps);
+            System.out.printf("\nSteps: %d\n", steps);
         }
         keyboard.close();
     }

@@ -21,7 +21,7 @@ public class FibonacciNumber
         else
         {
             long result = fibonacci(n);
-            System.out.printf("Fibonacci number %d is %d%n", n, result);
+            System.out.printf("Fibonacci number %d is %d\n", n, result);
         }
         keyboard.close();
     }

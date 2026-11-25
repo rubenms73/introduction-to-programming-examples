@@ -20,7 +20,7 @@ public class BreakingDownSeconds
         int minutes = remaining / 60;
         int seconds = remaining % 60;
 
-        System.out.printf("%d hours, %d minutes, %d seconds%n", hours, minutes, seconds);
+        System.out.printf("%d hours, %d minutes, %d seconds\n", hours, minutes, seconds);
         keyboard.close();
     }
 }

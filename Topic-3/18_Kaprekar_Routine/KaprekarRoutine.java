@@ -30,7 +30,7 @@ public class KaprekarRoutine
                 int ascending = reverseFourDigits(descending);
                 number = descending - ascending;
                 steps++;
-                System.out.printf("%04d - %04d = %04d%n", descending, ascending, number);
+                System.out.printf("%04d - %04d = %04d\n", descending, ascending, number);
             }
             System.out.println("Steps: " + steps);
         }

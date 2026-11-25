@@ -25,7 +25,7 @@ public class DistanceBetweenPoints
         double dy = y2 - y1;
         double distance = Math.sqrt(dx * dx + dy * dy);
 
-        System.out.printf("Distance: %.4f%n", distance);
+        System.out.printf("Distance: %.4f\n", distance);
         keyboard.close();
     }
 }
