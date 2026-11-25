@@ -3,7 +3,10 @@
  */
 public class Point3D extends Point2D
 {
-    /** The z coordinate. x and y are inherited from Point2D. */
+    /**
+     * The z coordinate. x and y are inherited from Point2D, where they are
+     * private, so this class reads them with getX() and getY().
+     */
     private int z;
 
     /** Creates the point (0, 0, 0). */
@@ -60,14 +63,16 @@ public class Point3D extends Point2D
     }
 
     /**
-     * Calculates the distance to the origin. x and y are protected, so they
-     * can be used directly.
+     * Calculates the distance to the origin.
      *
      * @return the distance from the point to (0, 0, 0)
      */
     public double norm()
     {
-        return Math.sqrt(x * x + y * y + z * z);
+        int x = getX();
+        int y = getY();
+        int sum = x * x + y * y + z * z;
+        return Math.sqrt(sum);
     }
 
     /**
@@ -78,6 +83,6 @@ public class Point3D extends Point2D
     @Override
     public String toString()
     {
-        return String.format("(%d, %d, %d)", x, y, z);
+        return String.format("(%d, %d, %d)", getX(), getY(), z);
     }
 }

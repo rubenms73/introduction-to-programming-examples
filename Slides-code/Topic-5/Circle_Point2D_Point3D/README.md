@@ -17,9 +17,10 @@ The example classes from the Topic 5 slides:
   case, build the default object. No exceptions are used.
 - **Deep copy.** The copy constructor of `Circle` creates a new `Point2D`, so the
   copy and the original do not share their centre.
-- **Inheritance, `protected` and `super`.** `x` and `y` are `protected`, so
-  `Point3D` uses them directly in `norm()`. The constructors of `Point3D` call
-  `super(...)` to let `Point2D` initialise `x` and `y`.
+- **Inheritance with private attributes and `super`.** Each class keeps its
+  attributes `private`: `Point3D` reads the inherited `x` and `y` with `getX()`
+  and `getY()`, and its constructors call `super(...)` to let `Point2D`
+  initialise them.
 - **`toString()` with `String.format`.**
 
 ## Compile and run

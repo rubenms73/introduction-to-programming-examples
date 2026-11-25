@@ -3,17 +3,11 @@
  */
 public class Point2D
 {
-    /**
-     * The x coordinate. It is protected, so the subclass Point3D can use it
-     * directly.
-     */
-    protected int x;
+    /** The x coordinate. */
+    private int x;
 
-    /**
-     * The y coordinate. It is protected, so the subclass Point3D can use it
-     * directly.
-     */
-    protected int y;
+    /** The y coordinate. */
+    private int y;
 
     /** Creates the point (0, 0). */
     public Point2D()
