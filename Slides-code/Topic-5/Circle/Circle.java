@@ -145,7 +145,11 @@ public class Circle
     @Override
     public boolean equals(Object obj)
     {
+        if (this == obj)
+            // The same object: it is equal to itself.
+            return true;
         if (!(obj instanceof Circle))
+            // null, or an object of another class.
             return false;
         Circle other = (Circle) obj;
         return x == other.x && y == other.y

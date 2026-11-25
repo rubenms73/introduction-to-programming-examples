@@ -214,7 +214,11 @@ public class Point
     @Override
     public boolean equals(Object obj)
     {
+        if (this == obj)
+            // The same object: it is equal to itself.
+            return true;
         if (!(obj instanceof Point))
+            // null, or an object of another class.
             return false;
         Point other = (Point) obj;
         if (coordinates.length != other.coordinates.length)
