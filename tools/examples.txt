@@ -2,6 +2,7 @@
 PracticalExamSolutions/2026-2027/Control1-ExamA ; Program ; 31
 PracticalExamSolutions/2026-2027/Control1-ExamD ; Program ; 12
 PracticalExamSolutions/2026-2027/Control2-PL01 ; Program ;
+PracticalExamSolutions/2026-2027/Control2-PL01/WithChecks ; Program ;
 PracticalExamSolutions/2026-2027/Control2-PL02 ; Program ;
 Slides-code/Topic-1/HelloWorld ; HelloWorld ;
 Slides-code/Topic-1/Welcome ; Welcome ;
