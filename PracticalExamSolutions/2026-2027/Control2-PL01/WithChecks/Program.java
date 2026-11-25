@@ -2,6 +2,11 @@
  * Solution to the second lab control, group PL-01, with data checks:
  * inserting an element into a new array and removing the consonants from
  * a text. Each method returns null when its data are not valid.
+ *
+ * The statement did not explicitly ask for all these checks: it said that
+ * the data could be assumed to be valid, so the solution without checks
+ * (../Program.java) is also complete. Checking the data, as explained in
+ * the lab session, was a way of getting a better grade.
  */
 public class Program
 {
