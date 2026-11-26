@@ -87,3 +87,4 @@ Topic-5/34_StudentRecord ; Main ;
 Topic-5/35_PasswordPolicy ; Main ;
 Topic-5/36_Book ; Main ;
 Topic-5/37_ContactCard_and_Address ; Main ;
+Topic-5/39_Temperature_Logger ; Main ;

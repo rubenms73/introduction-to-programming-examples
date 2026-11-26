@@ -15,3 +15,4 @@ Exercise numbers match the additional exercises handout.
 | [35 PasswordPolicy](35_PasswordPolicy/) | `java -cp "." Main` |
 | [36 Book](36_Book/) | `java -cp "." Main` |
 | [37 ContactCard and Address](37_ContactCard_and_Address/) | `java -cp "." Main` |
+| [39 Temperature logger](39_Temperature_Logger/) | `java -cp "." Main` |

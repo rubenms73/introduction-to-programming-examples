@@ -1,0 +1,14 @@
+Empty log: 2026-12-01 []
+Maximum of an empty log: null
+Log: 2026-12-01 [08:00 9.5 C, 10:00 14.0 C, 09:00 12.5 C, 11:00 14.0 C]
+Second reading at 09:00: false
+Adding null: false
+Readings stored: 4
+Reading at 09:00: 09:00 12.5 C
+Reading at 15:00: null
+Maximum (first of two at 14.0): 10:00 14.0 C
+Average: 12.5
+Hours above 12 degrees: 3
+Copy equals original: true
+After adding to the copy: false
+Reading at 08:00 after changing the returned copy: 08:00 9.5 C

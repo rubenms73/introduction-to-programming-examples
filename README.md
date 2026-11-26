@@ -99,7 +99,7 @@ java -cp "." BreakingDownSeconds
 - The 38 additional exercises require only the JDK. C, Python and assembly tools
   are needed only for their corresponding Topic 1 demonstrations.
 
-Exercises 31–37 include `Main.java` demonstrations. Other examples either prompt
+Exercises 31–37 and 39 include `Main.java` demonstrations. Other examples either prompt
 for input or use sample values in their main method. Exercise numbers follow
 the additional exercises handout. Introductory solutions assume inputs within the
 exercise's intended domain and numeric range.
